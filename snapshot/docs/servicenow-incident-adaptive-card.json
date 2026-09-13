@@ -1,0 +1,151 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://www.servicenow.com/content/dam/servicenow-assets/images/meganav/servicenow-header-logo.svg",
+                  "size": "Small",
+                  "width": "40px"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "ServiceNow Incident",
+                  "weight": "Bolder",
+                  "size": "Medium",
+                  "color": "Accent"
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "${number}",
+                  "size": "Large",
+                  "weight": "Bolder",
+                  "spacing": "None"
+                }
+              ],
+              "verticalContentAlignment": "Center"
+            }
+          ]
+        }
+      ],
+      "style": "emphasis"
+    },
+    {
+      "type": "Container",
+      "spacing": "Medium",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "${short_description}",
+          "size": "Medium",
+          "weight": "Bolder",
+          "wrap": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "${description}",
+          "wrap": true,
+          "isSubtle": true,
+          "spacing": "Small",
+          "maxLines": 3
+        }
+      ]
+    },
+    {
+      "type": "FactSet",
+      "spacing": "Medium",
+      "facts": [
+        {
+          "title": "State:",
+          "value": "${state_display}"
+        },
+        {
+          "title": "Priority:",
+          "value": "${priority_display}"
+        },
+        {
+          "title": "Urgency:",
+          "value": "${urgency_display}"
+        },
+        {
+          "title": "Impact:",
+          "value": "${impact_display}"
+        },
+        {
+          "title": "Category:",
+          "value": "${category}"
+        },
+        {
+          "title": "Assigned To:",
+          "value": "${assigned_to_display}"
+        },
+        {
+          "title": "Assignment Group:",
+          "value": "${assignment_group_display}"
+        },
+        {
+          "title": "Opened:",
+          "value": "{{DATE(${opened_at}, SHORT)}}"
+        },
+        {
+          "title": "Caller:",
+          "value": "${caller_id_display}"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "spacing": "Medium",
+      "separator": true,
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "**Configuration Item:** ${cmdb_ci_display}",
+          "wrap": true,
+          "size": "Small",
+          "isVisible": "${if(cmdb_ci_display, true, false)}"
+        },
+        {
+          "type": "TextBlock",
+          "text": "**Company:** ${company_display}",
+          "wrap": true,
+          "size": "Small",
+          "isVisible": "${if(company_display, true, false)}"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "View in ServiceNow",
+      "url": "${instance_url}/nav_to.do?uri=incident.do?sys_id=${sys_id}",
+      "style": "positive"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Update Incident",
+      "data": {
+        "action": "update",
+        "sys_id": "${sys_id}"
+      }
+    }
+  ]
+}

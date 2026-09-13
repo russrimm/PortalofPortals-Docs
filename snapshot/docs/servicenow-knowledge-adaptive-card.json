@@ -1,0 +1,182 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://www.servicenow.com/content/dam/servicenow-assets/images/meganav/servicenow-header-logo.svg",
+                  "size": "Small",
+                  "width": "40px",
+                  "altText": "ServiceNow"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Knowledge Article",
+                  "weight": "Bolder",
+                  "size": "Medium",
+                  "color": "Accent"
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "${number}",
+                  "size": "Large",
+                  "weight": "Bolder",
+                  "spacing": "None"
+                }
+              ],
+              "verticalContentAlignment": "Center"
+            }
+          ]
+        }
+      ],
+      "style": "emphasis"
+    },
+    {
+      "type": "Container",
+      "spacing": "Medium",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "${title}",
+          "size": "Large",
+          "weight": "Bolder",
+          "wrap": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "${short_description}",
+          "wrap": true,
+          "isSubtle": true,
+          "spacing": "Small",
+          "size": "Medium"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "spacing": "Medium",
+      "separator": true,
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Article Details",
+          "weight": "Bolder",
+          "size": "Medium",
+          "spacing": "Small"
+        }
+      ]
+    },
+    {
+      "type": "FactSet",
+      "spacing": "Small",
+      "facts": [
+        {
+          "title": "Article Number:",
+          "value": "${number}"
+        },
+        {
+          "title": "Workflow State:",
+          "value": "${workflow_state}"
+        },
+        {
+          "title": "Knowledge Base:",
+          "value": "${kb_knowledge_base}"
+        },
+        {
+          "title": "Category:",
+          "value": "${kb_category}"
+        },
+        {
+          "title": "Author:",
+          "value": "${author}"
+        },
+        {
+          "title": "Created:",
+          "value": "{{DATE(${sys_created_on}, SHORT)}}"
+        },
+        {
+          "title": "Last Updated:",
+          "value": "{{DATE(${sys_updated_on}, SHORT)}}"
+        },
+        {
+          "title": "Views:",
+          "value": "${sys_view_count}"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "spacing": "Medium",
+      "separator": true,
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Content Preview",
+          "weight": "Bolder",
+          "size": "Medium",
+          "spacing": "Small"
+        },
+        {
+          "type": "TextBlock",
+          "text": "${snippet}",
+          "wrap": true,
+          "spacing": "Small",
+          "maxLines": 5,
+          "isSubtle": true
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "spacing": "Small",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "**Relevance Score:** ${relevance_percentage}%",
+          "wrap": true,
+          "size": "Small",
+          "isVisible": "${if(relevance_percentage, true, false)}"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "View Full Article",
+      "url": "${instance_url}/kb_view.do?sys_kb_id=${sys_id}",
+      "style": "positive"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "Open in ServiceNow",
+      "url": "${instance_url}/nav_to.do?uri=kb_knowledge.do?sys_id=${sys_id}"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Request Changes",
+      "data": {
+        "action": "feedback",
+        "article_id": "${sys_id}",
+        "article_number": "${number}"
+      }
+    }
+  ]
+}
