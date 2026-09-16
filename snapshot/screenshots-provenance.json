@@ -4502,8 +4502,9 @@
     },
     {
       "path": "docs/screenshots/TOUR.md",
-      "sha256": "1f50ee3c1d5f1a4c6cdddad22cde6a9c02cf3313aa8864e09c1570a847cf41e5",
-      "bytes": 8175
+      "sha256": "b5b0c1e49f0f6f918c218bae90167caf9a07a9aa14f5eede9311f1e7f55c0db4",
+      "bytes": 8199,
+      "sourceSha256": "1f50ee3c1d5f1a4c6cdddad22cde6a9c02cf3313aa8864e09c1570a847cf41e5"
     }
   ]
 }

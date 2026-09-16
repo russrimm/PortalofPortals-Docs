@@ -42,7 +42,7 @@ rendering an error.
 
 ## Portal Home
 
-![Portal Home](home.jpg)
+![Portal Home](home.webp)
 
 The Portal 360° home page in dark mode. Provides a high-level overview of the entire Microsoft cloud environment including quick-access tiles, tenant health signals, and recent activity highlights.
 
@@ -50,7 +50,7 @@ The Portal 360° home page in dark mode. Provides a high-level overview of the e
 
 ## Governance Dashboard
 
-![Governance Dashboard](dashboard.jpg)
+![Governance Dashboard](dashboard.webp)
 
 Central governance dashboard aggregating key security, compliance, and operational metrics across Azure and Microsoft 365. Shows Secure Score, risky users, device compliance, and service health in a single view.
 
@@ -58,7 +58,7 @@ Central governance dashboard aggregating key security, compliance, and operation
 
 ## Security Pulse
 
-![Security Pulse](security-pulse.jpg)
+![Security Pulse](security-pulse.webp)
 
 Live CVE intelligence from NVD, MSRC, and CISA KEV. Rendered against live tenant data with 4 summary metrics, 10 charts.
 
@@ -66,7 +66,7 @@ Live CVE intelligence from NVD, MSRC, and CISA KEV. Rendered against live tenant
 
 ## User Management
 
-![User Management](users.jpg)
+![User Management](users.webp)
 
 Comprehensive user directory showing all Entra ID users with their status, license assignments, and last sign-in date. Supports search, filter, and bulk operations.
 
@@ -74,7 +74,7 @@ Comprehensive user directory showing all Entra ID users with their status, licen
 
 ## Group Management
 
-![Group Management](groups.jpg)
+![Group Management](groups.webp)
 
 Azure AD group administration showing security groups, Microsoft 365 groups, and distribution lists. Supports membership management, dynamic groups, and group-based licensing.
 
@@ -82,7 +82,7 @@ Azure AD group administration showing security groups, Microsoft 365 groups, and
 
 ## Roles and Administrators
 
-![Roles and Administrators](entra-roles-and-administrators.jpg)
+![Roles and Administrators](entra-roles-and-administrators.webp)
 
 Entra ID directory roles — built-in and custom. Rendered against live tenant data with 4 summary metrics.
 
@@ -90,7 +90,7 @@ Entra ID directory roles — built-in and custom. Rendered against live tenant d
 
 ## Enterprise Applications
 
-![Enterprise Applications](enterprise-applications.jpg)
+![Enterprise Applications](enterprise-applications.webp)
 
 Comprehensive enterprise application management showing all apps assigned to the tenant including SAML SSO apps, OAuth apps, and provisioning-enabled applications.
 
@@ -98,7 +98,7 @@ Comprehensive enterprise application management showing all apps assigned to the
 
 ## Conditional Access Policies
 
-![Conditional Access Policies](conditional-access.jpg)
+![Conditional Access Policies](conditional-access.webp)
 
 Full view of all Conditional Access policies in the tenant with state (enabled, disabled, report-only), assignment scope, and grant/session controls.
 
@@ -106,7 +106,7 @@ Full view of all Conditional Access policies in the tenant with state (enabled, 
 
 ## Microsoft Secure Score
 
-![Microsoft Secure Score](secure-score.jpg)
+![Microsoft Secure Score](secure-score.webp)
 
 Microsoft 365 Secure Score showing the overall security posture with completed and recommended improvement actions. Tracks score trends and compares with similar organizations.
 
@@ -114,7 +114,7 @@ Microsoft 365 Secure Score showing the overall security posture with completed a
 
 ## Defender for Endpoint
 
-![Defender for Endpoint](defender-atp.jpg)
+![Defender for Endpoint](defender-atp.webp)
 
 Configuration required.
 
@@ -122,7 +122,7 @@ Configuration required.
 
 ## Insight — MFA Gap
 
-![Insight — MFA Gap](insights-mfa-gap.jpg)
+![Insight — MFA Gap](insights-mfa-gap.webp)
 
 Users without any MFA method registered in the tenant. Rendered against live tenant data with 3 summary metrics, 3 live records.
 
@@ -130,7 +130,7 @@ Users without any MFA method registered in the tenant. Rendered against live ten
 
 ## License Management
 
-![License Management](licensing.jpg)
+![License Management](licensing.webp)
 
 Centralized license management view showing all Microsoft 365 and Azure subscriptions, license counts, assigned quantities, and per-service-plan breakdowns.
 
@@ -138,7 +138,7 @@ Centralized license management view showing all Microsoft 365 and Azure subscrip
 
 ## Azure Infrastructure Overview
 
-![Azure Infrastructure Overview](azure-infrastructure.jpg)
+![Azure Infrastructure Overview](azure-infrastructure.webp)
 
 Top-level Azure Infrastructure page providing navigation to resource management, organization hierarchy, cost management, policy, and monitoring capabilities.
 
@@ -162,7 +162,7 @@ AI-powered diagnostics for Azure Virtual Machines that analyzes performance data
 
 ## Azure Daily Costs
 
-![Azure Daily Costs](azure-daily-costs.jpg)
+![Azure Daily Costs](azure-daily-costs.webp)
 
 Day-by-day Azure spend breakdown for August 2026. Rendered against live tenant data with 3 summary metrics, 3 live records, 11 charts.
 
@@ -170,7 +170,7 @@ Day-by-day Azure spend breakdown for August 2026. Rendered against live tenant d
 
 ## Azure Monitor Metrics
 
-![Azure Monitor Metrics](azure-metrics.jpg)
+![Azure Monitor Metrics](azure-metrics.webp)
 
 Azure Monitor metrics explorer for visualizing resource performance metrics over custom time ranges. Supports multiple resources, metrics, and aggregation types.
 
@@ -186,7 +186,7 @@ Real-time Microsoft 365 and Azure service health status showing active incidents
 
 ## AI Foundry — Deployments
 
-![AI Foundry — Deployments](azure-ai-foundry-deployments.jpg)
+![AI Foundry — Deployments](azure-ai-foundry-deployments.webp)
 
 Manage AI model deployments within an AI Foundry account.
 
@@ -194,7 +194,7 @@ Manage AI model deployments within an AI Foundry account.
 
 ## Copilot Readiness
 
-![Copilot Readiness](microsoft365-copilot-readiness.jpg)
+![Copilot Readiness](microsoft365-copilot-readiness.webp)
 
 Who is ready for a Microsoft 365 Copilot seat, who is sitting on one they never use, and which seats you can move today without buying anything. Ports Microsoft\\'s M365UsageAnalytics readiness model onto live Graph data — no audit-log export required. Rendered against live tenant data with 4 summary metrics, 5 charts.
 
@@ -202,7 +202,7 @@ Who is ready for a Microsoft 365 Copilot seat, who is sitting on one they never 
 
 ## Exchange Admin Dashboard
 
-![Exchange Admin Dashboard](exchange-admin-dashboard.jpg)
+![Exchange Admin Dashboard](exchange-admin-dashboard.webp)
 
 Exchange Online policy compliance and mailbox health overview. Rendered against live tenant data with 5 summary metrics, 6 live records.
 
@@ -210,7 +210,7 @@ Exchange Online policy compliance and mailbox health overview. Rendered against 
 
 ## SharePoint Sites
 
-![SharePoint Sites](sharepoint-sites.jpg)
+![SharePoint Sites](sharepoint-sites.webp)
 
 SharePoint Online site collection inventory showing site type, storage usage, last modified date, and owner. Supports site lifecycle management operations.
 
@@ -226,7 +226,7 @@ Retrieve AI-generated meeting summaries, action items, and participant mentions 
 
 ## Intune Managed Devices
 
-![Intune Managed Devices](device-management-devices.jpg)
+![Intune Managed Devices](device-management-devices.webp)
 
 Complete Intune device inventory showing all managed devices with enrollment type, compliance state, OS version, last check-in, and assigned user.
 
@@ -234,7 +234,7 @@ Complete Intune device inventory showing all managed devices with enrollment typ
 
 ## Encryption Report
 
-![Encryption Report](device-management-encryption-report.jpg)
+![Encryption Report](device-management-encryption-report.webp)
 
 BitLocker, FileVault, and device encryption readiness from /deviceManagement/managedDeviceEncryptionStates. Rendered against live tenant data with 12 live records, 3 charts.
 
@@ -250,7 +250,7 @@ Complete inventory of all Power Platform environments with type (Default, Produc
 
 ## Copilot Studio Dashboard
 
-![Copilot Studio Dashboard](power-platform-copilot-studio-dashboard.jpg)
+![Copilot Studio Dashboard](power-platform-copilot-studio-dashboard.webp)
 
 Select report pages for telemetry, governance, environments, authentication, and connector usage.
 
@@ -258,7 +258,7 @@ Select report pages for telemetry, governance, environments, authentication, and
 
 ## Fabric Admin — Workspaces
 
-![Fabric Admin — Workspaces](fabric-admin-workspaces.jpg)
+![Fabric Admin — Workspaces](fabric-admin-workspaces.webp)
 
 Tenant-wide view of every Fabric workspace (requires Fabric admin).
 
@@ -266,7 +266,7 @@ Tenant-wide view of every Fabric workspace (requires Fabric admin).
 
 ## Reports Hub
 
-![Reports Hub](reports.jpg)
+![Reports Hub](reports.webp)
 
 68 reports across 18 categories · Powered by Microsoft Graph reportRoot API.
 

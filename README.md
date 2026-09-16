@@ -158,7 +158,9 @@ even with `--force`.
 
 The build checks imported file hashes, byte counts, complete image coverage,
 processing-record consistency and encoded dimensions/metadata before rendering.
-Do not edit source
+Screenshot caption imports normalize replaced JPG links to their indexed WEBP
+paths so the Markdown also works directly on GitHub, recording separate source
+and published hashes. Otherwise, do not edit source
 Markdown in `snapshot` to fix display or links. Make website changes in `site`
 or `scripts`, or update the original documentation through a separate, approved
 source-repository workflow and import it again.
@@ -262,13 +264,17 @@ OCR output, identifier values or ancillary reports. The version-1 index has:
   Aliases may only name the same-stem original JPG replaced by a WEBP.
 - `documents`: exactly `docs/screenshots/README.md` and
   `docs/screenshots/TOUR.md`, each with `path`, `sha256`, and `bytes`. These
-  remain unchanged source bytes and receive the index source commit.
+  receive the index source commit. The importer rewrites inline links using
+  indexed JPG aliases to their actual WEBP paths, retaining the original hash
+  in optional `sourceSha256` when the published bytes differ. An already-normalized
+  input may also supply that original `sourceSha256`.
 - `version`: `1`. Unknown fields are rejected, preventing accidental OCR text
   from being copied into provenance.
 
 The importer validates the entire input and existing snapshot before changing
-the snapshot, stages only processed images plus unchanged documents, verifies
-the stage, then swaps the snapshot directory with rollback on a failed swap.
+the snapshot, stages only processed images plus link-normalized captions and
+unchanged other documents, verifies the stage, then swaps the snapshot directory
+with rollback on a failed swap.
 It removes the prior directory after success. Do not interrupt the swap or run
 other snapshot writers concurrently; if interrupted, stop serving and inspect
 any `.screenshots-stage-*`/`.screenshots-previous-*` directories before retrying.
