@@ -6,7 +6,7 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { fileURLToPath } from 'node:url';
 import { importScreenshots, parseArguments } from '../scripts/import-screenshots.mjs';
-import { imageDimensions, PROVENANCE, validateSnapshot } from '../scripts/screenshots.mjs';
+import { imageDimensions, normalizeScreenshotDocument, PROVENANCE, SCREENSHOT_DOCUMENTS, validateSnapshot } from '../scripts/screenshots.mjs';
 import { prepareOutput, removeStaleOutput } from '../scripts/build-output.mjs';
 import { sha256, syncDocs } from '../scripts/sync-docs.mjs';
 
@@ -96,11 +96,74 @@ test('import replaces images and preserves immutable original document provenanc
   assert.equal(image.sha256, sha256(await fs.readFile(native(f.destination, image.path))));
   assert.notEqual(image.sha256, image.sourceSha256);
   assert.equal(manifest.files.find(file => file.path === 'docs/screenshots/TOUR.md').sourceCommit, CURRENT);
+  const provenance = JSON.parse(await fs.readFile(native(f.destination, PROVENANCE)));
+  for (const source of f.index.documents) {
+    const published = await fs.readFile(native(f.destination, source.path));
+    assert.equal(published.toString(), '# Current captions\n\n![Home](home.webp)\n');
+    const document = manifest.files.find(file => file.path === source.path);
+    assert.equal(document.sourceSha256, source.sha256);
+    assert.equal(document.sha256, sha256(published));
+    assert.notEqual(document.sha256, document.sourceSha256);
+    assert.equal(provenance.documents.find(file => file.path === source.path).sourceSha256, source.sha256);
+  }
   assert.equal(manifest.screenshots.counts.masked, 1);
   await validateSnapshot(f.destination, manifest, { exact: true });
   assert.deepEqual((await fs.readdir(f.project)).sort(), ['snapshot'], 'No raw backup or staging files remain');
   await importScreenshots(f);
+  assert.deepEqual(JSON.parse(await fs.readFile(native(f.destination, PROVENANCE))), provenance);
   await assert.rejects(syncDocs({ source: f.input, destination: f.destination, force: true }), /Privacy-processed screenshots cannot be replaced/);
+});
+
+test('caption normalization only replaces indexed local JPG aliases and is idempotent', () => {
+  const files = [{ path: 'docs/screenshots/home.webp', aliases: ['docs/screenshots/home.jpg'] }];
+  const markdown = Buffer.from([
+    '![Home](home.jpg)',
+    '[View](./home.jpg?raw=true#preview "Home")',
+    '![Home](<home.jpg>)',
+    '![Legacy](legacy.jpg)',
+    '![External](https://example.com/home.jpg)',
+    '![Current](home.webp)',
+  ].join('\n'));
+  const expected = Buffer.from(markdown.toString()
+    .replace('(home.jpg)', '(home.webp)')
+    .replace('./home.jpg?', 'home.webp?')
+    .replace('<home.jpg>', '<home.webp>'));
+  const normalized = normalizeScreenshotDocument(markdown, SCREENSHOT_DOCUMENTS[1], files);
+  assert.deepEqual(normalized, expected);
+  assert.deepEqual(normalizeScreenshotDocument(normalized, SCREENSHOT_DOCUMENTS[1], files), expected);
+});
+
+test('already-normalized caption input retains its original upstream hash', async t => {
+  const f = await fixture(t);
+  for (const file of f.index.documents) {
+    const bytes = normalizeScreenshotDocument(await fs.readFile(native(f.input, file.path)), file.path, f.index.files);
+    file.sourceSha256 = file.sha256;
+    file.sha256 = sha256(bytes);
+    file.bytes = bytes.length;
+    await write(f.input, file.path, bytes);
+  }
+  await saveIndex(f);
+  const manifest = await importScreenshots(f);
+  for (const file of f.index.documents) {
+    assert.equal(manifest.files.find(item => item.path === file.path).sourceSha256, file.sourceSha256);
+  }
+  await validateSnapshot(f.destination, manifest, { exact: true });
+});
+
+test('committed tour and gallery image links resolve without the site alias resolver', async () => {
+  const root = path.join(repositoryRoot, 'snapshot');
+  const manifest = JSON.parse(await fs.readFile(path.join(root, 'manifest.json')));
+  const images = new Set(manifest.files.filter(file => file.kind === 'image').map(file => file.path));
+  for (const document of SCREENSHOT_DOCUMENTS) {
+    const markdown = await fs.readFile(native(root, document), 'utf8');
+    const links = [...markdown.matchAll(/!\[[^\]]*\]\(([^)]+)\)/g)];
+    assert.ok(links.length > 0, `${document} must retain its images`);
+    for (const [, href] of links) {
+      const relative = path.posix.join(path.posix.dirname(document), href);
+      assert.ok(images.has(relative), `${document}: ${href} must be a real image, not an alias`);
+      await fs.access(native(root, relative));
+    }
+  }
 });
 
 test('invalid prepared imports leave the entire snapshot unchanged', async t => {
@@ -123,6 +186,7 @@ test('invalid prepared imports leave the entire snapshot unchanged', async t => 
     ['raw OCR field', f => { f.index.files[0].ocrText = 'must not be recorded'; }],
     ['identifier in methodology', f => { f.index.methodology += ' 12345678-1234-1234-1234-123456789abc'; }],
     ['missing caption', f => { f.index.documents.pop(); }],
+    ['invalid caption source hash', f => { f.index.documents[0].sourceSha256 = 'invalid'; }],
     ['invalid timestamp', f => { f.index.processedAt = 'yesterday'; }],
   ];
   for (const [name, mutate] of cases) await t.test(name, async st => {

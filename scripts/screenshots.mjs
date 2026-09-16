@@ -64,12 +64,25 @@ export function validateScreenshotIndex(index) {
   if (!index.files.some(file => file.capture === 'current')) throw new Error('A current screenshot set is required');
   if (index.documents.length !== SCREENSHOT_DOCUMENTS.length) throw new Error('Both screenshot caption documents are required');
   for (const file of index.documents) {
-    exactKeys(file, ['path', 'sha256', 'bytes'], 'screenshot document');
+    exactKeys(file, ['path', 'sha256', 'bytes', ...(Object.hasOwn(file, 'sourceSha256') ? ['sourceSha256'] : [])], 'screenshot document');
     if (!SCREENSHOT_DOCUMENTS.includes(file.path) || !digest(file.sha256)
+      || (Object.hasOwn(file, 'sourceSha256') && !digest(file.sourceSha256))
       || !integer(file.bytes, 1, 16 * 1024 * 1024)) throw new Error('Invalid screenshot caption document');
     reserve(file.path);
   }
   return index;
+}
+
+export function normalizeScreenshotDocument(bytes, documentPath, files) {
+  const aliases = new Map(files.flatMap(file => file.aliases.map(alias => [alias, file.path])));
+  const directory = path.posix.dirname(documentPath);
+  const markdown = bytes.toString('utf8').replace(/(\]\(\s*<?)([^)\s>]+)/g, (match, prefix, href) => {
+    if (/^(?:[a-z][a-z\d+.-]*:|\/|#)/i.test(href)) return match;
+    const [, target, suffix] = href.match(/^([^?#]*)(.*)$/);
+    const replacement = aliases.get(path.posix.join(directory, target));
+    return replacement ? `${prefix}${path.posix.relative(directory, replacement)}${suffix}` : match;
+  });
+  return Buffer.from(markdown);
 }
 
 export function screenshotCounts(index) {
@@ -223,7 +236,7 @@ export async function validateSnapshot(root, manifest, { exact = false } = {}) {
     for (const file of index.documents) {
       const entry = manifest.files.find(item => item.path === file.path);
       if (!entry || entry.kind !== 'document' || entry.sourceCommit !== index.source.commit
-        || entry.sourceSha256 !== file.sha256 || entry.sha256 !== file.sha256 || entry.bytes !== file.bytes) {
+        || entry.sourceSha256 !== (file.sourceSha256 ?? file.sha256) || entry.sha256 !== file.sha256 || entry.bytes !== file.bytes) {
         throw new Error(`Screenshot document provenance mismatch: ${file.path}`);
       }
     }

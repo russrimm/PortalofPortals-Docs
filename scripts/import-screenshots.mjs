@@ -3,7 +3,7 @@ import path from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { assertNoCredentials, assertNoSymlinkComponents, isWithin, readRegularFile, sha256 } from './sync-docs.mjs';
-import { PROVENANCE, SCREENSHOT_DOCUMENTS, listRegularFiles, readCheckedFile, screenshotCounts, validateScreenshotIndex, validateSnapshot } from './screenshots.mjs';
+import { PROVENANCE, SCREENSHOT_DOCUMENTS, listRegularFiles, normalizeScreenshotDocument, readCheckedFile, screenshotCounts, validateScreenshotIndex, validateSnapshot } from './screenshots.mjs';
 
 export async function importScreenshots({ input, destination = path.resolve('snapshot') } = {}) {
   if (typeof input !== 'string' || !input.trim()) throw new Error('--input is required');
@@ -45,6 +45,13 @@ export async function importScreenshots({ input, destination = path.resolve('sna
   }
   for (const file of index.documents) {
     if (!previous.files.some(item => item.path === file.path && item.kind === 'document')) throw new Error(`Missing original caption document: ${file.path}`);
+    const bytes = normalizeScreenshotDocument(contents.get(file.path), file.path, index.files);
+    if (!bytes.equals(contents.get(file.path))) {
+      file.sourceSha256 ??= file.sha256;
+      file.sha256 = sha256(bytes);
+      file.bytes = bytes.length;
+      contents.set(file.path, bytes);
+    }
   }
   const preserved = previous.files.filter(file => file.kind !== 'image' && !SCREENSHOT_DOCUMENTS.includes(file.path));
   for (const file of preserved) contents.set(file.path, await readCheckedFile(snapshotRoot, file));
@@ -52,7 +59,7 @@ export async function importScreenshots({ input, destination = path.resolve('sna
   const files = [
     ...preserved,
     ...index.files.map(file => ({ ...file, kind: 'image' })),
-    ...index.documents.map(file => ({ ...file, kind: 'document', sourceCommit: index.source.commit, sourceSha256: file.sha256 })),
+    ...index.documents.map(file => ({ ...file, kind: 'document', sourceCommit: index.source.commit, sourceSha256: file.sourceSha256 ?? file.sha256 })),
   ].sort((a, b) => a.path < b.path ? -1 : a.path > b.path ? 1 : 0);
   const manifest = {
     ...previous,
