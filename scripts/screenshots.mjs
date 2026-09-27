@@ -5,7 +5,9 @@ import { assertNoCredentials, assertNoSymlinkComponents, maybeLstat, readRegular
 
 export const PROVENANCE = 'screenshots-provenance.json';
 export const SCREENSHOT_DOCUMENTS = ['docs/screenshots/README.md', 'docs/screenshots/TOUR.md'];
+export const RETIREMENT_REASONS = ['page-removed-upstream'];
 const REPOSITORY = 'russrimm/PortalofPortals';
+const INDEX_KEYS = ['version', 'source', 'processedAt', 'methodology', 'files', 'documents'];
 const digest = value => typeof value === 'string' && /^[a-f0-9]{64}$/.test(value);
 const commit = value => typeof value === 'string' && /^[a-f0-9]{40}$/.test(value);
 const integer = (value, minimum, maximum) => Number.isSafeInteger(value) && value >= minimum && value <= maximum;
@@ -19,7 +21,8 @@ function exactKeys(value, keys, label) {
 }
 
 export function validateScreenshotIndex(index) {
-  exactKeys(index, ['version', 'source', 'processedAt', 'methodology', 'files', 'documents'], 'screenshot index');
+  const retiring = Boolean(index) && typeof index === 'object' && Object.hasOwn(index, 'retired');
+  exactKeys(index, retiring ? [...INDEX_KEYS, 'retired'] : INDEX_KEYS, 'screenshot index');
   exactKeys(index.source, ['repository', 'commit'], 'screenshot source');
   if (index.version !== 1 || index.source.repository !== REPOSITORY || !commit(index.source.commit)
     || typeof index.processedAt !== 'string'
@@ -70,7 +73,29 @@ export function validateScreenshotIndex(index) {
       || !integer(file.bytes, 1, 16 * 1024 * 1024)) throw new Error('Invalid screenshot caption document');
     reserve(file.path);
   }
+  if (retiring) {
+    if (!Array.isArray(index.retired) || !index.retired.length) throw new Error('Retired screenshots must be a non-empty list when present');
+    for (const file of index.retired) {
+      exactKeys(file, ['path', 'reason'], 'retired screenshot');
+      // Only current-set WEBPs can be retired; legacy JPGs keep their own retention rules.
+      if (!imagePath(file.path) || !file.path.endsWith('.webp') || !RETIREMENT_REASONS.includes(file.reason)) {
+        throw new Error(`Invalid retired screenshot: ${file.path}`);
+      }
+      reserve(file.path);
+    }
+  }
   return index;
+}
+
+// Local image targets linked from a caption document, resolved relative to docs/screenshots.
+export function referencedScreenshots(bytes, documentPath) {
+  const directory = path.posix.dirname(documentPath);
+  const targets = new Set();
+  for (const [, href] of bytes.toString('utf8').matchAll(/\]\(\s*<?([^)\s>]+)/g)) {
+    if (/^(?:[a-z][a-z\d+.-]*:|\/|#)/i.test(href)) continue;
+    targets.add(path.posix.join(directory, href.replace(/[?#].*$/, '')));
+  }
+  return targets;
 }
 
 export function normalizeScreenshotDocument(bytes, documentPath, files) {
@@ -226,6 +251,9 @@ export async function validateSnapshot(root, manifest, { exact = false } = {}) {
     }
     const images = manifest.files.filter(file => file.kind === 'image');
     if (images.length !== index.files.length) throw new Error('Screenshot provenance must cover every image');
+    if (index.retired?.some(file => manifest.files.some(item => item.path === file.path))) {
+      throw new Error('Retired screenshot remains in the snapshot manifest');
+    }
     for (const file of index.files) {
       const entry = images.find(image => image.path === file.path);
       if (!entry || Object.keys(entry).length !== Object.keys(file).length + 1

@@ -3,7 +3,7 @@ import path from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { assertNoCredentials, assertNoSymlinkComponents, isWithin, readRegularFile, sha256 } from './sync-docs.mjs';
-import { PROVENANCE, SCREENSHOT_DOCUMENTS, listRegularFiles, normalizeScreenshotDocument, readCheckedFile, screenshotCounts, validateScreenshotIndex, validateSnapshot } from './screenshots.mjs';
+import { PROVENANCE, SCREENSHOT_DOCUMENTS, listRegularFiles, normalizeScreenshotDocument, readCheckedFile, referencedScreenshots, screenshotCounts, validateScreenshotIndex, validateSnapshot } from './screenshots.mjs';
 
 export async function importScreenshots({ input, destination = path.resolve('snapshot') } = {}) {
   if (typeof input !== 'string' || !input.trim()) throw new Error('--input is required');
@@ -33,8 +33,14 @@ export async function importScreenshots({ input, destination = path.resolve('sna
   await validateSnapshot(snapshotRoot, previous, { exact: true });
   const images = previous.files.filter(file => file.kind === 'image');
   const replacementPaths = new Set(index.files.flatMap(file => [file.path, ...file.aliases]));
-  if (images.some(file => [file.path, ...(file.aliases ?? [])].some(relative => !replacementPaths.has(relative)))) {
-    throw new Error('Prepared set omits an existing image or alias without a replacement');
+  const retired = new Set((index.retired ?? []).map(file => file.path));
+  for (const relative of retired) {
+    const original = images.find(image => image.path === relative);
+    if (!original || original.capture === 'legacy') throw new Error(`Retired screenshot is not a current image in the existing snapshot: ${relative}`);
+  }
+  if (images.some(file => !retired.has(file.path)
+    && [file.path, ...(file.aliases ?? [])].some(relative => !replacementPaths.has(relative)))) {
+    throw new Error('Prepared set omits an existing image or alias without a replacement or retirement');
   }
   for (const file of index.files.filter(file => file.capture === 'legacy')) {
     const original = images.find(image => image.path === file.path);
@@ -46,6 +52,9 @@ export async function importScreenshots({ input, destination = path.resolve('sna
   for (const file of index.documents) {
     if (!previous.files.some(item => item.path === file.path && item.kind === 'document')) throw new Error(`Missing original caption document: ${file.path}`);
     const bytes = normalizeScreenshotDocument(contents.get(file.path), file.path, index.files);
+    if ([...referencedScreenshots(bytes, file.path)].some(relative => retired.has(relative))) {
+      throw new Error(`Caption document links a retired screenshot: ${file.path}`);
+    }
     if (!bytes.equals(contents.get(file.path))) {
       file.sourceSha256 ??= file.sha256;
       file.sha256 = sha256(bytes);

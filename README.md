@@ -268,6 +268,12 @@ OCR output, identifier values or ancillary reports. The version-1 index has:
   indexed JPG aliases to their actual WEBP paths, retaining the original hash
   in optional `sourceSha256` when the published bytes differ. An already-normalized
   input may also supply that original `sourceSha256`.
+- `retired` (optional, non-empty when present): `{ "path", "reason" }` entries
+  for existing current WEBPs whose portal pages were removed upstream. `reason`
+  must be `page-removed-upstream`. A retired path cannot also appear in `files`
+  or as an alias, legacy JPGs cannot be retired, and neither caption document
+  may still link to it. Retiring an image also drops its JPG aliases. The list is
+  kept in the processing record.
 - `version`: `1`. Unknown fields are rejected, preventing accidental OCR text
   from being copied into provenance.
 
@@ -278,7 +284,7 @@ with rollback on a failed swap.
 It removes the prior directory after success. Do not interrupt the swap or run
 other snapshot writers concurrently; if interrupted, stop serving and inspect
 any `.screenshots-stage-*`/`.screenshots-previous-*` directories before retrying.
-All existing images and aliases must be retained or replaced explicitly.
+All existing images and aliases must be retained, replaced or explicitly retired.
 Input/project overlap, symlinks, hardlinks, unowned snapshot files, bad hashes,
 inconsistent counts and metadata-bearing encodings are rejected.
 

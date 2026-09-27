@@ -229,6 +229,91 @@ test('legacy JPG uses original source provenance and no-guid review remains dist
     assert.deepEqual(await tree(f.project), before);
 });
 
+async function retirementFixture(t) {
+  const f = await fixture(t);
+  const relative = 'docs/screenshots/removed-page.webp';
+  const original = Buffer.from('previously published page that no longer exists upstream');
+  await write(f.destination, relative, original);
+  f.manifest.files.push({ path: relative, bytes: original.length, sha256: sha256(original), kind: 'image' });
+  f.manifest.counts.images++;
+  f.manifest.counts.files++;
+  await write(f.destination, 'manifest.json', JSON.stringify(f.manifest));
+  f.retiredPath = relative;
+  return f;
+}
+
+test('an existing current screenshot is removed only through an explicit retirement', async t => {
+  const f = await retirementFixture(t);
+  for (const relative of ['docs/application-walkthrough.md', 'docs/README.md', 'docs/admin-guide.md']) {
+    const bytes = Buffer.from('# Guide\n');
+    await write(f.destination, relative, bytes);
+    f.manifest.files.push({ path: relative, bytes: bytes.length, sha256: sha256(bytes), kind: 'document' });
+    f.manifest.counts.documents++;
+    f.manifest.counts.files++;
+  }
+  await write(f.destination, 'manifest.json', JSON.stringify(f.manifest));
+  for (const name of ['dashboard.webp', 'users--user-details.webp', 'azure-daily-costs.webp']) {
+    const relative = `docs/screenshots/${name}`;
+    f.index.files.push({ ...f.index.files[0], path: relative, sourcePath: relative, aliases: [] });
+    await write(f.input, relative, webp);
+  }
+  await saveIndex(f);
+  const before = await tree(f.project);
+  await assert.rejects(importScreenshots(f), /without a replacement or retirement/);
+  assert.deepEqual(await tree(f.project), before);
+  f.index.retired = [{ path: f.retiredPath, reason: 'page-removed-upstream' }];
+  await saveIndex(f);
+  const manifest = await importScreenshots(f);
+  assert.ok(!manifest.files.some(file => file.path === f.retiredPath));
+  await assert.rejects(fs.access(native(f.destination, f.retiredPath)), { code: 'ENOENT' });
+  const provenance = JSON.parse(await fs.readFile(native(f.destination, PROVENANCE)));
+  assert.deepEqual(provenance.retired, f.index.retired);
+  await validateSnapshot(f.destination, manifest, { exact: true });
+  const stale = structuredClone(manifest);
+  stale.files.push({ ...manifest.files.find(file => file.kind === 'image'), path: f.retiredPath, sourcePath: f.retiredPath, aliases: [] });
+  await assert.rejects(validateSnapshot(f.destination, stale), /cover every image|Retired screenshot remains/);
+  for (const name of ['build.mjs', 'build-output.mjs', 'content.mjs', 'scope.mjs', 'screenshots.mjs', 'sync-docs.mjs']) {
+    await write(f.project, `scripts/${name}`, await fs.readFile(path.join(repositoryRoot, 'scripts', name)));
+  }
+  await fs.cp(path.join(repositoryRoot, 'site'), path.join(f.project, 'site'), { recursive: true });
+  await execute(process.execPath, [path.join(f.project, 'scripts', 'build.mjs')], { cwd: f.project, windowsHide: true });
+  const gallery = JSON.parse(await fs.readFile(path.join(f.project, 'dist', 'gallery-index.json')));
+  assert.ok(!gallery.some(file => file.path === f.retiredPath));
+  assert.match(await fs.readFile(path.join(f.project, 'dist', 'about.html'), 'utf8'), /1 retired because their pages were removed upstream/);
+});
+
+test('invalid screenshot retirements leave the entire snapshot unchanged', async t => {
+  const retire = (f, entry) => { f.index.retired = [{ path: f.retiredPath, reason: 'page-removed-upstream', ...entry }]; };
+  const cases = [
+    ['empty list', f => { f.index.retired = []; }, /non-empty list/],
+    ['not a list', f => { f.index.retired = f.retiredPath; }, /non-empty list/],
+    ['unknown reason', f => retire(f, { reason: 'looked-stale' }), /Invalid retired screenshot/],
+    ['extra field', f => retire(f, { route: '/removed-page' }), /Invalid retired screenshot fields/],
+    ['traversal', f => retire(f, { path: '../removed-page.webp' }), /Invalid retired screenshot/],
+    ['legacy JPG', f => retire(f, { path: 'docs/screenshots/home.jpg' }), /Invalid retired screenshot/],
+    ['not in snapshot', f => retire(f, { path: 'docs/screenshots/never-published.webp' }), /not a current image in the existing snapshot/],
+    ['also replaced', f => retire(f, { path: 'docs/screenshots/home.webp' }), /Duplicate screenshot path/],
+    ['duplicate', f => { retire(f); f.index.retired.push(structuredClone(f.index.retired[0])); }, /Duplicate screenshot path/],
+    ['linked by caption', async f => {
+      retire(f);
+      const bytes = Buffer.from('# Current captions\n\n![Removed](./removed-page.webp?raw=true)\n');
+      for (const document of f.index.documents) {
+        document.sha256 = sha256(bytes);
+        document.bytes = bytes.length;
+        await write(f.input, document.path, bytes);
+      }
+    }, /links a retired screenshot/],
+  ];
+  for (const [name, mutate, expected] of cases) await t.test(name, async st => {
+    const f = await retirementFixture(st);
+    const before = await tree(f.project);
+    await mutate(f);
+    await saveIndex(f);
+    await assert.rejects(importScreenshots(f), expected);
+    assert.deepEqual(await tree(f.project), before);
+  });
+});
+
 test('input overlap, hardlinks and directory symlinks are rejected without mutation', async t => {
   const f = await fixture(t);
   const before = await tree(f.project);
