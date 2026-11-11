@@ -79,7 +79,7 @@ Source repository: **[russrimm/PortalofPortals](https://github.com/russrimm/Port
 The initial snapshot is based on commit **5195ea6b**. Read the manifest or the
 website's **About this snapshot** page for the full commit and exact counts.
 
-**Current totals: 238 documents, 317 processed images, six supporting attachments
+**Current totals: 238 documents, 319 processed images, six supporting attachments
 and one license (562 imported files), plus the screenshot processing record.**
 
 ### Included documentation and assets
@@ -88,7 +88,7 @@ and one license (562 imported files), plus the screenshot processing record.**
    `docs/code-review`, `docs/ux`, `docs/screenshots/README.md` and
    `docs/screenshots/TOUR.md`. Product documentation about infographic prompts
    is source reading material, not executable agent instructions.
-2. The refreshed `docs/screenshots` set: **311 current-upstream WEBPs and six
+2. The refreshed `docs/screenshots` set: **313 current-upstream WEBPs and six
    processed legacy JPGs**, with 24 former JPG paths resolving to newer WEBPs.
 3. These six supporting documentation attachments:
    `docs/authorization-inventory.csv`, `docs/openapi.json`, `docs/openapi.yaml`,
@@ -214,8 +214,8 @@ caption-document footers, the About page and machine-readable provenance identif
 the actual source and processing status, rather than calling the images “safe
 for public.”
 
-The refreshed set contains **311 current-upstream WEBPs plus six retained
-legacy JPGs (317 images)**. Twenty-four original JPG paths become local aliases
+The refreshed set contains **313 current-upstream WEBPs plus six retained
+legacy JPGs (319 images)**. Twenty-four original JPG paths become local aliases
 to their WEBP replacements. “Current” means membership in the newer upstream
 set, not a guarantee that every capture was newly taken. The manifest and gallery
 index are authoritative for the set actually imported.

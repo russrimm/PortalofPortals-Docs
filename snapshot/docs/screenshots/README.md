@@ -4,7 +4,10 @@ A visual tour of every page in Portal 360°, the unified administration portal f
 Microsoft Entra ID, Microsoft 365, Intune, Azure, Power Platform, Microsoft Fabric,
 and Azure DevOps.
 
-**307 of 438 pages** are pictured below in 311 screenshots, captured from the authenticated app in dark mode.
+**310 of 449 pages** are pictured below in 314 screenshots, captured from the authenticated app in dark mode.
+
+This refresh accepted 75 screenshots with strict loading, error, and redaction gates.
+239 previously published images were retained; their presence does not establish that those pages passed this refresh.
 
 For a shorter, narrative walkthrough of the marquee pages, see the
 [product tour](TOUR.md).
@@ -25,11 +28,11 @@ These show the loaded starting interface, not a completed operation or invented 
 
 ![Home](home.webp)
 
-### Governance dashboard
+### Governance
 
 `/dashboard`
 
-![Governance dashboard](dashboard.webp)
+![Governance](dashboard.webp)
 
 ### Threat intelligence
 
@@ -87,11 +90,11 @@ Click any page name to open its full screenshot.
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
-| Home | `/` | [View](home.webp) | Previous image retained; not refreshed |
-| About Portal 360° | `/about` | [View](about.webp) | Previous image retained; not refreshed |
-| Governance dashboard | `/dashboard` | [View](dashboard.webp) | Previous image retained; not refreshed |
+| Home | `/` | [View](home.webp) | Updated |
+| About Portal 360° | `/about` | [View](about.webp) | Updated |
+| Governance | `/dashboard` | [View](dashboard.webp) | Updated |
 | Policy compliance | `/playbooks` | [View](playbooks.webp) | Previous image retained; not refreshed |
-| Threat intelligence | `/security-pulse` | [View](security-pulse.webp) | Previous image retained; not refreshed |
+| Threat intelligence | `/security-pulse` | [View](security-pulse.webp) | Updated |
 | CVE | `/security-pulse/cve` | [View](security-pulse-cve.webp) | Previous image retained; not refreshed |
 
 ### Microsoft 365 & Copilot
@@ -100,15 +103,15 @@ Click any page name to open its full screenshot.
 | --- | --- | --- | --- |
 | M365 Activity | `/microsoft365/activity` | [View](microsoft365-activity.webp) | Previous image retained; not refreshed |
 | Agent Identities | `/microsoft365/agent-identity` | [View](microsoft365-agent-identity.webp) | Previous image retained; not refreshed |
-| Agent Identity Blueprints | `/microsoft365/agent-identity-blueprints` | [View](microsoft365-agent-identity-blueprints.webp) | Previous image retained; not refreshed |
-| Agent Users | `/microsoft365/agent-users` | [View](microsoft365-agent-users.webp) | Previous image retained; not refreshed |
+| Agent Identity Blueprints | `/microsoft365/agent-identity-blueprints` | [View](microsoft365-agent-identity-blueprints.webp) | Updated |
+| Agent Users | `/microsoft365/agent-users` | [View](microsoft365-agent-users.webp) | Updated |
 | Copilot | `/microsoft365/copilot` | [View](microsoft365-copilot.webp) | Previous image retained; not refreshed |
-| Copilot Agents | `/microsoft365/copilot/agents` | [View](microsoft365-copilot-agents.webp) | Previous image retained; not refreshed |
+| Copilot Agents | `/microsoft365/copilot/agents` | [View](microsoft365-copilot-agents.webp) | Updated |
 | Copilot Chat | `/microsoft365/copilot/chat` | [View](microsoft365-copilot-chat.webp) | Previous image retained; not refreshed |
-| Copilot Readiness | `/microsoft365/copilot/readiness` | [View](microsoft365-copilot-readiness.webp) | Previous image retained; not refreshed |
-| Copilot Usage | `/microsoft365/copilot/user-count` | [View](microsoft365-copilot-user-count.webp) | Previous image retained; not refreshed |
+| Copilot Readiness | `/microsoft365/copilot/readiness` | [View](microsoft365-copilot-readiness.webp) | Updated |
+| Copilot Usage | `/microsoft365/copilot/user-count` | [View](microsoft365-copilot-user-count.webp) | Updated |
 | Microsoft 365 Updates | `/microsoft365/updates` | [View](microsoft365-updates.webp) | Previous image retained; not refreshed |
-| Work IQ Chat | `/microsoft365/work-iq` | [View](microsoft365-work-iq.webp) | Previous image retained; not refreshed |
+| Work IQ Chat | `/microsoft365/work-iq` | [View](microsoft365-work-iq.webp) | Updated |
 | Work IQ Governance | `/microsoft365/work-iq/governance` | [View](microsoft365-work-iq-governance.webp) | Previous image retained; not refreshed |
 
 ### Identity & Access
@@ -116,19 +119,22 @@ Click any page name to open its full screenshot.
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | Access Reviews | `/access-reviews` | [View](access-reviews.webp) | Previous image retained; not refreshed |
-| App Registrations | `/applications` | [View](applications.webp) | Previous image retained; not refreshed |
-| Enterprise Applications | `/enterprise-applications` | [View](enterprise-applications.webp) | Previous image retained; not refreshed |
+| App Registrations | `/applications` | [View](applications.webp) | Updated |
+| Enterprise Applications | `/enterprise-applications` | [View](enterprise-applications.webp) | Updated |
 | Access Packages | `/entitlement/access-packages` | [View](entitlement-access-packages.webp) | Previous image retained; not refreshed |
 | Catalogs | `/entitlement/catalogs` | [View](entitlement-catalogs.webp) | Previous image retained; not refreshed |
 | My Access | `/entitlement/my-access` | [View](entitlement-my-access.webp) | Previous image retained; not refreshed |
+| Admin consent requests | `/entra/admin-consent-requests` | [View](entra-admin-consent-requests.webp) | Updated |
+| Administrative units | `/entra/administrative-units` | [View](entra-administrative-units.webp) | Updated |
+| Domains & directory sync | `/entra/domains` | [View](entra-domains.webp) | Updated |
 | Roles and administrators | `/entra/roles-and-administrators` | [View](entra-roles-and-administrators.webp) | Previous image retained; not refreshed |
-| Groups | `/groups` | [View](groups.webp) | Previous image retained; not refreshed |
+| Groups | `/groups` | [View](groups.webp) | Updated |
 | Lifecycle Workflows | `/lifecycle-workflows` | [View](lifecycle-workflows.webp) | Previous image retained; not refreshed |
 | Assign Roles | `/pim/assign-roles` | [View](pim-assign-roles.webp) | Previous image retained; not refreshed |
 | My Roles | `/pim/my-roles` | [View](pim-my-roles.webp) | Previous image retained; not refreshed |
 | Role Assignments | `/pim/role-assignments` | [View](pim-role-assignments.webp) | Previous image retained; not refreshed |
-| My Profile | `/profile` | [View](profile.webp) | Previous image retained; not refreshed |
-| User 360 | `/users` | [View](users.webp) | Previous image retained; not refreshed |
+| My Profile | `/profile` | [View](profile.webp) | Updated |
+| User 360 | `/users` | [View](users.webp) | Updated |
 | User 360 — User details | `/users` | [View](users--user-details.webp) | Previous image retained; not refreshed |
 | User 360 — User details — Groups | `/users` | [View](users--user-details-groups.webp) | Previous image retained; not refreshed |
 | User 360 — User details — Licenses | `/users` | [View](users--user-details-licenses.webp) | Previous image retained; not refreshed |
@@ -142,10 +148,10 @@ Click any page name to open its full screenshot.
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | App Management Policies | `/app-management-policies` | [View](app-management-policies.webp) | Previous image retained; not refreshed |
-| Authentication Contexts | `/authentication-contexts` | [View](authentication-contexts.webp) | Previous image retained; not refreshed |
+| Authentication Contexts | `/authentication-contexts` | [View](authentication-contexts.webp) | Updated |
 | Authentication Strength Policies | `/authentication-strength` | [View](authentication-strength.webp) | Previous image retained; not refreshed |
 | Authorization Policy | `/authorization-policy` | [View](authorization-policy.webp) | Previous image retained; not refreshed |
-| Conditional Access Policies | `/conditional-access` | [View](conditional-access.webp) | Previous image retained; not refreshed |
+| Conditional Access Policies | `/conditional-access` | [View](conditional-access.webp) | Updated |
 | Cross Tenant Access | `/cross-tenant-access` | [View](cross-tenant-access.webp) | Previous image retained; not refreshed |
 | Security Defaults | `/security-defaults` | [View](security-defaults.webp) | Previous image retained; not refreshed |
 | Token Lifetime Policies | `/token-lifetime-policies` | [View](token-lifetime-policies.webp) | Previous image retained; not refreshed |
@@ -154,28 +160,28 @@ Click any page name to open its full screenshot.
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
-| Defender for Endpoint | `/defender-atp` | [View](defender-atp.webp) | Previous image retained; not refreshed |
+| Defender for Endpoint | `/defender-atp` | [View](defender-atp.webp) | Updated |
 | Discovered Cloud Apps | `/defender-cloud-apps/discovered-apps` | [View](defender-cloud-apps-discovered-apps.webp) | Previous image retained; not refreshed |
 | Legacy Authentication | `/insights/legacy-auth` | [View](insights-legacy-auth.webp) | Previous image retained; not refreshed |
 | MFA Registration Gap | `/insights/mfa-gap` | [View](insights-mfa-gap.webp) | Previous image retained; not refreshed |
 | Stale Licensed Users | `/insights/stale-users` | [View](insights-stale-users.webp) | Previous image retained; not refreshed |
 | NIST NVD (CVE Database) | `/nvd` | [View](nvd.webp) | Previous image retained; not refreshed |
 | Risky Service Principals | `/risky-service-principals` | [View](risky-service-principals.webp) | Previous image retained; not refreshed |
-| Risky Users | `/risky-users` | [View](risky-users.webp) | Previous image retained; not refreshed |
+| Risky Users | `/risky-users` | [View](risky-users.webp) | Updated |
 | Secure Score | `/secure-score` | [View](secure-score.webp) | Previous image retained; not refreshed |
 | Defender Secure Score | `/secure-score/defender` | [View](secure-score-defender.webp) | Previous image retained; not refreshed |
-| Security Alerts | `/security-alerts` | [View](security-alerts.webp) | Previous image retained; not refreshed |
+| Security Alerts | `/security-alerts` | [View](security-alerts.webp) | Updated |
 
 ### Sign-in & Audit Logs
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
-| Audit Log Queries | `/audit-log-queries` | [View](audit-log-queries.webp) | Previous image retained; not refreshed |
+| Audit Log Queries | `/audit-log-queries` | [View](audit-log-queries.webp) | Updated |
 | Audit Logs | `/audit-logs` | [View](audit-logs.webp) | Previous image retained; not refreshed |
 | Blocked Sign-ins | `/conditional-access-blocked-signins` | [View](conditional-access-blocked-signins.webp) | Previous image retained; not refreshed |
 | MFA Sign-ins | `/mfa-signins` | [View](mfa-signins.webp) | Previous image retained; not refreshed |
 | Provisioning Logs | `/provisioning-logs` | [View](provisioning-logs.webp) | Previous image retained; not refreshed |
-| Service Principal Sign-Ins | `/service-principal-signins` | [View](service-principal-signins.webp) | Previous image retained; not refreshed |
+| Service Principal Sign-Ins | `/service-principal-signins` | [View](service-principal-signins.webp) | Updated |
 | User Registration Details | `/user-registration-details` | [View](user-registration-details.webp) | Previous image retained; not refreshed |
 
 ### Azure
@@ -184,15 +190,15 @@ Click any page name to open its full screenshot.
 | --- | --- | --- | --- |
 | App Insights AI Analysis | `/application-insights-exceptions` | [View](application-insights-exceptions.webp) | Previous image retained; not refreshed |
 | Azure resources | `/azure` | [View](azure.webp) | Previous image retained; not refreshed |
-| Advisor | `/azure/advisor` | [View](azure-advisor.webp) | Previous image retained; not refreshed |
+| Advisor | `/azure/advisor` | [View](azure-advisor.webp) | Updated |
 | Microsoft Foundry | `/azure/ai-foundry` | [View](azure-ai-foundry.webp) | Previous image retained; not refreshed |
 | Projects | `/azure/ai-foundry/account-projects` | [View](azure-ai-foundry-account-projects.webp) | Previous image retained; not refreshed |
 | All Resources | `/azure/ai-foundry/accounts` | [View](azure-ai-foundry-accounts.webp) | Previous image retained; not refreshed |
-| Agent Chat | `/azure/ai-foundry/agent-chat` | [View](azure-ai-foundry-agent-chat.webp) | Previous image retained; not refreshed |
+| Agent Chat | `/azure/ai-foundry/agent-chat` | [View](azure-ai-foundry-agent-chat.webp) | Updated |
 | List Agents | `/azure/ai-foundry/agents` | [View](azure-ai-foundry-agents.webp) | Previous image retained; not refreshed |
 | Model Deployments | `/azure/ai-foundry/deployments` | [View](azure-ai-foundry-deployments.webp) | Previous image retained; not refreshed |
 | Available Models | `/azure/ai-foundry/models` | [View](azure-ai-foundry-models.webp) | Previous image retained; not refreshed |
-| Usage & Quotas | `/azure/ai-foundry/usage` | [View](azure-ai-foundry-usage.webp) | Previous image retained; not refreshed |
+| Costs & Quotas | `/azure/ai-foundry/usage` | [View](azure-ai-foundry-usage.webp) | Previous image retained; not refreshed |
 | Allowed Connections | `/azure/allowed-connections` | [View](azure-allowed-connections.webp) | Previous image retained; not refreshed |
 | Bicep Tools | `/azure/bicep` | [View](azure-bicep.webp) | Previous image retained; not refreshed |
 | Budgets | `/azure/budgets` | [View](azure-budgets.webp) | Previous image retained; not refreshed |
@@ -202,31 +208,32 @@ Click any page name to open its full screenshot.
 | Deployment Stacks | `/azure/deployment-stacks` | [View](azure-deployment-stacks.webp) | Previous image retained; not refreshed |
 | Emerging Issues | `/azure/emerging-issues` | [View](azure-emerging-issues.webp) | Previous image retained; not refreshed |
 | Forecasts | `/azure/forecasts` | [View](azure-forecasts.webp) | Previous image retained; not refreshed |
-| Health & Compliance | `/azure/health-compliance` | [View](azure-health-compliance.webp) | Previous image retained; not refreshed |
+| Health & Compliance | `/azure/health-compliance` | [View](azure-health-compliance.webp) | Updated |
 | Azure Infrastructure | `/azure/infrastructure` | [View](azure-infrastructure.webp) | Previous image retained; not refreshed |
 | License Usage | `/azure/license-usage` | [View](azure-license-usage.webp) | Previous image retained; not refreshed |
 | Azure Monitor Metrics | `/azure/metrics` | [View](azure-metrics.webp) | Previous image retained; not refreshed |
+| Azure Monitor alerts | `/azure/monitor-alerts` | [View](azure-monitor-alerts.webp) | Updated |
 | Azure Monitor API Coverage | `/azure/monitor-api-coverage` | [View](azure-monitor-api-coverage.webp) | Previous image retained; not refreshed |
 | Monitoring & Logs | `/azure/monitoring-logs` | [View](azure-monitoring-logs.webp) | Previous image retained; not refreshed |
-| Compliance Policies | `/azure/policy` | [View](azure-policy.webp) | Previous image retained; not refreshed |
+| Azure Policy | `/azure/policy` | [View](azure-policy.webp) | Updated |
 | Policy Assignments | `/azure/policy/assignments` | [View](azure-policy-assignments.webp) | Previous image retained; not refreshed |
 | Policy Definitions | `/azure/policy/definitions` | [View](azure-policy-definitions.webp) | Previous image retained; not refreshed |
 | Private Endpoints | `/azure/private-endpoints` | [View](azure-private-endpoints.webp) | Previous image retained; not refreshed |
 | Public IP Addresses | `/azure/public-ip-addresses` | [View](azure-public-ip-addresses.webp) | Previous image retained; not refreshed |
-| Quota Management | `/azure/quota-requests` | [View](azure-quota-requests.webp) | Previous image retained; not refreshed |
-| Redis Cache Inventory | `/azure/redis-caches` | [View](azure-redis-caches.webp) | Previous image retained; not refreshed |
+| Quota Management | `/azure/quota-requests` | [View](azure-quota-requests.webp) | Updated |
+| Redis Cache Inventory | `/azure/redis-caches` | [View](azure-redis-caches.webp) | Updated |
 | Resource Details | `/azure/resource-details` | [View](azure-resource-details.webp) | Previous image retained; not refreshed |
 | Resource Management | `/azure/resource-management` | [View](azure-resource-management.webp) | Previous image retained; not refreshed |
 | Resource Type Browser | `/azure/resource-types` | [View](azure-resource-types.webp) | Previous image retained; not refreshed |
 | Azure resources | `/azure/resources` | [View](azure-resources.webp) | Previous image retained; not refreshed |
+| Access control (IAM) | `/azure/role-assignments` | [View](azure-role-assignments.webp) | Updated |
 | Regulatory Compliance | `/azure/security/compliance-results` | [View](azure-security-compliance-results.webp) | Previous image retained; not refreshed |
 | Azure Service Health Events | `/azure/service-health-events` | [View](azure-service-health-events.webp) | Previous image retained; not refreshed |
-| Service Retirements | `/azure/service-retirements` | [View](azure-service-retirements.webp) | Previous image retained; not refreshed |
-| SQL Databases | `/azure/sql-databases` | [View](azure-sql-databases.webp) | Previous image retained; not refreshed |
+| Service Retirements | `/azure/service-retirements` | [View](azure-service-retirements.webp) | Updated |
+| SQL Databases | `/azure/sql-databases` | [View](azure-sql-databases.webp) | Updated |
 | Agent Governance | `/azure/sre-agent/governance` | [View](azure-sre-agent-governance.webp) | Previous image retained; not refreshed |
 | Agent Unit Consumption | `/azure/sre-agent/usage` | [View](azure-sre-agent-usage.webp) | Previous image retained; not refreshed |
 | Subnets | `/azure/subnets` | [View](azure-subnets.webp) | Previous image retained; not refreshed |
-| Microsoft Product Subscriptions | `/azure/subscribed-skus` | [View](azure-subscribed-skus.webp) | Previous image retained; not refreshed |
 | Subscriptions | `/azure/subscriptions` | [View](azure-subscriptions.webp) | Previous image retained; not refreshed |
 | Azure Updates | `/azure/updates` | [View](azure-updates.webp) | Previous image retained; not refreshed |
 | Host Pools | `/azure/virtual-desktop/host-pools` | [View](azure-virtual-desktop-host-pools.webp) | Previous image retained; not refreshed |
@@ -236,49 +243,48 @@ Click any page name to open its full screenshot.
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
-| Power Apps | `/power-platform/apps` | [View](power-platform-apps.webp) | Previous image retained; not refreshed |
+| Power Apps | `/power-platform/apps` | [View](power-platform-apps.webp) | Updated |
 | Connector Catalog | `/power-platform/connectors` | [View](power-platform-connectors.webp) | Previous image retained; not refreshed |
 | Copilot & AI Governance | `/power-platform/copilot-governance` | [View](power-platform-copilot-governance.webp) | Previous image retained; not refreshed |
-| Copilot Studio Agents | `/power-platform/copilot-studio` | [View](power-platform-copilot-studio.webp) | Previous image retained; not refreshed |
-| Agent Builder | `/power-platform/copilot-studio/agent-builder` | [View](power-platform-copilot-studio-agent-builder.webp) | Previous image retained; not refreshed |
-| Agent Review | `/power-platform/copilot-studio/agent-review` | [View](power-platform-copilot-studio-agent-review.webp) | Previous image retained; not refreshed |
+| Copilot Studio Agents | `/power-platform/copilot-studio` | [View](power-platform-copilot-studio.webp) | Updated |
+| Agent Builder | `/power-platform/copilot-studio/agent-builder` | [View](power-platform-copilot-studio-agent-builder.webp) | Updated |
+| Agent Review | `/power-platform/copilot-studio/agent-review` | [View](power-platform-copilot-studio-agent-review.webp) | Updated |
 | Agent Connector Report | `/power-platform/copilot-studio/connector-report` | [View](power-platform-copilot-studio-connector-report.webp) | Previous image retained; not refreshed |
-| Copilot Credit Governance | `/power-platform/copilot-studio/credit-governance` | [View](power-platform-copilot-studio-credit-governance.webp) | Previous image retained; not refreshed |
+| Copilot Credit Governance | `/power-platform/copilot-studio/credit-governance` | [View](power-platform-copilot-studio-credit-governance.webp) | Updated |
 | Copilot Studio Dashboard | `/power-platform/copilot-studio/dashboard` | [View](power-platform-copilot-studio-dashboard.webp) | Previous image retained; not refreshed |
 | Copilot Studio Monitoring | `/power-platform/copilot-studio/monitoring` | [View](power-platform-copilot-studio-monitoring.webp) | Previous image retained; not refreshed |
-| Threat Protection | `/power-platform/copilot-studio/threat-protection` | [View](power-platform-copilot-studio-threat-protection.webp) | Previous image retained; not refreshed |
+| Threat Protection | `/power-platform/copilot-studio/threat-protection` | [View](power-platform-copilot-studio-threat-protection.webp) | Updated |
 | User Prompt Report | `/power-platform/copilot-studio/user-prompt-report` | [View](power-platform-copilot-studio-user-prompt-report.webp) | Previous image retained; not refreshed |
-| Dataverse Storage | `/power-platform/dataverse-storage` | [View](power-platform-dataverse-storage.webp) | Previous image retained; not refreshed |
+| Dataverse Storage | `/power-platform/dataverse-storage` | [View](power-platform-dataverse-storage.webp) | Updated |
 | DLP Policies | `/power-platform/dlp-policies` | [View](power-platform-dlp-policies.webp) | Previous image retained; not refreshed |
 | Environment Groups | `/power-platform/environment-groups` | [View](power-platform-environment-groups.webp) | Previous image retained; not refreshed |
-| Environment Settings | `/power-platform/environment-settings` | [View](power-platform-environment-settings.webp) | Previous image retained; not refreshed |
 | Environment Variables | `/power-platform/environment-variables` | [View](power-platform-environment-variables.webp) | Previous image retained; not refreshed |
-| Request Environment | `/power-platform/environments/request` | [View](power-platform-environments-request.webp) | Previous image retained; not refreshed |
-| Theme Preview | `/power-platform/environments/theme-preview` | [View](power-platform-environments-theme-preview.webp) | Previous image retained; not refreshed |
-| ERD Generator | `/power-platform/erd-generator` | [View](power-platform-erd-generator.webp) | Previous image retained; not refreshed |
-| Flow Run Logs | `/power-platform/flow-logs` | [View](power-platform-flow-logs.webp) | Previous image retained; not refreshed |
+| Request Environment | `/power-platform/environments/request` | [View](power-platform-environments-request.webp) | Updated |
+| ERD Generator | `/power-platform/erd-generator` | [View](power-platform-erd-generator.webp) | Updated |
+| Desktop Flow Run Logs | `/power-platform/flow-logs` | [View](power-platform-flow-logs.webp) | Updated |
 | Flow Operations Catalog | `/power-platform/flow-operations` | [View](power-platform-flow-operations.webp) | Previous image retained; not refreshed |
-| Power Automate Flows | `/power-platform/flows` | [View](power-platform-flows.webp) | Previous image retained; not refreshed |
+| Power Automate Flows | `/power-platform/flows` | [View](power-platform-flows.webp) | Updated |
 | Advanced Connector Policies | `/power-platform/governance/advanced-connector-policies` | [View](power-platform-governance-advanced-connector-policies.webp) | Previous image retained; not refreshed |
-| Cross Tenant Reports | `/power-platform/governance/cross-tenant-reports` | [View](power-platform-governance-cross-tenant-reports.webp) | Previous image retained; not refreshed |
+| Cross Tenant Reports | `/power-platform/governance/cross-tenant-reports` | [View](power-platform-governance-cross-tenant-reports.webp) | Updated |
 | Environment Governance Policies | `/power-platform/governance/environment-policies` | [View](power-platform-governance-environment-policies.webp) | Previous image retained; not refreshed |
 | Human Review Queue | `/power-platform/governance/human-review` | [View](power-platform-governance-human-review.webp) | Previous image retained; not refreshed |
 | Rule-based Policies | `/power-platform/governance/rule-based-policies` | [View](power-platform-governance-rule-based-policies.webp) | Previous image retained; not refreshed |
 | Grant SPN System Administrator | `/power-platform/grant-spn-bulk` | [View](power-platform-grant-spn-bulk.webp) | Previous image retained; not refreshed |
-| Inventory Reports | `/power-platform/inventory-reports` | [View](power-platform-inventory-reports.webp) | Previous image retained; not refreshed |
-| Desktop Flows | `/power-platform/inventory-reports/desktop-flows` | [View](power-platform-inventory-reports-desktop-flows.webp) | Previous image retained; not refreshed |
-| M365 Workflow Agent Flows | `/power-platform/inventory-reports/m365-agent-flows` | [View](power-platform-inventory-reports-m365-agent-flows.webp) | Previous image retained; not refreshed |
-| Known Issues | `/power-platform/known-issues` | [View](power-platform-known-issues.webp) | Previous image retained; not refreshed |
-| Billing Plans | `/power-platform/licensing/billing-policies` | [View](power-platform-licensing-billing-policies.webp) | Previous image retained; not refreshed |
-| Pay-as-you-go Guardrails | `/power-platform/licensing/payg-guardrails` | [View](power-platform-licensing-payg-guardrails.webp) | Previous image retained; not refreshed |
-| Tenant Capacity Details | `/power-platform/licensing/tenant-capacity` | [View](power-platform-licensing-tenant-capacity.webp) | Previous image retained; not refreshed |
-| User Per Flow Capacity | `/power-platform/licensing/user-per-flow-capacity` | [View](power-platform-licensing-user-per-flow-capacity.webp) | Previous image retained; not refreshed |
+| Inventory Reports | `/power-platform/inventory-reports` | [View](power-platform-inventory-reports.webp) | Updated |
+| Desktop Flows | `/power-platform/inventory-reports/desktop-flows` | [View](power-platform-inventory-reports-desktop-flows.webp) | Updated |
+| M365 Workflow Agent Flows | `/power-platform/inventory-reports/m365-agent-flows` | [View](power-platform-inventory-reports-m365-agent-flows.webp) | Updated |
+| Known Issues | `/power-platform/known-issues` | [View](power-platform-known-issues.webp) | Updated |
+| Billing Plans | `/power-platform/licensing/billing-policies` | [View](power-platform-licensing-billing-policies.webp) | Updated |
+| Pay-as-you-go Guardrails | `/power-platform/licensing/payg-guardrails` | [View](power-platform-licensing-payg-guardrails.webp) | Updated |
+| Tenant Capacity Details | `/power-platform/licensing/tenant-capacity` | [View](power-platform-licensing-tenant-capacity.webp) | Updated |
+| User Per Flow Capacity | `/power-platform/licensing/user-per-flow-capacity` | [View](power-platform-licensing-user-per-flow-capacity.webp) | Updated |
+| Managed App Builder | `/power-platform/managed-apps` | [View](power-platform-managed-apps.webp) | Updated |
 | Recommendations | `/power-platform/recommendations` | [View](power-platform-recommendations.webp) | Previous image retained; not refreshed |
 | Release Plans | `/power-platform/release-planner` | [View](power-platform-release-planner.webp) | Previous image retained; not refreshed |
 | Security Roles | `/power-platform/security-roles` | [View](power-platform-security-roles.webp) | Previous image retained; not refreshed |
-| Solution Analysis | `/power-platform/solutions/analyze` | [View](power-platform-solutions-analyze.webp) | Previous image retained; not refreshed |
+| Solution Analysis | `/power-platform/solutions/analyze` | [View](power-platform-solutions-analyze.webp) | Updated |
 | Tenant Settings | `/power-platform/tenant-settings` | [View](power-platform-tenant-settings.webp) | Previous image retained; not refreshed |
-| Usage | `/power-platform/usage` | [View](power-platform-usage.webp) | Previous image retained; not refreshed |
+| Usage | `/power-platform/usage` | [View](power-platform-usage.webp) | Updated |
 
 ### Device Management & Intune
 
@@ -288,12 +294,12 @@ Click any page name to open its full screenshot.
 | App Configuration Policies | `/application-management/app-configuration-policies` | [View](application-management-app-configuration-policies.webp) | Previous image retained; not refreshed |
 | Detected Apps | `/application-management/detected-apps` | [View](application-management-detected-apps.webp) | Previous image retained; not refreshed |
 | Intune Managed Apps | `/application-management/intune-apps` | [View](application-management-intune-apps.webp) | Previous image retained; not refreshed |
-| Managed App Registrations | `/application-management/managed-app-registrations` | [View](application-management-managed-app-registrations.webp) | Previous image retained; not refreshed |
+| Managed App Registrations | `/application-management/managed-app-registrations` | [View](application-management-managed-app-registrations.webp) | Updated |
 | Microsoft Intune | `/device-management` | [View](device-management.webp) | Previous image retained; not refreshed |
 | Android Enterprise | `/device-management/android-enterprise` | [View](device-management-android-enterprise.webp) | Previous image retained; not refreshed |
 | App Protection Policies | `/device-management/app-protection` | [View](device-management-app-protection.webp) | Previous image retained; not refreshed |
 | Autopilot Profiles | `/device-management/autopilot-profiles` | [View](device-management-autopilot-profiles.webp) | Previous image retained; not refreshed |
-| Compliance Policies | `/device-management/compliance-policies` | [View](device-management-compliance-policies.webp) | Previous image retained; not refreshed |
+| Compliance Policies | `/device-management/compliance-policies` | [View](device-management-compliance-policies.webp) | Updated |
 | Compliance Status | `/device-management/compliance-status` | [View](device-management-compliance-status.webp) | Previous image retained; not refreshed |
 | Windows CVE Report | `/device-management/cve-report` | [View](device-management-cve-report.webp) | Previous image retained; not refreshed |
 | Devices | `/device-management/devices` | [View](device-management-devices.webp) | Previous image retained; not refreshed |
@@ -320,14 +326,14 @@ Click any page name to open its full screenshot.
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | Exchange Admin Dashboard | `/exchange/admin-dashboard` | [View](exchange-admin-dashboard.webp) | Previous image retained; not refreshed |
-| Mailbox Folders | `/exchange/mailbox-folders` | [View](exchange-mailbox-folders.webp) | Previous image retained; not refreshed |
+| Mailbox Folders | `/exchange/mailbox-folders` | [View](exchange-mailbox-folders.webp) | Updated |
 | Mailboxes | `/exchange/mailboxes` | [View](exchange-mailboxes.webp) | Previous image retained; not refreshed |
 | SharePoint Settings | `/sharepoint-settings` | [View](sharepoint-settings.webp) | Previous image retained; not refreshed |
-| SharePoint | `/sharepoint-sites` | [View](sharepoint-sites.webp) | Previous image retained; not refreshed |
+| SharePoint | `/sharepoint-sites` | [View](sharepoint-sites.webp) | Updated |
 | SharePoint Format Editor | `/sharepoint/format-editor` | [View](sharepoint-format-editor.webp) | Previous image retained; not refreshed |
 | SharePoint Search | `/sharepoint/search` | [View](sharepoint-search.webp) | Previous image retained; not refreshed |
 | Teams List | `/teams/list-teams` | [View](teams-list-teams.webp) | Previous image retained; not refreshed |
-| Transcripts | `/teams/transcripts` | [View](teams-transcripts.webp) | Previous image retained; not refreshed |
+| Transcripts | `/teams/transcripts` | [View](teams-transcripts.webp) | Updated |
 | Teams User Activity | `/teams/user-activity` | [View](teams-user-activity.webp) | Previous image retained; not refreshed |
 
 ### Microsoft Fabric
@@ -339,7 +345,7 @@ Click any page name to open its full screenshot.
 | Domains | `/fabric/admin/domains` | [View](fabric-admin-domains.webp) | Previous image retained; not refreshed |
 | Tenant settings | `/fabric/admin/tenant-settings` | [View](fabric-admin-tenant-settings.webp) | Previous image retained; not refreshed |
 | Workspaces | `/fabric/admin/workspaces` | [View](fabric-admin-workspaces.webp) | Previous image retained; not refreshed |
-| Capacities | `/fabric/capacities` | [View](fabric-capacities.webp) | Previous image retained; not refreshed |
+| Capacities | `/fabric/capacities` | [View](fabric-capacities.webp) | Updated |
 | Dashboards | `/fabric/dashboards` | [View](fabric-dashboards.webp) | Previous image retained; not refreshed |
 | Data pipelines | `/fabric/data-pipelines` | [View](fabric-data-pipelines.webp) | Previous image retained; not refreshed |
 | Domains | `/fabric/domains` | [View](fabric-domains.webp) | Previous image retained; not refreshed |
@@ -377,15 +383,14 @@ Click any page name to open its full screenshot.
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
-| Message Center | `/message-center` | [View](message-center.webp) | Previous image retained; not refreshed |
-| Azure Service Health Events | `/service-health/events` | [View](service-health-events.webp) | Previous image retained; not refreshed |
+| Message Center | `/message-center` | [View](message-center.webp) | Updated |
 
 ### Reports & Analytics
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | ServiceNow Incident Analytics | `/analytics/servicenow-incidents` | [View](analytics-servicenow-incidents.webp) | Previous image retained; not refreshed |
-| Microsoft 365 Usage Reports | `/reports` | [View](reports.webp) | Previous image retained; not refreshed |
+| Microsoft 365 Usage Reports | `/reports` | [View](reports.webp) | Updated |
 | Browser Distribution User Counts | `/reports/browser-distribution-user-counts` | [View](reports-browser-distribution-user-counts.webp) | Previous image retained; not refreshed |
 | Browser User Counts | `/reports/browser-user-counts` | [View](reports-browser-user-counts.webp) | Previous image retained; not refreshed |
 | Email Activity Counts | `/reports/email-activity-counts` | [View](reports-email-activity-counts.webp) | Previous image retained; not refreshed |
@@ -394,7 +399,7 @@ Click any page name to open its full screenshot.
 | Email App Usage User Counts | `/reports/email-app-usage-user-counts` | [View](reports-email-app-usage-user-counts.webp) | Previous image retained; not refreshed |
 | Email App Usage Versions User Counts | `/reports/email-app-usage-versions-user-counts` | [View](reports-email-app-usage-versions-user-counts.webp) | Previous image retained; not refreshed |
 | M365 App Platform User Counts | `/reports/m365-app-platform-user-counts` | [View](reports-m365-app-platform-user-counts.webp) | Previous image retained; not refreshed |
-| M365 App User Counts | `/reports/m365-app-user-counts` | [View](reports-m365-app-user-counts.webp) | Previous image retained; not refreshed |
+| M365 App User Counts | `/reports/m365-app-user-counts` | [View](reports-m365-app-user-counts.webp) | Updated |
 | Mailbox Usage Detail | `/reports/mailbox-usage-detail` | [View](reports-mailbox-usage-detail.webp) | Previous image retained; not refreshed |
 | Mailbox Usage Mailbox Counts | `/reports/mailbox-usage-mailbox-counts` | [View](reports-mailbox-usage-mailbox-counts.webp) | Previous image retained; not refreshed |
 | Mailbox Usage Quota Status | `/reports/mailbox-usage-quota-status-mailbox-counts` | [View](reports-mailbox-usage-quota-status-mailbox-counts.webp) | Previous image retained; not refreshed |
@@ -410,7 +415,7 @@ Click any page name to open its full screenshot.
 | M365 Groups Activity File Counts | `/reports/office365-groups-activity-file-counts` | [View](reports-office365-groups-activity-file-counts.webp) | Previous image retained; not refreshed |
 | M365 Groups Activity Group Counts | `/reports/office365-groups-activity-group-counts` | [View](reports-office365-groups-activity-group-counts.webp) | Previous image retained; not refreshed |
 | M365 Groups Activity Storage | `/reports/office365-groups-activity-storage` | [View](reports-office365-groups-activity-storage.webp) | Previous image retained; not refreshed |
-| Office 365 Reporting | `/reports/office365-reporting` | [View](reports-office365-reporting.webp) | Previous image retained; not refreshed |
+| Office 365 Reporting | `/reports/office365-reporting` | [View](reports-office365-reporting.webp) | Updated |
 | OneDrive Activity File Counts | `/reports/onedrive-activity-file-counts` | [View](reports-onedrive-activity-file-counts.webp) | Previous image retained; not refreshed |
 | OneDrive Activity User Counts | `/reports/onedrive-activity-user-counts` | [View](reports-onedrive-activity-user-counts.webp) | Previous image retained; not refreshed |
 | OneDrive Usage Account Counts | `/reports/onedrive-usage-account-counts` | [View](reports-onedrive-usage-account-counts.webp) | Previous image retained; not refreshed |
@@ -431,7 +436,7 @@ Click any page name to open its full screenshot.
 | Teams Team Activity Detail | `/reports/teams-team-activity-detail` | [View](reports-teams-team-activity-detail.webp) | Previous image retained; not refreshed |
 | Teams User Activity Counts | `/reports/teams-user-activity-counts` | [View](reports-teams-user-activity-counts.webp) | Previous image retained; not refreshed |
 | Teams User Activity User Counts | `/reports/teams-user-activity-user-counts` | [View](reports-teams-user-activity-user-counts.webp) | Previous image retained; not refreshed |
-| Tenant Reporting | `/reports/tenant-reporting` | [View](reports-tenant-reporting.webp) | Previous image retained; not refreshed |
+| Tenant Reporting | `/reports/tenant-reporting` | [View](reports-tenant-reporting.webp) | Updated |
 | Yammer Activity Counts | `/reports/yammer-activity-counts` | [View](reports-yammer-activity-counts.webp) | Previous image retained; not refreshed |
 | Yammer Activity User Counts | `/reports/yammer-activity-user-counts` | [View](reports-yammer-activity-user-counts.webp) | Previous image retained; not refreshed |
 | Yammer Device Usage Distribution | `/reports/yammer-device-usage-distribution-user-counts` | [View](reports-yammer-device-usage-distribution-user-counts.webp) | Previous image retained; not refreshed |
@@ -462,8 +467,8 @@ Click any page name to open its full screenshot.
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
-| Tenant Health Briefer | `/agent` | [View](agent.webp) | Previous image retained; not refreshed |
-| Infographic Generator | `/agents/infographic` | [View](agents-infographic.webp) | Previous image retained; not refreshed |
+| Tenant Health Briefer | `/agent` | [View](agent.webp) | Updated |
+| Infographic Generator | `/agents/infographic` | [View](agents-infographic.webp) | Updated |
 
 ### Tools & Utilities
 
@@ -478,20 +483,20 @@ Click any page name to open its full screenshot.
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
-| Devices | `/devices` | [View](devices.webp) | Previous image retained; not refreshed |
-| Governance Hub | `/governance-hub` | [View](governance-hub.webp) | Previous image retained; not refreshed |
+| Devices | `/devices` | [View](devices.webp) | Updated |
 | Licensing | `/licensing` | [View](licensing.webp) | Previous image retained; not refreshed |
-| License Optimization | `/licensing/optimization` | [View](licensing-optimization.webp) | Previous image retained; not refreshed |
+| Group license errors | `/licensing/group-license-errors` | [View](licensing-group-license-errors.webp) | Updated |
+| License Optimization | `/licensing/optimization` | [View](licensing-optimization.webp) | Updated |
 | Message details | `/message/[id]` | [View](message-center--message-details.webp) | Previous image retained; not refreshed |
 | My Account | `/my-account` | [View](my-account.webp) | Previous image retained; not refreshed |
 | OneDrive Admin | `/onedrive-admin` | [View](onedrive-admin.webp) | Previous image retained; not refreshed |
-| Report Builder | `/pax/report-builder` | [View](pax-report-builder.webp) | Previous image retained; not refreshed |
+| Report Builder | `/pax/report-builder` | [View](pax-report-builder.webp) | Updated |
 | Reports and Exports | `/pax/reports` | [View](pax-reports.webp) | Previous image retained; not refreshed |
 | Threat Hunting Playbook | `/threat-hunting-playbook` | [View](threat-hunting-playbook.webp) | Previous image retained; not refreshed |
 
 ## Pages not pictured
 
-131 pages have no approved screenshot in this gallery.
+139 pages have no approved screenshot in this gallery.
 Reasons include unavailable provider data, unfinished selections, privacy exclusions,
 and pages not reached before a capture run stopped. No error or loading frame is
 used as a replacement.
@@ -539,6 +544,8 @@ used as a replacement.
 | `/devops/wikis` | not captured |
 | `/devops/work-items` | not captured |
 | `/entitlement/access-packages/[id]` | requires an authorized detail target |
+| `/entra/risk-detections` | not captured |
+| `/exchange/message-trace` | not captured |
 | `/fabric/admin/refreshables` | not captured |
 | `/fabric/connections` | not captured |
 | `/fabric/deployment-pipelines` | not captured |
@@ -575,6 +582,7 @@ used as a replacement.
 | `/pax/tables` | not captured |
 | `/power-platform/audit/power-app-launches` | not captured |
 | `/power-platform/copilot-studio/[agentId]` | requires an authorized detail target |
+| `/power-platform/copilot-studio/agent-request` | not captured |
 | `/power-platform/copilot-studio/tool-call-report` | not captured |
 | `/power-platform/dataverse-admin` | not captured |
 | `/power-platform/dataverse-analytics` | not captured |
@@ -587,11 +595,14 @@ used as a replacement.
 | `/power-platform/inventory-reports/code-apps` | not captured |
 | `/power-platform/inventory-reports/environment-groups` | not captured |
 | `/power-platform/licensing/entitlement-insight` | not captured |
+| `/power-platform/readiness` | not captured |
 | `/power-platform/role-assignments` | not captured |
 | `/power-platform/solutions/[solutionId]/components` | requires an authorized detail target |
 | `/power-platform/team-templates` | not captured |
 | `/power-platform/tenant-drift` | not captured |
 | `/purview-compliance` | not captured |
+| `/purview/ediscovery-cases` | not captured |
+| `/purview/retention-labels` | not captured |
 | `/reports/browser-user-detail` | not captured |
 | `/reports/email-activity-user-detail` | not captured |
 | `/reports/email-app-usage-user-detail` | not captured |
@@ -629,6 +640,8 @@ used as a replacement.
 | `/tools/token-inspector` | not captured |
 | `/user-signins` | not captured |
 | `/users/[id]` | requires an authorized detail target |
+| `/workflows` | not captured |
+| `/workflows/offboarding` | not captured |
 
 ## Regenerating this gallery
 
