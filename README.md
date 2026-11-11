@@ -20,6 +20,14 @@ admin actions for each page is published with GitHub Pages by
 were written from the page source code. Build locally with
 `node scripts/build-showcase.mjs`; output goes to `pages-dist/`.
 
+Pages awaiting an approved capture use `"screenshotStatus": "pending"` in
+`showcase/pages.json` and display **Screenshot pending** instead of an image or
+full-size link. The five ServiceNow routes are included this way, with descriptions
+and admin actions; Change Tasks is identified as a redirect to Change Management.
+Page and screenshot totals are reported separately. An indexed, approved image
+with the matching stem replaces the pending card automatically; unmarked missing
+screenshots and missing indexed files still fail the build.
+
 ## Run locally
 
 Requires **Node.js 22 or newer** and npm.

@@ -14,17 +14,26 @@ const sizes = new Map(provenance.files.flatMap(f => [[f.path, f], ...f.aliases.m
 const pages = [];
 for (const page of data.pages) {
   const file = ['webp', 'jpg'].map(ext => `${page.stem}.${ext}`).find(name => sizes.has(`docs/screenshots/${name}`));
-  if (!file) throw new Error(`No screenshot for ${page.stem}`);
+  if (!file) {
+    if (page.screenshotStatus !== 'pending') throw new Error(`No screenshot for ${page.stem}`);
+    pages.push({ ...page, file: null });
+    continue;
+  }
   await access(path.join(shots, file)).catch(() => { throw new Error(`Missing image file ${file}`); });
   const meta = sizes.get(`docs/screenshots/${file}`);
   pages.push({ ...page, file, width: meta.width, height: meta.height });
 }
 
 const categories = [...new Set(pages.map(p => p.category))];
-const card = p => `<article class="card" id="${esc(p.stem)}" data-category="${esc(p.category)}" data-search="${esc([p.title, p.route, p.category, p.description].join(' ').toLowerCase())}">
-  <a class="shot" href="screenshots/${esc(p.file)}" data-full aria-label="Open full-size screenshot: ${esc(p.title)}">
+const screenshotCount = pages.filter(p => p.file).length;
+const pendingCount = pages.length - screenshotCount;
+const card = p => `<article class="card" id="${esc(p.stem)}" data-category="${esc(p.category)}" data-search="${esc([p.title, p.route, p.category, p.description, ...(!p.file ? ['Screenshot pending'] : [])].join(' ').toLowerCase())}">
+  ${p.file ? `<a class="shot" href="screenshots/${esc(p.file)}" data-full aria-label="Open full-size screenshot: ${esc(p.title)}">
     <img src="screenshots/${esc(p.file)}" width="${p.width}" height="${p.height}" loading="lazy" decoding="async" alt="Screenshot of the ${esc(p.title)} page in Portal 360">
-  </a>
+  </a>` : `<div class="shot-pending">
+    <p><strong>Screenshot pending</strong></p>
+    <p>No approved screenshot is available for this page yet.</p>
+  </div>`}
   <div class="body">
     <p class="meta"><span class="cat">${esc(p.category)}</span><code>${esc(p.route)}</code></p>
     <h3><a href="#${esc(p.stem)}">${esc(p.title)}</a></h3>
@@ -40,14 +49,14 @@ const html = `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Portal 360 screenshot showcase</title>
-<meta name="description" content="${pages.length} annotated screenshots of Portal 360, a unified admin portal for Microsoft Entra ID, Microsoft 365, Intune, Azure, Power Platform, Fabric and Azure DevOps. All tenant data is redacted.">
+<meta name="description" content="${pages.length} annotated pages of Portal 360 with ${screenshotCount} screenshots and ${pendingCount} screenshots pending. A unified admin portal for Microsoft Entra ID, Microsoft 365, Intune, Azure, Power Platform, Fabric and Azure DevOps.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="hero">
   <h1>Portal 360 screenshot showcase</h1>
-  <p>${pages.length} annotated pages from Portal 360, a unified administration portal for Microsoft Entra ID, Microsoft 365, Intune, Azure, Power Platform, Microsoft Fabric and Azure DevOps. Captured in dark mode.</p>
+  <p>${pages.length} annotated pages from Portal 360, a unified administration portal for Microsoft Entra ID, Microsoft 365, Intune, Azure, Power Platform, Microsoft Fabric and Azure DevOps. ${screenshotCount} screenshots captured in dark mode; ${pendingCount} screenshots pending.</p>
   <p class="note">All tenant data is redacted or replaced with fictional stand-ins. Screenshots are from upstream commit <code>${esc(provenance.source.commit.slice(0, 7))}</code> for refreshed pages; a few pages keep earlier captures.</p>
   <div class="tools">
     <label class="sr" for="q">Search pages</label>
@@ -79,7 +88,7 @@ ${pages.filter(p => p.category === c).map(card).join('\n')}
 
 await rm(out, { recursive: true, force: true });
 await mkdir(path.join(out, 'screenshots'), { recursive: true });
-for (const p of pages) await cp(path.join(shots, p.file), path.join(out, 'screenshots', p.file));
+for (const p of pages.filter(p => p.file)) await cp(path.join(shots, p.file), path.join(out, 'screenshots', p.file));
 for (const name of ['styles.css', 'app.js', 'favicon.svg']) await cp(path.join(root, 'showcase', name), path.join(out, name));
 await writeFile(path.join(out, 'index.html'), html);
 await writeFile(path.join(out, '.nojekyll'), '');
