@@ -10,6 +10,16 @@ The source is hosted in the private GitHub repository
 [russrimm/PortalofPortals-Docs](https://github.com/russrimm/PortalofPortals-Docs).
 The website itself is not deployed; use the local commands below to view it.
 
+## GitHub Pages showcase
+
+A static, searchable gallery of every screenshot with an explanation and typical
+admin actions for each page is published with GitHub Pages by
+`.github/workflows/pages.yml`. In **Settings > Pages**, set the source to
+**GitHub Actions**. The page data lives in `showcase/pages.json`: entries marked
+`curated` come from the Portal 360 in-app gallery, and entries marked `generated`
+were written from the page source code. Build locally with
+`node scripts/build-showcase.mjs`; output goes to `pages-dist/`.
+
 ## Run locally
 
 Requires **Node.js 22 or newer** and npm.

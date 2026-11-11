@@ -1,0 +1,4212 @@
+{
+ "source": {
+  "repository": "russrimm/PortalofPortals",
+  "note": "Curated entries come from src/app/screenshots/data/screenshots-data.ts; generated entries were written from page source."
+ },
+ "pages": [
+  {
+   "stem": "home",
+   "title": "Home",
+   "route": "/",
+   "category": "Overview",
+   "description": "The Portal 360° home page in dark mode. Provides a high-level overview of the entire Microsoft cloud environment including quick-access tiles, tenant health signals, and recent activity highlights.",
+   "adminActions": [
+    "Navigate to any portal section from the central hub",
+    "Review at-a-glance health signals for your tenant",
+    "Access pinned resources and recent activity",
+    "Toggle between light and dark themes"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "about",
+   "title": "About Portal 360°",
+   "route": "/about",
+   "category": "Overview",
+   "description": "The About page documents all 250+ capabilities of Portal 360°, organized by service area. Provides links to documentation, screenshot galleries, and getting started guides.",
+   "adminActions": [
+    "Review the full capability catalog across all Microsoft services",
+    "Access documentation and setup guides",
+    "Understand what actions are available in the portal",
+    "Navigate to the visual screenshot gallery for demos"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "dashboard",
+   "title": "Governance",
+   "route": "/dashboard",
+   "category": "Overview",
+   "description": "Central governance dashboard aggregating key security, compliance, and operational metrics across Azure and Microsoft 365. Shows Secure Score, risky users, device compliance, and service health in a single view.",
+   "adminActions": [
+    "Monitor overall tenant health at a glance",
+    "Identify critical security issues requiring attention",
+    "Track compliance posture across the organization",
+    "Drill into specific areas from summary widgets"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "playbooks",
+   "title": "Policy compliance",
+   "route": "/playbooks",
+   "category": "Overview",
+   "description": "Interactive governance policy library defining organizational standards for Microsoft cloud administration. Playbooks provide structured guidance for common admin scenarios.",
+   "adminActions": [
+    "Browse governance policies and standards",
+    "Review playbooks for specific admin scenarios",
+    "Share governance guidance with team members",
+    "Use playbooks as checklists for complex tasks"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "security-pulse",
+   "title": "Threat intelligence",
+   "route": "/security-pulse",
+   "category": "Overview",
+   "description": "Live CVE intelligence from NVD, MSRC, and CISA KEV. Rendered against live tenant data with 4 summary metrics, 10 charts.",
+   "adminActions": [
+    "Recently discovered",
+    "Top critical CVEs",
+    "Most likely to be exploited",
+    "Vendor-disclosed advisories",
+    "Analyze 10 trend visualisation(s)"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "security-pulse-cve",
+   "title": "CVE",
+   "route": "/security-pulse/cve",
+   "category": "Overview",
+   "description": "Shows CVE vulnerability information in the Security Pulse area. Admins use it to look up known vulnerabilities that may affect their tenant.",
+   "adminActions": [
+    "Search for a CVE",
+    "Review the severity and details",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "microsoft365-activity",
+   "title": "M365 Activity",
+   "route": "/microsoft365/activity",
+   "category": "Microsoft 365 & Copilot",
+   "description": "Daily active users, service activity, and per-user last activity dates. Rendered against live tenant data with 30 live records, 7 charts.",
+   "adminActions": [
+    "Active users",
+    "Services",
+    "User activity",
+    "7 days",
+    "30 days"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "microsoft365-agent-identity",
+   "title": "Agent Identities",
+   "route": "/microsoft365/agent-identity",
+   "category": "Microsoft 365 & Copilot",
+   "description": "Microsoft 365 AI agent identity management showing all registered Copilot Studio and Azure AI agents with their permission scopes and identity configuration.",
+   "adminActions": [
+    "View all AI agent identities in the tenant",
+    "Review agent permission scopes and access",
+    "Manage agent lifecycle (register, update, revoke)",
+    "Audit AI agent activity and usage"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "microsoft365-agent-identity-blueprints",
+   "title": "Agent Identity Blueprints",
+   "route": "/microsoft365/agent-identity-blueprints",
+   "category": "Microsoft 365 & Copilot",
+   "description": "Lists agent identity blueprints with their app ID, sign-in audience, and publisher domain, plus totals for disabled and tagged blueprints. Admins use it to govern how agent identities are templated.",
+   "adminActions": [
+    "Create a new blueprint",
+    "Review totals and per-blueprint details",
+    "Search the list",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "microsoft365-agent-users",
+   "title": "Agent Users",
+   "route": "/microsoft365/agent-users",
+   "category": "Microsoft 365 & Copilot",
+   "description": "Lists agent users with enabled and disabled totals, display name and UPN, identity parent ID, and job or department. Admins use it to see which agents have user accounts.",
+   "adminActions": [
+    "Create a new agent user",
+    "Review enabled and disabled counts",
+    "Search the list",
+    "Open an agent user for details"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "microsoft365-copilot",
+   "title": "Copilot",
+   "route": "/microsoft365/copilot",
+   "category": "Microsoft 365 & Copilot",
+   "description": "Overview page for Microsoft 365 Copilot in Portal 360. Admins use it to reach Copilot-related administration and reports.",
+   "adminActions": [
+    "Review Copilot status",
+    "Open Copilot Chat",
+    "Navigate to related Copilot pages"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "microsoft365-copilot-agents",
+   "title": "Copilot Agents",
+   "route": "/microsoft365/copilot/agents",
+   "category": "Microsoft 365 & Copilot",
+   "description": "Tenant packages from the Copilot admin catalog. Click a row to view full details. Rendered against live tenant data with 282 live records.",
+   "adminActions": [
+    "Sort and filter by Name, Type, Hosts, Element Types",
+    "Review 282 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "microsoft365-copilot-chat",
+   "title": "Copilot Chat",
+   "route": "/microsoft365/copilot/chat",
+   "category": "Microsoft 365 & Copilot",
+   "description": "Chat page for asking Microsoft 365 Copilot questions from inside Portal 360. Admins use it to query their tenant data conversationally.",
+   "adminActions": [
+    "Type a question and send it",
+    "Review the answer and sources",
+    "Start a new conversation"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "microsoft365-copilot-readiness",
+   "title": "Copilot Readiness",
+   "route": "/microsoft365/copilot/readiness",
+   "category": "Microsoft 365 & Copilot",
+   "description": "Who is ready for a Microsoft 365 Copilot seat, who is sitting on one they never use, and which seats you can move today without buying anything. Ports Microsoft\\'s M365UsageAnalytics readiness model onto live Graph data  -  no audit-log export required. Rendered against live tenant data with 4 summary metrics, 5 charts.",
+   "adminActions": [
+    "Tune model",
+    "Executive summary",
+    "License strategy",
+    "Workloads",
+    "Action lists"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "microsoft365-copilot-user-count",
+   "title": "Copilot Usage",
+   "route": "/microsoft365/copilot/user-count",
+   "category": "Microsoft 365 & Copilot",
+   "description": "Adoption statistics, consumption trends, and per-user activity. Rendered against live tenant data with 3 summary metrics.",
+   "adminActions": [
+    "Overview",
+    "Consumption",
+    "License Reclamation"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "microsoft365-updates",
+   "title": "Microsoft 365 Updates",
+   "route": "/microsoft365/updates",
+   "category": "Microsoft 365 & Copilot",
+   "description": "Shows Microsoft 365 service updates and announcements. Admins use it to track changes that may affect users.",
+   "adminActions": [
+    "Browse recent updates",
+    "Open an update for details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "microsoft365-work-iq",
+   "title": "Work IQ Chat",
+   "route": "/microsoft365/work-iq",
+   "category": "Microsoft 365 & Copilot",
+   "description": "Content search chat powered by Work IQ. Admins enter a question and get an answer grounded in Microsoft 365 content, optionally including public web content and streaming output.",
+   "adminActions": [
+    "Ask a question",
+    "Toggle web grounding",
+    "Toggle streaming of the answer",
+    "Start a new search or try an example prompt"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "microsoft365-work-iq-governance",
+   "title": "Work IQ Governance",
+   "route": "/microsoft365/work-iq/governance",
+   "category": "Microsoft 365 & Copilot",
+   "description": "Shows whether your tenant is enabled for Work IQ, including the service principal and its provisioning state. Admins use it to confirm Work IQ is set up correctly.",
+   "adminActions": [
+    "Check the service principal status",
+    "Refresh the status",
+    "Open the service principal in the Entra admin center",
+    "Open Work IQ Chat"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "access-reviews",
+   "title": "Access Reviews",
+   "route": "/access-reviews",
+   "category": "Identity & Access",
+   "description": "Graph API error: 403 - {\"error\":{\"code\":\"\",\"message\":\"Attempted to perform an unauthorized operation.\",\"innerError\":{\"date\":\"2026-08-03T14:50:33\",\"request-id\":\"a1589393-cdd2-41dd-b733-698c61fad07e\",\"client-request-id\":\"a1589393-cdd2-41dd-b733-698c61fad07e\"}}}.",
+   "adminActions": [
+    "Review Error Loading Access Reviews across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "applications",
+   "title": "App Registrations",
+   "route": "/applications",
+   "category": "Identity & Access",
+   "description": "Azure AD application registrations owned by the tenant. Shows custom-built apps, API permissions, redirect URIs, certificates, and client secrets with expiry dates.",
+   "adminActions": [
+    "Manage custom application registrations",
+    "Review and update API permission assignments",
+    "Track certificate and secret expiry dates",
+    "Create new app registrations for custom development"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "enterprise-applications",
+   "title": "Enterprise Applications",
+   "route": "/enterprise-applications",
+   "category": "Identity & Access",
+   "description": "Comprehensive enterprise application management showing all apps assigned to the tenant including SAML SSO apps, OAuth apps, and provisioning-enabled applications.",
+   "adminActions": [
+    "View and manage all enterprise applications",
+    "Configure user and group assignments to apps",
+    "Review application permissions and consent grants",
+    "Enable or disable user access to specific applications"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "entitlement-access-packages",
+   "title": "Access Packages",
+   "route": "/entitlement/access-packages",
+   "category": "Identity & Access",
+   "description": "Lists entitlement management access packages and catalogs. Admins use it to see which bundles of resources users can request.",
+   "adminActions": [
+    "Create a catalog",
+    "Create an access package",
+    "View an access package",
+    "Browse the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "entitlement-catalogs",
+   "title": "Catalogs",
+   "route": "/entitlement/catalogs",
+   "category": "Identity & Access",
+   "description": "Lists access package catalogs and the resources inside the selected catalog. Admins use it to see which resources can be packaged.",
+   "adminActions": [
+    "Select a catalog",
+    "Review its resources",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "entitlement-my-access",
+   "title": "My Access",
+   "route": "/entitlement/my-access",
+   "category": "Identity & Access",
+   "description": "Shows your own access packages and requests in entitlement management. Users and admins use it to check current access and request status.",
+   "adminActions": [
+    "Review current access packages",
+    "Check request status",
+    "Open Microsoft My Access"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "entra-admin-consent-requests",
+   "title": "Admin consent requests",
+   "route": "/entra/admin-consent-requests",
+   "category": "Identity & Access",
+   "description": "Lists applications that users asked an administrator to approve through the admin consent workflow, with permissions requested and who asked. Admins use it to see what is waiting for a decision.",
+   "adminActions": [
+    "Filter the requests",
+    "Review the summary counts",
+    "Open a request for details",
+    "Open the Entra admin center to approve or deny"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "entra-administrative-units",
+   "title": "Administrative units",
+   "route": "/entra/administrative-units",
+   "category": "Identity & Access",
+   "description": "Lists administrative units, which scope Entra role assignments to a subset of users, groups, or devices. Admins use it to see how delegated administration is carved up.",
+   "adminActions": [
+    "Review the unit summary",
+    "Open a unit to see its members",
+    "Search the list",
+    "Open the Entra admin center to change membership or roles"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "entra-domains",
+   "title": "Domains & directory sync",
+   "route": "/entra/domains",
+   "category": "Identity & Access",
+   "description": "Lists custom and initial domains with verification and authentication type, plus Microsoft Entra Connect sync status. Admins use it to check domain health and hybrid sync timing.",
+   "adminActions": [
+    "Review the domain summary",
+    "Check the default and initial domains",
+    "Review last directory and password hash sync",
+    "Open the Microsoft 365 admin center to add or verify a domain"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "entra-roles-and-administrators",
+   "title": "Roles and administrators",
+   "route": "/entra/roles-and-administrators",
+   "category": "Identity & Access",
+   "description": "Entra ID directory roles  -  built-in and custom. Rendered against live tenant data with 4 summary metrics.",
+   "adminActions": [
+    "Create custom role",
+    "All(146)",
+    "Built-in(145)",
+    "Custom(1)"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "groups",
+   "title": "Groups",
+   "route": "/groups",
+   "category": "Identity & Access",
+   "description": "Azure AD group administration showing security groups, Microsoft 365 groups, and distribution lists. Supports membership management, dynamic groups, and group-based licensing.",
+   "adminActions": [
+    "Browse all tenant groups with member counts",
+    "Add and remove group members",
+    "Manage group owners and settings",
+    "View group-based license assignments"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "lifecycle-workflows",
+   "title": "Lifecycle Workflows",
+   "route": "/lifecycle-workflows",
+   "category": "Identity & Access",
+   "description": "The Lifecycle Workflows workspace in Portal 360°.",
+   "adminActions": [
+    "Review Lifecycle Workflows across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "pim-assign-roles",
+   "title": "Assign Roles",
+   "route": "/pim/assign-roles",
+   "category": "Identity & Access",
+   "description": "Page for assigning Microsoft Entra roles through Privileged Identity Management. Admins use it to grant eligible or active role assignments.",
+   "adminActions": [
+    "Choose a role",
+    "Choose a user or group",
+    "Set assignment type and duration",
+    "Submit the assignment"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "pim-my-roles",
+   "title": "My Roles",
+   "route": "/pim/my-roles",
+   "category": "Identity & Access",
+   "description": "Shows the PIM roles you are eligible for or have active. Admins use it to activate roles when needed.",
+   "adminActions": [
+    "Review eligible roles",
+    "Activate a role with a justification",
+    "Review active roles",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "pim-role-assignments",
+   "title": "Role Assignments",
+   "route": "/pim/role-assignments",
+   "category": "Identity & Access",
+   "description": "View and manage privileged identity management role assignments. Rendered against live tenant data with 25 live records.",
+   "adminActions": [
+    "Active Assignments (25)",
+    "Eligible Assignments (3)",
+    "Assign Role",
+    "Revoke",
+    "Sort and filter by Principal, Role, Scope, Status"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "profile",
+   "title": "My Profile",
+   "route": "/profile",
+   "category": "Identity & Access",
+   "description": "CEO, COO, CTO, CIO · IT.",
+   "adminActions": [
+    "Experience",
+    "About Me",
+    "Contact Details",
+    "Interests & Education",
+    "Add"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "users",
+   "title": "User 360",
+   "route": "/users",
+   "category": "Identity & Access",
+   "description": "Comprehensive user directory showing all Entra ID users with their status, license assignments, and last sign-in date. Supports search, filter, and bulk operations.",
+   "adminActions": [
+    "Search and filter users by name, UPN, or department",
+    "View user status (active, blocked, guest)",
+    "Navigate to detailed user profiles",
+    "Initiate bulk operations on selected users"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "users--user-details",
+   "title": "User 360 — User details",
+   "route": "/users",
+   "category": "Identity & Access",
+   "description": "Details panel for a selected user in User 360, showing their profile and account information. Admins use it to look up a user in one place.",
+   "adminActions": [
+    "Review profile and account details",
+    "Switch between tabs such as Groups, Licenses, and Sign-In Logs",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "users--user-details-groups",
+   "title": "User 360 — User details — Groups",
+   "route": "/users",
+   "category": "Identity & Access",
+   "description": "Groups tab of the user details, listing the groups the selected user belongs to. Admins use it to understand the user's access through group membership.",
+   "adminActions": [
+    "Review the user's group memberships",
+    "Search the list",
+    "Switch to another tab"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "users--user-details-licenses",
+   "title": "User 360 — User details — Licenses",
+   "route": "/users",
+   "category": "Identity & Access",
+   "description": "Licenses tab of the user details, listing licenses assigned to the selected user. Admins use it to verify what the user is licensed for.",
+   "adminActions": [
+    "Review assigned licenses",
+    "Switch to another tab",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "users--user-details-signin-logs",
+   "title": "User 360 — User details — Sign-In Logs",
+   "route": "/users",
+   "category": "Identity & Access",
+   "description": "Sign-In Logs tab of the user details, listing recent sign-in events for the selected user. Admins use it to investigate access problems or suspicious activity.",
+   "adminActions": [
+    "Review recent sign-ins and their results",
+    "Open a sign-in for details",
+    "Switch to another tab"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "users-360",
+   "title": "User 360",
+   "route": "/users/360",
+   "category": "Identity & Access",
+   "description": "User 360 page that brings a user's profile, groups, licenses, and sign-ins together. Admins use it to troubleshoot a single user.",
+   "adminActions": [
+    "Search for a user",
+    "Open the user's details",
+    "Switch between detail tabs",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "users-create-user",
+   "title": "Create User",
+   "route": "/users/create-user",
+   "category": "Identity & Access",
+   "description": "Guided user creation form supporting all Entra ID user properties including display name, UPN, password policy, department, manager, and initial license assignment.",
+   "adminActions": [
+    "Create new Entra ID user accounts",
+    "Set initial passwords and force-change policies",
+    "Assign department, job title, and manager",
+    "Apply initial license assignments during provisioning"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "users-invite-guest",
+   "title": "Invite Guest",
+   "route": "/users/invite-guest",
+   "category": "Identity & Access",
+   "description": "Invite external users, manage guest lifecycle, and send bulk invitations via B2B collaboration.",
+   "adminActions": [
+    "Invite Guest",
+    "Guest Users",
+    "Bulk Invite",
+    "Reset",
+    "Send Invitation"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "app-management-policies",
+   "title": "App Management Policies",
+   "route": "/app-management-policies",
+   "category": "Conditional Access & Policy",
+   "description": "Lists tenant app management policies, including password credential rules such as maximum lifetime and which apps they apply to. Admins use it to check credential restrictions on app registrations.",
+   "adminActions": [
+    "Review each policy's restrictions",
+    "Check which apps are covered",
+    "Open the Microsoft Graph documentation",
+    "Retry if loading fails"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "authentication-contexts",
+   "title": "Authentication Contexts",
+   "route": "/authentication-contexts",
+   "category": "Conditional Access & Policy",
+   "description": "Lists Conditional Access authentication contexts that can protect sensitive resources. Admins use it to manage the contexts policies refer to.",
+   "adminActions": [
+    "Search contexts",
+    "Add a context",
+    "Edit or remove a context",
+    "Refresh the inventory"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "authentication-strength",
+   "title": "Authentication Strength Policies",
+   "route": "/authentication-strength",
+   "category": "Conditional Access & Policy",
+   "description": "Define which authentication method combinations satisfy requirements in Conditional Access policies. Rendered against live tenant data with 3 live records.",
+   "adminActions": [
+    "New Policy",
+    "Sort and filter by Name, Type, Satisfies, Combinations",
+    "Review 3 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "authorization-policy",
+   "title": "Authorization Policy",
+   "route": "/authorization-policy",
+   "category": "Conditional Access & Policy",
+   "description": "Used to manage authorization related settings across the company.",
+   "adminActions": [
+    "Review Authorization Policy across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "conditional-access",
+   "title": "Conditional Access Policies",
+   "route": "/conditional-access",
+   "category": "Conditional Access & Policy",
+   "description": "Full view of all Conditional Access policies in the tenant with state (enabled, disabled, report-only), assignment scope, and grant/session controls.",
+   "adminActions": [
+    "View all CA policies and their current state",
+    "Create, edit, enable, or disable CA policies",
+    "Analyze which users and apps each policy targets",
+    "Switch policies to report-only mode for safe testing"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "cross-tenant-access",
+   "title": "Cross Tenant Access",
+   "route": "/cross-tenant-access",
+   "category": "Conditional Access & Policy",
+   "description": "Default cross-tenant access configuration for B2B collaboration and direct connect.",
+   "adminActions": [
+    "Review Cross Tenant Access Policy across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "security-defaults",
+   "title": "Security Defaults",
+   "route": "/security-defaults",
+   "category": "Conditional Access & Policy",
+   "description": "Security defaults provide baseline security settings that help protect your organization.",
+   "adminActions": [
+    "Review Security Defaults across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "token-lifetime-policies",
+   "title": "Token Lifetime Policies",
+   "route": "/token-lifetime-policies",
+   "category": "Conditional Access & Policy",
+   "description": "Shows custom token lifetime policies and the Microsoft Entra ID default token lifetimes for access and ID tokens. Admins use it to see how long tokens remain valid.",
+   "adminActions": [
+    "Review custom policies",
+    "Compare against system defaults",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "defender-atp",
+   "title": "Defender for Endpoint",
+   "route": "/defender-atp",
+   "category": "Security & Risk",
+   "description": "Configuration required.",
+   "adminActions": [
+    "Alerts",
+    "Machines",
+    "Recommendations",
+    "Vulnerabilities",
+    "Software"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "defender-cloud-apps-discovered-apps",
+   "title": "Discovered Cloud Apps",
+   "route": "/defender-cloud-apps/discovered-apps",
+   "category": "Security & Risk",
+   "description": "Lists cloud apps discovered by Microsoft Defender for Cloud Apps with category, risk score, and transactions. Admins use it to find risky shadow IT.",
+   "adminActions": [
+    "Pick a discovery stream",
+    "Filter by app name or category",
+    "Review high risk apps",
+    "Retry loading"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "insights-legacy-auth",
+   "title": "Legacy Authentication",
+   "route": "/insights/legacy-auth",
+   "category": "Security & Risk",
+   "description": "Sign-ins using protocols that bypass MFA  -  last 7 days. Rendered against live tenant data with 4 summary metrics.",
+   "adminActions": [
+    "Users Using Legacy Auth",
+    "Protocol Breakdown",
+    "Daily Trend"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "insights-mfa-gap",
+   "title": "MFA Registration Gap",
+   "route": "/insights/mfa-gap",
+   "category": "Security & Risk",
+   "description": "Users without any MFA method registered in the tenant. Rendered against live tenant data with 3 summary metrics, 3 live records.",
+   "adminActions": [
+    "Unregistered Users",
+    "By Department",
+    "Method Popularity",
+    "Sort and filter by User, Department, Admin, SSPR",
+    "Review 3 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "insights-stale-users",
+   "title": "Stale Licensed Users",
+   "route": "/insights/stale-users",
+   "category": "Security & Risk",
+   "description": "Enabled users with active licenses who haven\\'t signed in recently. Rendered against live tenant data with 4 summary metrics, 2 live records.",
+   "adminActions": [
+    "30 days",
+    "60 days",
+    "90 days",
+    "Sort and filter by User, Department, Licenses, Last Sign-in",
+    "Review 2 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "nvd",
+   "title": "NIST NVD (CVE Database)",
+   "route": "/nvd",
+   "category": "Security & Risk",
+   "description": "National Vulnerability Database (NVD) browser integrated into the portal. Search and review CVEs with CVSS scores, affected products, and remediation guidance.",
+   "adminActions": [
+    "Search CVEs by ID, product, or keyword",
+    "Review CVSS scores and exploit availability",
+    "Assess vulnerability impact on your environment",
+    "Track CVEs relevant to your technology stack"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "risky-service-principals",
+   "title": "Risky Service Principals",
+   "route": "/risky-service-principals",
+   "category": "Security & Risk",
+   "description": "The signed-in user’s access token does not include the required Microsoft Graph scope.",
+   "adminActions": [
+    "Review Missing Graph permission across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "risky-users",
+   "title": "Risky Users",
+   "route": "/risky-users",
+   "category": "Security & Risk",
+   "description": "Lists users flagged by Microsoft Entra ID Protection with their risk level and state. Admins use it to find accounts that may be compromised.",
+   "adminActions": [
+    "Filter by risk level",
+    "Filter by risk state",
+    "Open a user for details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "secure-score",
+   "title": "Secure Score",
+   "route": "/secure-score",
+   "category": "Security & Risk",
+   "description": "Microsoft 365 Secure Score showing the overall security posture with completed and recommended improvement actions. Tracks score trends and compares with similar organizations.",
+   "adminActions": [
+    "Review current security score and trend",
+    "Identify recommended improvement actions by impact",
+    "Mark actions as completed or risk accepted",
+    "Compare score against industry benchmarks"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "secure-score-defender",
+   "title": "Defender Secure Score",
+   "route": "/secure-score/defender",
+   "category": "Security & Risk",
+   "description": "Shows the Microsoft Defender for Cloud secure score. Admins use it to see how well their cloud resources meet security recommendations.",
+   "adminActions": [
+    "Load the scores",
+    "Review each score and its breakdown",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "security-alerts",
+   "title": "Security Alerts",
+   "route": "/security-alerts",
+   "category": "Security & Risk",
+   "description": "Lists Microsoft Defender XDR alerts for review and triage. Admins use it to see what needs attention first.",
+   "adminActions": [
+    "Review and filter alerts",
+    "Open an alert for details",
+    "Assign or unassign an alert",
+    "Open the full alerts queue"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "audit-log-queries",
+   "title": "Audit Log Queries",
+   "route": "/audit-log-queries",
+   "category": "Sign-in & Audit Logs",
+   "description": "Create, track, and review custom audit log queries. Rendered against live tenant data with 1 live records.",
+   "adminActions": [
+    "1 selected",
+    "Run query",
+    "Sort and filter by Created, Service, Operation, UPN",
+    "Review 1 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "audit-logs",
+   "title": "Audit Logs",
+   "route": "/audit-logs",
+   "category": "Sign-in & Audit Logs",
+   "description": "Shows Microsoft Entra audit log activity, with result distribution and audit ingest status. Admins use it to review who changed what in the tenant.",
+   "adminActions": [
+    "Review activity and result distributions",
+    "Check audit ingest status",
+    "Search and filter audit entries",
+    "Open an entry for details"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "conditional-access-blocked-signins",
+   "title": "Blocked Sign-ins",
+   "route": "/conditional-access-blocked-signins",
+   "category": "Sign-in & Audit Logs",
+   "description": "Investigates sign-in attempts that were blocked by Conditional Access policies. Shows the user, application, location, device, and which specific CA policy blocked access.",
+   "adminActions": [
+    "Investigate why specific users are being blocked",
+    "Identify misconfigured CA policies causing access issues",
+    "Analyze sign-in failure patterns by location or app",
+    "Adjust CA policies based on block analysis"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "mfa-signins",
+   "title": "MFA Sign-ins",
+   "route": "/mfa-signins",
+   "category": "Sign-in & Audit Logs",
+   "description": "Successful MFA Sign-ins. Rendered against live tenant data with 4 summary metrics, 22 live records.",
+   "adminActions": [
+    "Sort and filter by Interval Start Time, Successful, Failed, Total",
+    "Review 22 live records from the tenant",
+    "Track 4 headline metrics at a glance"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "provisioning-logs",
+   "title": "Provisioning Logs",
+   "route": "/provisioning-logs",
+   "category": "Sign-in & Audit Logs",
+   "description": "Lists provisioning log entries with activity date, service principal, source identity, and target identity. Admins use it to troubleshoot user provisioning to connected apps.",
+   "adminActions": [
+    "Review recent provisioning events",
+    "Open an entry for details",
+    "Refresh the log"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "service-principal-signins",
+   "title": "Service Principal Sign-Ins",
+   "route": "/service-principal-signins",
+   "category": "Sign-in & Audit Logs",
+   "description": "Authentication logs for service principals and managed identities. Shows application sign-ins with OAuth credentials, certificates, and client secrets.",
+   "adminActions": [
+    "Monitor application authentication activity",
+    "Detect anomalous service principal sign-in patterns",
+    "Identify applications using expiring credentials",
+    "Audit which apps are accessing which resources"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "user-registration-details",
+   "title": "User Registration Details",
+   "route": "/user-registration-details",
+   "category": "Sign-in & Audit Logs",
+   "description": "MFA and SSPR (Self-Service Password Reset) registration status across all users. Shows which authentication methods are registered per user and overall tenant registration rates.",
+   "adminActions": [
+    "Identify users who have not registered for MFA",
+    "Track SSPR registration compliance",
+    "View which MFA methods are most commonly registered",
+    "Export registration reports for compliance purposes"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "application-insights-exceptions",
+   "title": "App Insights AI Analysis",
+   "route": "/application-insights-exceptions",
+   "category": "Azure",
+   "description": "Application Insights exception tracking showing unhandled exceptions, error rates, affected users, and stack traces for monitored applications.",
+   "adminActions": [
+    "View application exceptions and error trends",
+    "Review stack traces for debugging",
+    "Identify the most frequently occurring errors",
+    "Correlate exceptions with deployments or changes"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure",
+   "title": "Azure resources",
+   "route": "/azure",
+   "category": "Azure",
+   "description": "Azure inventory and Resource Graph query page with subscription and resource group selectors. Admins use it to list resources and run Resource Graph queries.",
+   "adminActions": [
+    "Pick a subscription",
+    "Pick a resource group",
+    "Run a Resource Graph query",
+    "Review the query results"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-advisor",
+   "title": "Advisor",
+   "route": "/azure/advisor",
+   "category": "Azure",
+   "description": "Shows Azure Advisor recommendations and scores for a subscription. Admins use it to find ways to improve reliability, security, cost, and performance.",
+   "adminActions": [
+    "Pick a subscription",
+    "Review the Advisor score",
+    "Open a recommendation for details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-ai-foundry",
+   "title": "Microsoft Foundry",
+   "route": "/azure/ai-foundry",
+   "category": "Azure",
+   "description": "Overview of Microsoft Foundry resources in Portal 360. Admins use it to reach accounts and agent chat.",
+   "adminActions": [
+    "Open All Resources",
+    "Open Agent Chat",
+    "Review Foundry resource information"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-ai-foundry-account-projects",
+   "title": "Projects",
+   "route": "/azure/ai-foundry/account-projects",
+   "category": "Azure",
+   "description": "The AI Foundry Account Projects workspace in Portal 360°.",
+   "adminActions": [
+    "Review AI Foundry Account Projects across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-ai-foundry-accounts",
+   "title": "All Resources",
+   "route": "/azure/ai-foundry/accounts",
+   "category": "Azure",
+   "description": "Lists all Foundry resources across your subscriptions. Admins use it to inventory Foundry accounts.",
+   "adminActions": [
+    "Browse the resources",
+    "Open a resource for details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-ai-foundry-agent-chat",
+   "title": "Agent Chat",
+   "route": "/azure/ai-foundry/agent-chat",
+   "category": "Azure",
+   "description": "Chat interface for talking to a Foundry agent or project by supplying its project endpoint, agent name, and version. Admins use it to test an agent.",
+   "adminActions": [
+    "Enter a project endpoint",
+    "Set the agent name and version",
+    "Start chatting",
+    "Change the agent"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-ai-foundry-agents",
+   "title": "List Agents",
+   "route": "/azure/ai-foundry/agents",
+   "category": "Azure",
+   "description": "List and manage AI agents in your Azure AI Foundry project.",
+   "adminActions": [
+    "Review AI Foundry Agents across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-ai-foundry-deployments",
+   "title": "Model Deployments",
+   "route": "/azure/ai-foundry/deployments",
+   "category": "Azure",
+   "description": "Manage AI model deployments within an AI Foundry account.",
+   "adminActions": [
+    "Review Model Deployments across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-ai-foundry-models",
+   "title": "Available Models",
+   "route": "/azure/ai-foundry/models",
+   "category": "Azure",
+   "description": "Browse AI models available for deployment in your subscription.",
+   "adminActions": [
+    "Review Available Models across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-ai-foundry-usage",
+   "title": "Costs & Quotas",
+   "route": "/azure/ai-foundry/usage",
+   "category": "Azure",
+   "description": "Find where Foundry spend goes by resource, deployment, region, and resource group, and check regional quotas.",
+   "adminActions": [
+    "Find the resources, deployments, and regions that drive Foundry spend"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-allowed-connections",
+   "title": "Allowed Connections",
+   "route": "/azure/allowed-connections",
+   "category": "Azure",
+   "description": "Lists allowed connections for a subscription with location and calculated actions. Admins use it to review network traffic that security rules allow.",
+   "adminActions": [
+    "Pick a subscription",
+    "Review each connection's information",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-bicep",
+   "title": "Bicep Tools",
+   "route": "/azure/bicep",
+   "category": "Azure",
+   "description": "Convert existing ARM JSON templates to clean Bicep syntax.",
+   "adminActions": [
+    "Review Azure Bicep Deployment across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-budgets",
+   "title": "Budgets",
+   "route": "/azure/budgets",
+   "category": "Azure",
+   "description": "Azure spending budgets with alert thresholds configured per subscription or resource group. Shows current spend versus budget with projected end-of-period totals.",
+   "adminActions": [
+    "Create and manage spending budgets",
+    "Configure alert thresholds at 80% and 100% of budget",
+    "Monitor actual spend versus budget targets",
+    "Adjust budget amounts as business needs change"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-cost-management",
+   "title": "Cost Overview",
+   "route": "/azure/cost-management",
+   "category": "Azure",
+   "description": "Cost overview with current month charges, Marketplace charges, price sheet, and cost allocation tags. Admins use it to track Azure spend.",
+   "adminActions": [
+    "Review current month charges",
+    "Review Marketplace charges",
+    "Browse the price sheet",
+    "Review cost allocation tags"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-daily-costs",
+   "title": "Daily Cost Analysis",
+   "route": "/azure/daily-costs",
+   "category": "Azure",
+   "description": "Day-by-day Azure spend breakdown for August 2026. Rendered against live tenant data with 3 summary metrics, 3 live records, 11 charts.",
+   "adminActions": [
+    "Sort and filter by Date, Total, vs Avg",
+    "Review 3 live records from the tenant",
+    "Analyze 11 trend visualisation(s)"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-deploy",
+   "title": "Bicep Export",
+   "route": "/azure/deploy",
+   "category": "Azure",
+   "description": "Infrastructure as Code deployment interface supporting ARM templates and Bicep files. Enables template validation, parameter configuration, and deployment execution.",
+   "adminActions": [
+    "Deploy ARM templates or Bicep files to Azure",
+    "Validate templates before deployment",
+    "Configure deployment parameters via UI",
+    "Monitor deployment progress and view outputs"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-deployment-stacks",
+   "title": "Deployment Stacks",
+   "route": "/azure/deployment-stacks",
+   "category": "Azure",
+   "description": "Lists Azure deployment stacks at a subscription, resource group, or management group scope. Admins use it to see which stacks manage their resources.",
+   "adminActions": [
+    "Set the scope",
+    "Refresh the list",
+    "Create a stack",
+    "Open a stack for details"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-emerging-issues",
+   "title": "Emerging Issues",
+   "route": "/azure/emerging-issues",
+   "category": "Azure",
+   "description": "Shows Azure emerging issues with a status banner, summary, and impacted regions and services. Admins use it to check whether a platform issue explains a problem.",
+   "adminActions": [
+    "Review the status banner",
+    "Check impacted regions",
+    "Check impacted services",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-forecasts",
+   "title": "Forecasts",
+   "route": "/azure/forecasts",
+   "category": "Azure",
+   "description": "Machine learning-powered Azure cost forecasts predicting end-of-month and end-of-quarter spending based on historical patterns and current trends.",
+   "adminActions": [
+    "View predicted Azure costs for the current period",
+    "Compare forecasts against existing budgets",
+    "Identify forecast overruns early for corrective action",
+    "Use forecasts to plan future budget allocations"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-health-compliance",
+   "title": "Health & Compliance",
+   "route": "/azure/health-compliance",
+   "category": "Azure",
+   "description": "The Azure Health & Compliance workspace in Portal 360°.",
+   "adminActions": [
+    "Organization",
+    "Networking",
+    "Compute & Virtualization",
+    "Data & Caching",
+    "Deployment & IaC"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-infrastructure",
+   "title": "Azure Infrastructure",
+   "route": "/azure/infrastructure",
+   "category": "Azure",
+   "description": "Top-level Azure Infrastructure page providing navigation to resource management, organization hierarchy, cost management, policy, and monitoring capabilities.",
+   "adminActions": [
+    "Navigate to Azure resource management sections",
+    "Access organizational hierarchy (management groups, subscriptions)",
+    "Jump to cost management and policy tools",
+    "View high-level Azure health and metrics"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-license-usage",
+   "title": "License Usage",
+   "route": "/azure/license-usage",
+   "category": "Azure",
+   "description": "License consumption and user distribution across your tenant. Rendered against live tenant data with 12 charts.",
+   "adminActions": [
+    "Analyze 12 trend visualisation(s)"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-metrics",
+   "title": "Azure Monitor Metrics",
+   "route": "/azure/metrics",
+   "category": "Azure",
+   "description": "Azure Monitor metrics explorer for visualizing resource performance metrics over custom time ranges. Supports multiple resources, metrics, and aggregation types.",
+   "adminActions": [
+    "Chart performance metrics for any Azure resource",
+    "Compare metrics across multiple resources",
+    "Set custom time ranges and aggregation intervals",
+    "Pin metric charts to dashboards or share as links"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-monitor-alerts",
+   "title": "Azure Monitor alerts",
+   "route": "/azure/monitor-alerts",
+   "category": "Azure",
+   "description": "Lists alert instances raised by metric, log, activity log, Application Insights, and Service Health alert rules in a subscription. Admins use it to see what is firing.",
+   "adminActions": [
+    "Filter by time range and monitor condition",
+    "Review the summary",
+    "Open an alert for details",
+    "Use Azure Monitor to acknowledge or tune alerts"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-monitor-api-coverage",
+   "title": "Azure Monitor API Coverage",
+   "route": "/azure/monitor-api-coverage",
+   "category": "Azure",
+   "description": "Reports how many Azure Monitor API endpoints were checked and how many items were discovered for a subscription and activity window. Admins use it to see which monitoring data is reachable.",
+   "adminActions": [
+    "Pick a subscription",
+    "Pick an activity window",
+    "Refresh the coverage",
+    "Open the metrics explorer"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-monitoring-logs",
+   "title": "Monitoring & Logs",
+   "route": "/azure/monitoring-logs",
+   "category": "Azure",
+   "description": "The Azure Monitoring Logs workspace in Portal 360°.",
+   "adminActions": [
+    "Organization",
+    "Networking",
+    "Compute & Virtualization",
+    "Data & Caching",
+    "Deployment & IaC"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-policy",
+   "title": "Azure Policy",
+   "route": "/azure/policy",
+   "category": "Azure",
+   "description": "Shows Azure Policy compliance for a chosen scope, with a search over policy assignments. Admins use it to see which resources are non-compliant.",
+   "adminActions": [
+    "Choose subscription or resource group scope",
+    "Search policy assignments",
+    "Review compliance results",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-policy-assignments",
+   "title": "Policy Assignments",
+   "route": "/azure/policy/assignments",
+   "category": "Azure",
+   "description": "Lists Azure Policy assignments for the chosen scope. Admins use it to see which policies are enforced where.",
+   "adminActions": [
+    "Choose a scope",
+    "Search assignments",
+    "Open an assignment for details"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-policy-definitions",
+   "title": "Policy Definitions",
+   "route": "/azure/policy/definitions",
+   "category": "Azure",
+   "description": "Lists Azure Policy definitions, both built-in and custom. Admins use it to browse the rules available to assign.",
+   "adminActions": [
+    "Search definitions",
+    "Open a definition for details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-private-endpoints",
+   "title": "Private Endpoints",
+   "route": "/azure/private-endpoints",
+   "category": "Azure",
+   "description": "Secure private connections to Azure services. Rendered against live tenant data with 3 summary metrics.",
+   "adminActions": [
+    "Track 3 headline metrics at a glance"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-public-ip-addresses",
+   "title": "Public IP Addresses",
+   "route": "/azure/public-ip-addresses",
+   "category": "Azure",
+   "description": "Manage and monitor public IP addresses across your Azure resources. Rendered against live tenant data with 4 summary metrics.",
+   "adminActions": [
+    "Track 4 headline metrics at a glance"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-quota-requests",
+   "title": "Quota Management",
+   "route": "/azure/quota-requests",
+   "category": "Azure",
+   "description": "Azure resource quota management showing current quotas, usage, and the ability to request quota increases for VM cores, storage, networking, and other resource types.",
+   "adminActions": [
+    "View current quota limits and utilization by region",
+    "Submit quota increase requests to Microsoft",
+    "Track the status of pending quota requests",
+    "Plan deployments around current quota constraints"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-redis-caches",
+   "title": "Redis Cache Inventory",
+   "route": "/azure/redis-caches",
+   "category": "Azure",
+   "description": "Azure Cache for Redis instances with tier, capacity, replication, and connection statistics. Useful for application performance and caching infrastructure management.",
+   "adminActions": [
+    "View all Redis cache instances and their tiers",
+    "Check cache hit rates and memory usage",
+    "Review replication configuration and geo-redundancy",
+    "Manage access keys and firewall rules"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-resource-details",
+   "title": "Resource Details",
+   "route": "/azure/resource-details",
+   "category": "Azure",
+   "description": "Shows details for one Azure resource looked up by resource ID. Admins use it to inspect a resource's properties.",
+   "adminActions": [
+    "Enter or follow a resource ID",
+    "Review the resource properties",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-resource-management",
+   "title": "Resource Management",
+   "route": "/azure/resource-management",
+   "category": "Azure",
+   "description": "The Azure Resource Management workspace in Portal 360°.",
+   "adminActions": [
+    "Organization",
+    "Networking",
+    "Compute & Virtualization",
+    "Data & Caching",
+    "Deployment & IaC"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-resource-types",
+   "title": "Resource Type Browser",
+   "route": "/azure/resource-types",
+   "category": "Azure",
+   "description": "Browses Azure resources by subscription and resource type with resource group and location. Admins use it to find all resources of a given type.",
+   "adminActions": [
+    "Pick a subscription",
+    "Pick a resource type",
+    "Search resources by name, resource group, or location",
+    "Open a resource for details"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-resources",
+   "title": "Azure resources",
+   "route": "/azure/resources",
+   "category": "Azure",
+   "description": "Cross-subscription Azure resource inventory with filtering by resource type, location, subscription, and tags. Enables resource discovery and governance at scale.",
+   "adminActions": [
+    "Search and filter resources across all subscriptions",
+    "View resource metadata, tags, and properties",
+    "Navigate to resource-specific management pages",
+    "Identify untagged or misplaced resources"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-role-assignments",
+   "title": "Access control (IAM)",
+   "route": "/azure/role-assignments",
+   "category": "Azure",
+   "description": "Lists Azure RBAC role assignments that apply to a subscription, including inherited, subscription, and resource group assignments. Admins use it to review who has access.",
+   "adminActions": [
+    "Filter by privileged roles only",
+    "Search by principal, role, or scope",
+    "Review the summary",
+    "Use Azure IAM to add or remove assignments"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-security-compliance-results",
+   "title": "Regulatory Compliance",
+   "route": "/azure/security/compliance-results",
+   "category": "Azure",
+   "description": "Shows regulatory compliance results from Microsoft Defender for Cloud. Admins use it to see how resources measure against compliance standards.",
+   "adminActions": [
+    "Pick a subscription",
+    "Review standards and controls",
+    "Open a result for details"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-service-health-events",
+   "title": "Azure Service Health Events",
+   "route": "/azure/service-health-events",
+   "category": "Azure",
+   "description": "Lists Azure Service Health events such as incidents, maintenance, and advisories. Admins use it to see platform events that affect their resources.",
+   "adminActions": [
+    "Pick a subscription",
+    "Filter events",
+    "Open an event for details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-service-retirements",
+   "title": "Service Retirements",
+   "route": "/azure/service-retirements",
+   "category": "Azure",
+   "description": "Advisor recommendations flagged as service upgrade / retirement (High Availability, New, untracked). Rendered against live tenant data with 3 summary metrics, 9 charts.",
+   "adminActions": [
+    "Analyze 9 trend visualisation(s)",
+    "Track 3 headline metrics at a glance"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-sql-databases",
+   "title": "SQL Databases",
+   "route": "/azure/sql-databases",
+   "category": "Azure",
+   "description": "Inventory of Azure SQL databases and managed instances across all subscriptions. Shows service tier, DTU/vCore usage, geo-replication status, and backup retention.",
+   "adminActions": [
+    "View all SQL databases and managed instances",
+    "Check database service tiers and capacity",
+    "Review backup and geo-replication configuration",
+    "Monitor database DTU and storage consumption"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-sre-agent-governance",
+   "title": "Agent Governance",
+   "route": "/azure/sre-agent/governance",
+   "category": "Azure",
+   "description": "Shows Azure SRE Agent governance, including provisioning, managed scopes, incident management, and experimental flags. Admins use it to verify how the agent is configured.",
+   "adminActions": [
+    "Review provisioning status",
+    "Review managed scopes",
+    "Check incident management settings",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-sre-agent-usage",
+   "title": "Agent Unit Consumption",
+   "route": "/azure/sre-agent/usage",
+   "category": "Azure",
+   "description": "Shows daily Azure SRE Agent unit consumption across all agents. Admins use it to track usage and cost.",
+   "adminActions": [
+    "Review the daily consumption chart",
+    "Compare days",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-subnets",
+   "title": "Subnets",
+   "route": "/azure/subnets",
+   "category": "Azure",
+   "description": "Manage and monitor subnet configurations across virtual networks. Rendered against live tenant data with 3 summary metrics.",
+   "adminActions": [
+    "Track 3 headline metrics at a glance"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-subscriptions",
+   "title": "Subscriptions",
+   "route": "/azure/subscriptions",
+   "category": "Azure",
+   "description": "All Azure subscriptions accessible to your account. Rendered against live tenant data with 3 summary metrics, 1 live records.",
+   "adminActions": [
+    "Sort and filter by Name, Subscription ID, State, Quota ID",
+    "Review 1 live records from the tenant",
+    "Track 3 headline metrics at a glance"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "azure-updates",
+   "title": "Azure Updates",
+   "route": "/azure/updates",
+   "category": "Azure",
+   "description": "Lists Azure service updates and announcements. Admins use it to follow new features and retirements.",
+   "adminActions": [
+    "Browse recent updates",
+    "Open an update for details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-virtual-desktop-host-pools",
+   "title": "Host Pools",
+   "route": "/azure/virtual-desktop/host-pools",
+   "category": "Azure",
+   "description": "Lists Azure Virtual Desktop host pools with totals for host pools, personal pools, and session hosts. Admins use it to manage virtual desktop infrastructure.",
+   "adminActions": [
+    "Search by name or resource group",
+    "Filter by subscription",
+    "Create a host pool",
+    "Delete a host pool"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "azure-virtual-networks",
+   "title": "Virtual Networks",
+   "route": "/azure/virtual-networks",
+   "category": "Azure",
+   "description": "ME-MngEnvMCAP946937-rurimmer-1. Rendered against live tenant data with 16 live records.",
+   "adminActions": [
+    "Sort and filter by Name, Resource Group, Location, Address Space",
+    "Review 16 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-apps",
+   "title": "Power Apps",
+   "route": "/power-platform/apps",
+   "category": "Power Platform",
+   "description": "Select an environment to view its Power Apps.",
+   "adminActions": [
+    "Review Power Apps across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-connectors",
+   "title": "Connector Catalog",
+   "route": "/power-platform/connectors",
+   "category": "Power Platform",
+   "description": "All Power Platform connectors with Admin Connector Policy (ACP) allow/block status, publisher details, and links to Microsoft Learn documentation.",
+   "adminActions": [
+    "Sort and filter by Connector, Publisher, Tier, ACP Status",
+    "Review 1 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-copilot-governance",
+   "title": "Copilot & AI Governance",
+   "route": "/power-platform/copilot-governance",
+   "category": "Power Platform",
+   "description": "Tenant-wide toggles for Power Platform Copilot and generative-AI features. Changes apply to every environment in this tenant.",
+   "adminActions": [
+    "Review Copilot & AI tenant governance across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-copilot-studio",
+   "title": "Copilot Studio Agents",
+   "route": "/power-platform/copilot-studio",
+   "category": "Power Platform",
+   "description": "Monitor all accessible agents across Power Platform environments.",
+   "adminActions": [
+    "Review Copilot Studio Agents across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-copilot-studio-agent-builder",
+   "title": "Agent Builder",
+   "route": "/power-platform/copilot-studio/agent-builder",
+   "category": "Power Platform",
+   "description": "Build a Copilot Studio agent with a guided wizard  -  generates YAML using the skills-for-copilot-studio schema and publishes it to your Power Platform environment.",
+   "adminActions": [
+    "Review Agent Builder across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-copilot-studio-agent-review",
+   "title": "Agent Review",
+   "route": "/power-platform/copilot-studio/agent-review",
+   "category": "Power Platform",
+   "description": "Upload an exported Copilot Studio solution to check its agents against ten design anti-patterns. Everything runs on the server  -  no Dataverse calls and no AI Builder credits.",
+   "adminActions": [
+    "Review Agent Review across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-copilot-studio-connector-report",
+   "title": "Agent Connector Report",
+   "route": "/power-platform/copilot-studio/connector-report",
+   "category": "Power Platform",
+   "description": "Flattened relationships between Copilot Studio agents and their connection references / connectors.",
+   "adminActions": [
+    "Review Agent → Connector Report across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-copilot-studio-credit-governance",
+   "title": "Copilot Credit Governance",
+   "route": "/power-platform/copilot-studio/credit-governance",
+   "category": "Power Platform",
+   "description": "Shows Copilot Studio credit governance by environment. Admins use it to see how Copilot credits are governed and spent.",
+   "adminActions": [
+    "Pick a governance scope",
+    "Switch between governance views",
+    "Select an environment",
+    "Open the Power Platform admin center"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-copilot-studio-dashboard",
+   "title": "Copilot Studio Dashboard",
+   "route": "/power-platform/copilot-studio/dashboard",
+   "category": "Power Platform",
+   "description": "Select report pages for telemetry, governance, environments, authentication, and connector usage.",
+   "adminActions": [
+    "Review Copilot Studio Dashboard across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-copilot-studio-monitoring",
+   "title": "Copilot Studio Monitoring",
+   "route": "/power-platform/copilot-studio/monitoring",
+   "category": "Power Platform",
+   "description": "Shows agent counts across selected environments, distribution by environment, and inventory reports. Admins use it to see where agents live and how they are published.",
+   "adminActions": [
+    "Review total agents and environments",
+    "Review agents per environment",
+    "Open inventory and governance reports",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-copilot-studio-threat-protection",
+   "title": "Threat Protection",
+   "route": "/power-platform/copilot-studio/threat-protection",
+   "category": "Power Platform",
+   "description": "Shows Copilot Studio threat protection settings, including the protection provider and endpoint link, for environments. Admins use it to set up external threat detection for agents.",
+   "adminActions": [
+    "Choose Microsoft Defender or another provider",
+    "Enter the endpoint link",
+    "Apply to selected environments",
+    "Follow the setup guide"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-copilot-studio-user-prompt-report",
+   "title": "User Prompt Report",
+   "route": "/power-platform/copilot-studio/user-prompt-report",
+   "category": "Power Platform",
+   "description": "Report of user prompts sent to Copilot Studio agents, filterable by user, agent, environment, or date. Admins use it to audit how agents are used.",
+   "adminActions": [
+    "Set the time range and environment",
+    "Filter prompt rows",
+    "Include test-pane sessions",
+    "Export CSV"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-dataverse-storage",
+   "title": "Dataverse Storage",
+   "route": "/power-platform/dataverse-storage",
+   "category": "Power Platform",
+   "description": "Top environments by Dataverse Database, File, and Log consumption with rated overage. Rendered against live tenant data with 1 summary metrics, 3 live records, 1 charts, 6 tabbed views.",
+   "adminActions": [
+    "Top 3",
+    "Top 5",
+    "Top 10",
+    "🗄️Database",
+    "📁File"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-dlp-policies",
+   "title": "DLP Policies",
+   "route": "/power-platform/dlp-policies",
+   "category": "Power Platform",
+   "description": "Lists Power Platform data loss prevention policies with enforcement tier, environment type, and dates. Admins use it to review connector grouping and endpoint rules.",
+   "adminActions": [
+    "Open a policy's details",
+    "Review connector groups",
+    "Review the enforcement tier",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-environment-groups",
+   "title": "Environment Groups",
+   "route": "/power-platform/environment-groups",
+   "category": "Power Platform",
+   "description": "Manage environment groups and membership using the Environment Groups API operations. Rendered against live tenant data with 1 live records.",
+   "adminActions": [
+    "Create group",
+    "Save changes",
+    "Delete group",
+    "Add environment to group",
+    "Remove environment from group"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-environment-variables",
+   "title": "Environment Variables",
+   "route": "/power-platform/environment-variables",
+   "category": "Power Platform",
+   "description": "View environment variable definitions and their current values stored in Dataverse. Rendered against live tenant data with 4 summary metrics, 85 live records.",
+   "adminActions": [
+    "Sort and filter by Display Name, Schema Name, Type, Current Value",
+    "Review 85 live records from the tenant",
+    "Track 4 headline metrics at a glance"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-environments-request",
+   "title": "Request Environment",
+   "route": "/power-platform/environments/request",
+   "category": "Power Platform",
+   "description": "Submit this form and the request will be routed to a Logic App that handles provisioning on your behalf. You’ll receive a tracking ID once the request is queued.",
+   "adminActions": [
+    "Review Request a new Power Platform environment across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-erd-generator",
+   "title": "ERD Generator",
+   "route": "/power-platform/erd-generator",
+   "category": "Power Platform",
+   "description": "Generate Entity Relationship Diagrams from Dataverse solutions in multiple formats.",
+   "adminActions": [
+    "Review Dataverse ERD Generator across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-flow-logs",
+   "title": "Desktop Flow Run Logs",
+   "route": "/power-platform/flow-logs",
+   "category": "Power Platform",
+   "description": "Elastic log viewer for desktop flow run logs in a Dataverse environment. Admins use it to troubleshoot flow runs.",
+   "adminActions": [
+    "Select an environment",
+    "Browse flow logs",
+    "Open a flow's logs",
+    "Go back to flows"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-flow-operations",
+   "title": "Flow Operations Catalog",
+   "route": "/power-platform/flow-operations",
+   "category": "Power Platform",
+   "description": "Connectors (APIs) available in this environment via api.flow.microsoft.com … /apis. Rendered against live tenant data with 4 summary metrics, 1284 live records.",
+   "adminActions": [
+    "Export CSV",
+    "Production",
+    "Columns",
+    "Sort and filter by Publisher, Display Name, Capabilities, Tier",
+    "Review 1284 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-flows",
+   "title": "Power Automate Flows",
+   "route": "/power-platform/flows",
+   "category": "Power Platform",
+   "description": "Power Automate flow inventory across all environments showing flow type (automated, scheduled, instant), owner, and run history. Enables flow governance and troubleshooting.",
+   "adminActions": [
+    "View all Power Automate flows across environments",
+    "Monitor flow run success and failure rates",
+    "Manage flow ownership and sharing",
+    "Enable or disable flows as needed"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-governance-advanced-connector-policies",
+   "title": "Advanced Connector Policies",
+   "route": "/power-platform/governance/advanced-connector-policies",
+   "category": "Power Platform",
+   "description": "Advanced connector policies (ACP) are rule-based policies containing a ConnectorManagement rule set. The rule set holds an allowlist of connectors, actions and connection types. Any connector that is not on the list is blocked in the environments the policy is assigned to. Rendered against live tenant data with 2 summary metrics, 24 live records.",
+   "adminActions": [
+    "Show raw policy JSON",
+    "Sort and filter by Connector, Actions, Allowed actions, Connection types",
+    "Review 24 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-governance-cross-tenant-reports",
+   "title": "Cross Tenant Reports",
+   "route": "/power-platform/governance/cross-tenant-reports",
+   "category": "Power Platform",
+   "description": "Lists cross-tenant connection reports with report ID, requested time, and date range. Admins use it to monitor connections between tenants.",
+   "adminActions": [
+    "Review the reports",
+    "View a report's details",
+    "Refresh the list",
+    "Sign in again if needed"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-governance-environment-policies",
+   "title": "Environment Governance Policies",
+   "route": "/power-platform/governance/environment-policies",
+   "category": "Power Platform",
+   "description": "Shows each environment with its Advanced Connector Policy and DLP policies applied. Admins use it to find environments missing governance.",
+   "adminActions": [
+    "Search environments or policies",
+    "Show only environments missing an ACP or DLP policy",
+    "Review the summary counts",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-governance-human-review",
+   "title": "Human Review Queue",
+   "route": "/power-platform/governance/human-review",
+   "category": "Power Platform",
+   "description": "Power Platform governance. Rendered against live tenant data with 3 summary metrics.",
+   "adminActions": [
+    "Pending",
+    "Approved",
+    "Rejected",
+    "Needs info",
+    "All"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-governance-rule-based-policies",
+   "title": "Rule-based Policies",
+   "route": "/power-platform/governance/rule-based-policies",
+   "category": "Power Platform",
+   "description": "Tenant-level rule sets  -  API reference. Rendered against live tenant data with 9 live records.",
+   "adminActions": [
+    "Sort and filter by Rule Set ID, Types, Environment Filter, Last Modified",
+    "Review 9 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-grant-spn-bulk",
+   "title": "Grant SPN System Administrator",
+   "route": "/power-platform/grant-spn-bulk",
+   "category": "Power Platform",
+   "description": "Form to grant a service principal the System Administrator role in Dataverse environments. Admins use it to onboard automation across environments.",
+   "adminActions": [
+    "Enter the service principal application ID",
+    "Select environments or choose all",
+    "Grant the role",
+    "Review the grant results"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-inventory-reports",
+   "title": "Inventory Reports",
+   "route": "/power-platform/inventory-reports",
+   "category": "Power Platform",
+   "description": "Comprehensive inventory reports for all Power Platform assets including apps, flows, connectors, and makers across all environments in the tenant.",
+   "adminActions": [
+    "Generate complete Power Platform inventory exports",
+    "Identify unused or orphaned apps and flows",
+    "Report on maker activity and asset creation",
+    "Plan governance reviews based on inventory data"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-inventory-reports-desktop-flows",
+   "title": "Desktop Flows",
+   "route": "/power-platform/inventory-reports/desktop-flows",
+   "category": "Power Platform",
+   "description": "The Desktop Flows workspace in Portal 360°. Rendered against live tenant data with 4 live records.",
+   "adminActions": [
+    "↻ Refresh",
+    "← Previous",
+    "Next 100 →",
+    "Sort and filter by environmentId, environmentName, location, flowName",
+    "Review 4 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-inventory-reports-m365-agent-flows",
+   "title": "M365 Workflow Agent Flows",
+   "route": "/power-platform/inventory-reports/m365-agent-flows",
+   "category": "Power Platform",
+   "description": "Inventory report of Microsoft 365 workflow agent flows. Admins use it to see which agent flows exist.",
+   "adminActions": [
+    "Review the flow list",
+    "Search or filter",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-known-issues",
+   "title": "Known Issues",
+   "route": "/power-platform/known-issues",
+   "category": "Power Platform",
+   "description": "View known issues, service disruptions, and workarounds for Power Platform services.",
+   "adminActions": [
+    "Review Power Platform Known Issues across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-licensing-billing-policies",
+   "title": "Billing Plans",
+   "route": "/power-platform/licensing/billing-policies",
+   "category": "Power Platform",
+   "description": "Power Platform pay-as-you-go and billing policy configuration showing linked Azure subscriptions and per-app pass consumption tracking.",
+   "adminActions": [
+    "Configure pay-as-you-go billing for environments",
+    "Link environments to Azure subscriptions for billing",
+    "Monitor per-app pass consumption",
+    "Review billing reports for Power Platform usage"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-licensing-payg-guardrails",
+   "title": "Pay-as-you-go Guardrails",
+   "route": "/power-platform/licensing/payg-guardrails",
+   "category": "Power Platform",
+   "description": "Shows pay-as-you-go guardrails that cap spend on a billing plan and unlink environments when the cap is reached, with a Copilot credit report. Admins use it to control pay-as-you-go cost.",
+   "adminActions": [
+    "Review credits and billing plans",
+    "Review environments linked to plans",
+    "Set or update guardrails",
+    "Open the admin center"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-licensing-tenant-capacity",
+   "title": "Tenant Capacity Details",
+   "route": "/power-platform/licensing/tenant-capacity",
+   "category": "Power Platform",
+   "description": "Detailed licensing and capacity analysis showing license consumption versus purchased quantities for Power Apps, Power Automate, and Power BI across the tenant.",
+   "adminActions": [
+    "Track Power Platform license utilization rates",
+    "Identify over-provisioned or under-utilized licenses",
+    "Plan license renewals based on actual usage",
+    "Allocate capacity add-ons to specific environments"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-licensing-user-per-flow-capacity",
+   "title": "User Per Flow Capacity",
+   "route": "/power-platform/licensing/user-per-flow-capacity",
+   "category": "Power Platform",
+   "description": "View per-user consumption of Power Automate per-flow capacity licenses.",
+   "adminActions": [
+    "Review User Per Flow Capacity Source across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-managed-apps",
+   "title": "Managed App Builder",
+   "route": "/power-platform/managed-apps",
+   "category": "Power Platform",
+   "description": "Managed App Builder for reviewing and deploying generated app source to a target environment. Admins use it to deploy an app after review.",
+   "adminActions": [
+    "Select the target environment",
+    "Review the source files",
+    "Confirm the reviewed revision",
+    "Deploy the app"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-recommendations",
+   "title": "Recommendations",
+   "route": "/power-platform/recommendations",
+   "category": "Power Platform",
+   "description": "Advisor recommendations across your Power Platform environments. Rendered against live tenant data with 4 summary metrics.",
+   "adminActions": [
+    "Filters",
+    "View 11 resources",
+    "View 1 resource",
+    "View 6 resources",
+    "View 8 resources"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-release-planner",
+   "title": "Release Plans",
+   "route": "/power-platform/release-planner",
+   "category": "Power Platform",
+   "description": "Power Platform · General Availability · Jul 27  -  Sep 3.",
+   "adminActions": [
+    "Power Apps3",
+    "Power Pages4",
+    "Power Automate3",
+    "Upcoming15",
+    "This Week11"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-security-roles",
+   "title": "Security Roles",
+   "route": "/power-platform/security-roles",
+   "category": "Power Platform",
+   "description": "Lists Dataverse security roles for an environment with their permissions. Admins use it to review who can do what.",
+   "adminActions": [
+    "Pick an environment",
+    "Search roles",
+    "Include managed roles",
+    "Create a new role"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-solutions-analyze",
+   "title": "Solution Analysis",
+   "route": "/power-platform/solutions/analyze",
+   "category": "Power Platform",
+   "description": "Analyzes an uploaded solution ZIP and returns findings by severity in report sections. Admins use it to check deployment readiness.",
+   "adminActions": [
+    "Upload a solution ZIP",
+    "Review findings by severity",
+    "Jump to a report section",
+    "Export CSV"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "power-platform-tenant-settings",
+   "title": "Tenant Settings",
+   "route": "/power-platform/tenant-settings",
+   "category": "Power Platform",
+   "description": "Tenant-wide Power Platform settings including environment creation policy, trial controls, connector governance defaults, and sharing restrictions.",
+   "adminActions": [
+    "Control who can create new environments",
+    "Restrict trial environment creation",
+    "Set default connector governance policies",
+    "Configure guest user access permissions"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "power-platform-usage",
+   "title": "Usage",
+   "route": "/power-platform/usage",
+   "category": "Power Platform",
+   "description": "Shows Power Platform usage information. Admins use it to see how the platform is being consumed.",
+   "adminActions": [
+    "Review usage metrics",
+    "Filter by environment or period",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "application-management",
+   "title": "Application Management",
+   "route": "/application-management",
+   "category": "Device Management & Intune",
+   "description": "Overview of application management in Portal 360. Admins use it to reach Intune apps and managed app registrations.",
+   "adminActions": [
+    "Open Intune managed apps",
+    "Open managed app registrations",
+    "Review app summaries"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "application-management-app-configuration-policies",
+   "title": "App Configuration Policies",
+   "route": "/application-management/app-configuration-policies",
+   "category": "Device Management & Intune",
+   "description": "Mobile Application Management (MAM) and Mobile Device Management (MDM) app configurations. Rendered against live tenant data with 3 summary metrics.",
+   "adminActions": [
+    "Create Policy",
+    "All Policies (1)",
+    "MAM (Managed Apps) (0)",
+    "MDM (Enrolled Devices) (1)",
+    "Edit"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "application-management-detected-apps",
+   "title": "Detected Apps",
+   "route": "/application-management/detected-apps",
+   "category": "Device Management & Intune",
+   "description": "The Detected Apps workspace in Portal 360°. Rendered against live tenant data with 3 summary metrics, 22 live records.",
+   "adminActions": [
+    "Sort and filter by Application Name, Version, Platform, Device Count",
+    "Review 22 live records from the tenant",
+    "Track 3 headline metrics at a glance"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "application-management-intune-apps",
+   "title": "Intune Managed Apps",
+   "route": "/application-management/intune-apps",
+   "category": "Device Management & Intune",
+   "description": "Lists apps managed by Intune. Admins use it to see which apps are deployed to devices.",
+   "adminActions": [
+    "Search the app list",
+    "Open an app for details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "application-management-managed-app-registrations",
+   "title": "Managed App Registrations",
+   "route": "/application-management/managed-app-registrations",
+   "category": "Device Management & Intune",
+   "description": "Shows MAM policy application status per user and device, with applied and intended policies by platform. Admins use it to verify app protection is applying.",
+   "adminActions": [
+    "Review registrations by platform",
+    "Compare applied and intended policies",
+    "Search the list",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "device-management",
+   "title": "Microsoft Intune",
+   "route": "/device-management",
+   "category": "Device Management & Intune",
+   "description": "Overview of Microsoft Intune device management in Portal 360. Admins use it to reach devices, policies, and reports.",
+   "adminActions": [
+    "Open the device list",
+    "Open compliance or policy pages",
+    "Review summary counts"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "device-management-android-enterprise",
+   "title": "Android Enterprise",
+   "route": "/device-management/android-enterprise",
+   "category": "Device Management & Intune",
+   "description": "Work profile and dedicated device configurations. Rendered against live tenant data with 1 summary metrics.",
+   "adminActions": [
+    "Track 1 headline metrics at a glance"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-app-protection",
+   "title": "App Protection Policies",
+   "route": "/device-management/app-protection",
+   "category": "Device Management & Intune",
+   "description": "Lists Intune app protection policies with platform, created, and modified dates. Admins use it to manage how corporate data is protected in apps.",
+   "adminActions": [
+    "Edit a policy",
+    "Delete a policy",
+    "Review platforms and dates",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "device-management-autopilot-profiles",
+   "title": "Autopilot Profiles",
+   "route": "/device-management/autopilot-profiles",
+   "category": "Device Management & Intune",
+   "description": "Windows Autopilot deployment profile management showing OOBE customization settings, enrollment mode, and device assignments for zero-touch provisioning.",
+   "adminActions": [
+    "View and manage Autopilot deployment profiles",
+    "Configure OOBE settings and user assignment type",
+    "Assign Autopilot profiles to hardware groups",
+    "Review Autopilot device registrations"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-compliance-policies",
+   "title": "Compliance Policies",
+   "route": "/device-management/compliance-policies",
+   "category": "Device Management & Intune",
+   "description": "Intune compliance policy management showing all policies with platform, assigned groups, and non-compliance action settings. Supports creating and editing policies.",
+   "adminActions": [
+    "View all compliance policies and their assignments",
+    "Create new compliance policies for Windows, iOS, Android",
+    "Configure non-compliance actions (notify, block)",
+    "Review compliance settings and minimum OS requirements"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-compliance-status",
+   "title": "Compliance Status",
+   "route": "/device-management/compliance-status",
+   "category": "Device Management & Intune",
+   "description": "Shows device compliance policies and the setting states behind them, including non-compliant settings. Admins use it to see why devices fail compliance.",
+   "adminActions": [
+    "Select a compliance policy",
+    "Review setting state summaries",
+    "Review non-compliant settings",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "device-management-cve-report",
+   "title": "Windows CVE Report",
+   "route": "/device-management/cve-report",
+   "category": "Device Management & Intune",
+   "description": "Devices Potentially Missing Updates.",
+   "adminActions": [
+    "Export CSV",
+    "Cards",
+    "Pie",
+    "Donut"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-devices",
+   "title": "Devices",
+   "route": "/device-management/devices",
+   "category": "Device Management & Intune",
+   "description": "Complete Intune device inventory showing all managed devices with enrollment type, compliance state, OS version, last check-in, and assigned user.",
+   "adminActions": [
+    "View all Intune-managed devices with compliance status",
+    "Filter devices by platform, OS version, or compliance",
+    "Sync, restart, or retire individual devices",
+    "Investigate non-compliant devices and resolve issues"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-devices--device-profile",
+   "title": "Device details",
+   "route": "/device-management/devices/[deviceId]",
+   "category": "Device Management & Intune",
+   "description": "Details for one managed device, including primary user, operating system, compliance and management state, and recent actions. Admins use it to troubleshoot and act on a device.",
+   "adminActions": [
+    "Review device essentials",
+    "Run a device action",
+    "View recovery credentials",
+    "Go back to the device list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "device-management-driver-update-profiles",
+   "title": "Driver Update Profiles",
+   "route": "/device-management/driver-update-profiles",
+   "category": "Device Management & Intune",
+   "description": "Driver update profiles manage Windows driver and firmware update deployments to device groups. Click a row to view full profile details. Rendered against live tenant data with 2 live records.",
+   "adminActions": [
+    "Cards",
+    "Pie",
+    "Donut",
+    "Sort and filter by Name, Approval Type, Deferral (days), New Updates",
+    "Review 2 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-encryption-report",
+   "title": "Encryption Report",
+   "route": "/device-management/encryption-report",
+   "category": "Device Management & Intune",
+   "description": "BitLocker, FileVault, and device encryption readiness from /deviceManagement/managedDeviceEncryptionStates. Rendered against live tenant data with 12 live records, 3 charts.",
+   "adminActions": [
+    "Sort and filter by Device Name, User, Device Type, OS Version",
+    "Review 12 live records from the tenant",
+    "Analyze 3 trend visualisation(s)"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-enrollment-report",
+   "title": "Enrollment Report",
+   "route": "/device-management/enrollment-report",
+   "category": "Device Management & Intune",
+   "description": "Lists device enrollment troubleshooting events with event ID, date, and correlation ID. Admins use it to diagnose enrollment failures.",
+   "adminActions": [
+    "Review failures",
+    "Note the correlation ID",
+    "Refresh the report"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "device-management-enrollment-restrictions",
+   "title": "Enrollment Restrictions",
+   "route": "/device-management/enrollment-restrictions",
+   "category": "Device Management & Intune",
+   "description": "Platform Restrictions. Rendered against live tenant data with 4 summary metrics.",
+   "adminActions": [
+    "All (5)",
+    "Platform (1)",
+    "Device Type (3)",
+    "Apple (0)",
+    "Other (2)"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-feature-update-profiles",
+   "title": "Feature Update Profiles",
+   "route": "/device-management/feature-update-profiles",
+   "category": "Device Management & Intune",
+   "description": "Feature update profiles control which Windows version devices are updated to. Click a row to view full profile details. Rendered against live tenant data with 1 live records.",
+   "adminActions": [
+    "Cards",
+    "Pie",
+    "Donut",
+    "Sort and filter by Name, Feature Version, End of Support, Assignments",
+    "Review 1 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-intune-audit-logs",
+   "title": "Intune Audit Logs",
+   "route": "/device-management/intune-audit-logs",
+   "category": "Device Management & Intune",
+   "description": "All CategoriesApplicationAssignmentFilterDeviceDeviceConfigurationDeviceInventoryEnrollment. Rendered against live tenant data with 50 live records.",
+   "adminActions": [
+    "Sort and filter by Activity, Actor, Date & Time↓, Result",
+    "Review 50 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-non-compliance-report",
+   "title": "Non-Compliance Report",
+   "route": "/device-management/non-compliance-report",
+   "category": "Device Management & Intune",
+   "description": "Devices and settings that are not compliant with Intune policies. Rendered against live tenant data with 7 live records.",
+   "adminActions": [
+    "Columns5",
+    "Sort and filter by Device Name, Device Type, O S Description, O S Version",
+    "Review 7 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-policy-assignments",
+   "title": "Policy Assignments",
+   "route": "/device-management/policy-assignments",
+   "category": "Device Management & Intune",
+   "description": "Comprehensive view of all Intune policy assignments across compliance policies, configuration profiles, apps, and update rings showing assignment scope.",
+   "adminActions": [
+    "Review all policy assignments across all policy types",
+    "Identify devices or groups with no policy assigned",
+    "Audit policy assignment consistency",
+    "Ensure critical policies are assigned correctly"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-rbac-roles",
+   "title": "RBAC Roles",
+   "route": "/device-management/rbac-roles",
+   "category": "Device Management & Intune",
+   "description": "Lists Intune role definitions with totals for built-in and custom roles. Admins use it to review role-based access to Intune.",
+   "adminActions": [
+    "Review built-in and custom roles",
+    "Open a role for permissions",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "device-management-reports",
+   "title": "Intune Reports",
+   "route": "/device-management/reports",
+   "category": "Device Management & Intune",
+   "description": "Generate and export Intune reports using the Microsoft Graph API.",
+   "adminActions": [
+    "Review Intune Reports across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-settings-catalog",
+   "title": "Settings Catalog",
+   "route": "/device-management/settings-catalog",
+   "category": "Device Management & Intune",
+   "description": "Lists Intune configuration policies built from the Settings Catalog by platform and technology. Admins use it to manage device configuration.",
+   "adminActions": [
+    "Search policies",
+    "Create a configuration policy",
+    "Review platform and technology",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "device-management-terms-and-conditions",
+   "title": "Terms and Conditions",
+   "route": "/device-management/terms-and-conditions",
+   "category": "Device Management & Intune",
+   "description": "Lists Intune terms and conditions that users must accept at enrollment, with totals and assignments. Admins use it to manage enrollment terms.",
+   "adminActions": [
+    "Create new terms",
+    "Review assignment counts",
+    "Edit or delete terms",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "device-management-update-rings",
+   "title": "Update Rings",
+   "route": "/device-management/update-rings",
+   "category": "Device Management & Intune",
+   "description": "Update rings define deferral periods and delivery settings for quality and feature updates. Click a row to view full ring details. Rendered against live tenant data with 2 live records.",
+   "adminActions": [
+    "Cards",
+    "Pie",
+    "Donut",
+    "Sort and filter by Name, Quality Deferral, Feature Deferral, Paused",
+    "Review 2 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "device-management-windows-update-status",
+   "title": "Windows Update Status",
+   "route": "/device-management/windows-update-status",
+   "category": "Device Management & Intune",
+   "description": "Windows update compliance report showing the distribution of devices across Windows versions, pending updates, and failed update installations.",
+   "adminActions": [
+    "Monitor Windows update compliance across devices",
+    "Identify devices running outdated OS versions",
+    "Investigate update failures and error codes",
+    "Force immediate update checks for specific devices"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "windows-updates",
+   "title": "Windows Updates",
+   "route": "/windows-updates",
+   "category": "Device Management & Intune",
+   "description": "Shows Windows Update management information for managed devices. Admins use it to review update status and deployments.",
+   "adminActions": [
+    "Review update status",
+    "Open a deployment or policy",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "windows-updates-catalog",
+   "title": "Windows Updates Catalog",
+   "route": "/windows-updates/catalog",
+   "category": "Device Management & Intune",
+   "description": "Windows Update for Business catalog showing available quality and feature updates with release dates, KB numbers, and applicability for managed devices.",
+   "adminActions": [
+    "Browse available Windows updates in the catalog",
+    "Review update content and affected systems",
+    "Plan update ring configurations based on releases",
+    "Search for specific KB articles and patches"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "exchange-admin-dashboard",
+   "title": "Exchange Admin Dashboard",
+   "route": "/exchange/admin-dashboard",
+   "category": "Exchange, Teams & SharePoint",
+   "description": "Exchange Online policy compliance and mailbox health overview. Rendered against live tenant data with 5 summary metrics, 6 live records.",
+   "adminActions": [
+    "Customize",
+    "Quota Violations",
+    "Activity Metrics",
+    "Audit & Security",
+    "Archive & Litigation Hold"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "exchange-mailbox-folders",
+   "title": "Mailbox Folders",
+   "route": "/exchange/mailbox-folders",
+   "category": "Exchange, Teams & SharePoint",
+   "description": "Shows Exchange mailbox folders for a mailbox you specify, with folder counts, subfolders, and item totals. Admins use it to inspect mailbox structure.",
+   "adminActions": [
+    "Enter a mailbox identifier and load folders",
+    "Filter folders by name or type",
+    "Create a new folder",
+    "Review totals"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "exchange-mailboxes",
+   "title": "Mailboxes",
+   "route": "/exchange/mailboxes",
+   "category": "Exchange, Teams & SharePoint",
+   "description": "All Exchange Online mailboxes in your organization. Rendered against live tenant data with 10 live records.",
+   "adminActions": [
+    "Sort and filter by Name, Email, Type, Status",
+    "Review 10 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "sharepoint-settings",
+   "title": "SharePoint Settings",
+   "route": "/sharepoint-settings",
+   "category": "Exchange, Teams & SharePoint",
+   "description": "SharePoint Online tenant-level configuration settings including sharing policies, access controls, file and folder settings, and advanced options.",
+   "adminActions": [
+    "Configure tenant-wide sharing policies",
+    "Set external sharing levels (Anyone, Guests, Org)",
+    "Manage access request and approval settings",
+    "Configure OneDrive and SharePoint storage limits"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "sharepoint-sites",
+   "title": "SharePoint",
+   "route": "/sharepoint-sites",
+   "category": "Exchange, Teams & SharePoint",
+   "description": "SharePoint Online site collection inventory showing site type, storage usage, last modified date, and owner. Supports site lifecycle management operations.",
+   "adminActions": [
+    "View all SharePoint site collections",
+    "Check site storage usage and quotas",
+    "Review site owners and access permissions",
+    "Manage site lifecycle (create, archive, delete)"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "sharepoint-format-editor",
+   "title": "SharePoint Format Editor",
+   "route": "/sharepoint/format-editor",
+   "category": "Exchange, Teams & SharePoint",
+   "description": "Build, preview, and validate SharePoint list formatting JSON before applying it to your columns, views, or tiles. Everything runs in your browser  -  no tenant connection needed.",
+   "adminActions": [
+    "Column",
+    "Row / View",
+    "Tile",
+    "Import .json",
+    "Clean & Format"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "sharepoint-search",
+   "title": "SharePoint Search",
+   "route": "/sharepoint/search",
+   "category": "Exchange, Teams & SharePoint",
+   "description": "Search page for SharePoint content. Admins use it to find sites, files, or items.",
+   "adminActions": [
+    "Enter a search query",
+    "Review results",
+    "Open a result"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "teams-list-teams",
+   "title": "Teams List",
+   "route": "/teams/list-teams",
+   "category": "Exchange, Teams & SharePoint",
+   "description": "Complete inventory of Microsoft Teams in the tenant with member count, owner, privacy setting, and creation date. Supports team lifecycle and governance management.",
+   "adminActions": [
+    "View all Teams with member counts and owners",
+    "Filter Teams by privacy setting or creation date",
+    "Identify orphaned or inactive Teams",
+    "Archive or delete Teams that are no longer active"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "teams-transcripts",
+   "title": "Transcripts",
+   "route": "/teams/transcripts",
+   "category": "Exchange, Teams & SharePoint",
+   "description": "Access meeting transcripts from Microsoft Teams calls and meetings. Useful for compliance, documentation, and follow-up action tracking.",
+   "adminActions": [
+    "Access transcripts from Teams meetings",
+    "Search transcript content for specific topics",
+    "Download transcripts for compliance archival",
+    "Review meeting participant lists"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "teams-user-activity",
+   "title": "Teams User Activity",
+   "route": "/teams/user-activity",
+   "category": "Exchange, Teams & SharePoint",
+   "description": "Microsoft Teams usage report showing messages sent, calls made, meetings attended, and active users over the selected reporting period.",
+   "adminActions": [
+    "Review Teams adoption metrics by user",
+    "Identify users who are not engaging with Teams",
+    "Track meeting and call usage trends",
+    "Generate usage reports for management"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "fabric",
+   "title": "Fabric",
+   "route": "/fabric",
+   "category": "Microsoft Fabric",
+   "description": "Entry page for Microsoft Fabric in Portal 360. It points admins to Fabric workspaces, capacities, domains, and item types such as lakehouses and pipelines.",
+   "adminActions": [
+    "Open workspaces",
+    "Open capacities",
+    "Open Fabric domains",
+    "Jump to an item type list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-admin-activity-events",
+   "title": "Activity events",
+   "route": "/fabric/admin/activity-events",
+   "category": "Microsoft Fabric",
+   "description": "Fabric activity log within one UTC day (requires Fabric admin).",
+   "adminActions": [
+    "Review Admin  -  activity events across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "fabric-admin-domains",
+   "title": "Domains",
+   "route": "/fabric/admin/domains",
+   "category": "Microsoft Fabric",
+   "description": "Tenant-wide view of every Fabric domain, which requires Fabric admin rights. Admins use it to review how workspaces are grouped for governance.",
+   "adminActions": [
+    "Review all domains in the tenant",
+    "Search the domain list",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-admin-tenant-settings",
+   "title": "Tenant settings",
+   "route": "/fabric/admin/tenant-settings",
+   "category": "Microsoft Fabric",
+   "description": "Lists Fabric tenant settings returned by the Fabric admin API. Admins use it to check which features are enabled and for whom.",
+   "adminActions": [
+    "Filter settings by name",
+    "Review each setting's state",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-admin-workspaces",
+   "title": "Workspaces",
+   "route": "/fabric/admin/workspaces",
+   "category": "Microsoft Fabric",
+   "description": "Tenant-wide view of every Fabric workspace (requires Fabric admin).",
+   "adminActions": [
+    "Review Admin  -  all workspaces across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "fabric-capacities",
+   "title": "Capacities",
+   "route": "/fabric/capacities",
+   "category": "Microsoft Fabric",
+   "description": "Lists Fabric capacities with their resource group, subscription, and current state. Admins use it to see capacity status and control cost.",
+   "adminActions": [
+    "Review capacity states",
+    "Suspend a running capacity",
+    "Resume a suspended capacity",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-dashboards",
+   "title": "Dashboards",
+   "route": "/fabric/dashboards",
+   "category": "Microsoft Fabric",
+   "description": "Lists Power BI dashboards across your Fabric workspaces. Admins use it to find dashboards and see where they live.",
+   "adminActions": [
+    "Search or filter the list",
+    "Open an item to see its details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-data-pipelines",
+   "title": "Data pipelines",
+   "route": "/fabric/data-pipelines",
+   "category": "Microsoft Fabric",
+   "description": "Lists Fabric data pipelines that orchestrate ingestion and transformation. Admins use it to see which pipelines exist and which workspaces own them.",
+   "adminActions": [
+    "Search or filter the list",
+    "Open an item to see its details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-domains",
+   "title": "Domains",
+   "route": "/fabric/domains",
+   "category": "Microsoft Fabric",
+   "description": "Lists Fabric domains, which group related workspaces for governance and discovery. Admins use it to see how workspaces are organized.",
+   "adminActions": [
+    "Search or filter the list",
+    "Open an item to see its details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-environments",
+   "title": "Spark environments",
+   "route": "/fabric/environments",
+   "category": "Microsoft Fabric",
+   "description": "Lists Fabric Spark environments, which hold libraries, pools, and Spark properties. Admins use it to see which environments exist and where.",
+   "adminActions": [
+    "Search or filter the list",
+    "Open an item to see its details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-eventhouses",
+   "title": "Eventhouses",
+   "route": "/fabric/eventhouses",
+   "category": "Microsoft Fabric",
+   "description": "Lists Eventhouses, which group KQL databases for Real-Time Intelligence. Admins use it to see where real-time data is hosted.",
+   "adminActions": [
+    "Search or filter the list",
+    "Open an item to see its details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-eventstreams",
+   "title": "Eventstreams",
+   "route": "/fabric/eventstreams",
+   "category": "Microsoft Fabric",
+   "description": "Lists Eventstreams that route streaming events for Real-Time Intelligence in Fabric. Admins use it to see which streams exist and who owns them.",
+   "adminActions": [
+    "Search or filter the list",
+    "Open an item to see its details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-kql-databases",
+   "title": "KQL databases",
+   "route": "/fabric/kql-databases",
+   "category": "Microsoft Fabric",
+   "description": "Lists the KQL (Kusto) databases used by Real-Time Analytics in Fabric. Admins use it to inventory real-time data stores.",
+   "adminActions": [
+    "Search or filter the list",
+    "Open an item to see its details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-lakehouses",
+   "title": "Lakehouses",
+   "route": "/fabric/lakehouses",
+   "category": "Microsoft Fabric",
+   "description": "Delta-based data lake stores across your Fabric workspaces.",
+   "adminActions": [
+    "Review Lakehouses across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "fabric-lakehouses--lakehouse-profile",
+   "title": "Lakehouse details",
+   "route": "/fabric/lakehouses/[workspaceId]/[lakehouseId]",
+   "category": "Microsoft Fabric",
+   "description": "Shows details for one Fabric lakehouse, including its ID, default schema, provisioning status, connection string, and OneLake paths. Admins use it to confirm configuration and find connection details.",
+   "adminActions": [
+    "Copy the lakehouse ID or connection string",
+    "Review the OneLake paths and SQL analytics endpoint",
+    "Open the lakehouse in the Fabric portal",
+    "Go back to the lakehouse list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-mirrored-databases",
+   "title": "Mirrored databases",
+   "route": "/fabric/mirrored-databases",
+   "category": "Microsoft Fabric",
+   "description": "Lists databases mirrored into Fabric OneLake from sources such as Cosmos DB, Azure SQL, and Snowflake. Admins use it to see which external data is replicated.",
+   "adminActions": [
+    "Search or filter the list",
+    "Open an item to see its details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-ml-experiments",
+   "title": "ML experiments",
+   "route": "/fabric/ml-experiments",
+   "category": "Microsoft Fabric",
+   "description": "Lists MLflow experiments used to track training runs in Fabric. Admins use it to see who is running machine learning work and where.",
+   "adminActions": [
+    "Search or filter the list",
+    "Open an item to see its details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-ml-models",
+   "title": "ML models",
+   "route": "/fabric/ml-models",
+   "category": "Microsoft Fabric",
+   "description": "Lists registered machine learning models in Fabric. Admins use it to inventory models across workspaces.",
+   "adminActions": [
+    "Search or filter the list",
+    "Open an item to see its details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-notebooks",
+   "title": "Notebooks",
+   "route": "/fabric/notebooks",
+   "category": "Microsoft Fabric",
+   "description": "Fabric notebooks (Spark, Python, and SQL) across your workspaces.",
+   "adminActions": [
+    "Review Notebooks across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "fabric-reports",
+   "title": "Reports",
+   "route": "/fabric/reports",
+   "category": "Microsoft Fabric",
+   "description": "Interactive Power BI / Fabric reports across your workspaces.",
+   "adminActions": [
+    "Review Reports across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "fabric-semantic-models",
+   "title": "Semantic models",
+   "route": "/fabric/semantic-models",
+   "category": "Microsoft Fabric",
+   "description": "Fabric semantic models (formerly Power BI datasets).",
+   "adminActions": [
+    "Review Semantic models across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "fabric-workspaces-list--workspace-profile",
+   "title": "Workspace details",
+   "route": "/fabric/workspaces/[workspaceId]",
+   "category": "Microsoft Fabric",
+   "description": "Shows details for one Fabric workspace, including its ID and capacity assignment. Admins use it to verify where a workspace runs and what it contains.",
+   "adminActions": [
+    "Review workspace ID and capacity assignment",
+    "Open an item in the workspace",
+    "Open the workspace in the Fabric portal",
+    "Go back to the workspace list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-workspaces-list--item-profile",
+   "title": "Workspace item details",
+   "route": "/fabric/workspaces/[workspaceId]/items/[itemId]",
+   "category": "Microsoft Fabric",
+   "description": "Shows details for a single item inside a Fabric workspace, such as its name and ID. Admins use it to inspect an item before acting on it elsewhere.",
+   "adminActions": [
+    "Review the item's properties",
+    "Open the detailed view",
+    "Open the item in the Fabric portal",
+    "Go back to the workspace"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-workspaces-create",
+   "title": "Create workspace",
+   "route": "/fabric/workspaces/create",
+   "category": "Microsoft Fabric",
+   "description": "Form for creating a new Fabric workspace through the Fabric API. Admins use it to provision a workspace with an optional capacity and domain.",
+   "adminActions": [
+    "Enter a display name and description",
+    "Set a capacity ID",
+    "Set a domain ID",
+    "Create the workspace"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "fabric-workspaces-list",
+   "title": "Workspaces",
+   "route": "/fabric/workspaces/list",
+   "category": "Microsoft Fabric",
+   "description": "All Fabric workspaces you have access to.",
+   "adminActions": [
+    "Review Workspaces across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "devops-area-paths",
+   "title": "Area Paths & Iterations",
+   "route": "/devops/area-paths",
+   "category": "Azure DevOps",
+   "description": "Shows the area path and iteration (sprint) classification trees for an Azure DevOps project. Admins use it to review how work is organized.",
+   "adminActions": [
+    "Pick a project",
+    "Switch between area paths and iterations",
+    "Filter nodes by name",
+    "Refresh the tree"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "devops-environments",
+   "title": "Environments",
+   "route": "/devops/environments",
+   "category": "Azure DevOps",
+   "description": "Lists Azure DevOps deployment environments with their descriptions, resources, and created dates. Admins use it to review deployment targets.",
+   "adminActions": [
+    "Pick a project",
+    "Search environments",
+    "Open an environment for details",
+    "Create a new environment"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "devops-github-connections",
+   "title": "GitHub Connections",
+   "route": "/devops/github-connections",
+   "category": "Azure DevOps",
+   "description": "Lists GitHub connections configured in an Azure DevOps project and whether they are ready. Admins use it to spot broken or unready connections.",
+   "adminActions": [
+    "Pick a project",
+    "Filter connections",
+    "Open a connection's details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "devops-permissions",
+   "title": "Permissions",
+   "route": "/devops/permissions",
+   "category": "Azure DevOps",
+   "description": "Browse security namespace ACLs in your Azure DevOps organization.",
+   "adminActions": [
+    "Review Permissions across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "devops-plans",
+   "title": "Delivery Plans",
+   "route": "/devops/plans",
+   "category": "Azure DevOps",
+   "description": "Lists Delivery Plans, the Scaled Agile cross-team timelines in Azure DevOps. Admins use it to see which plans exist in a project.",
+   "adminActions": [
+    "Pick a project",
+    "Search plans",
+    "Open a plan for details",
+    "Create a new plan"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "devops-project-config",
+   "title": "Project Configuration",
+   "route": "/devops/project-config",
+   "category": "Azure DevOps",
+   "description": "Shows an Azure DevOps project's process configuration, such as bug behavior, work item count limit, and area, iteration, and effort fields. Admins use it to verify how backlogs are set up.",
+   "adminActions": [
+    "Pick a project",
+    "Review the portfolio and requirements settings",
+    "Check the field mappings",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "devops-projects",
+   "title": "Projects",
+   "route": "/devops/projects",
+   "category": "Azure DevOps",
+   "description": "Lists Azure DevOps projects with their descriptions after you sign in. Admins use it to find projects and start new ones.",
+   "adminActions": [
+    "Search loaded projects",
+    "Refresh the project list",
+    "Create a new project",
+    "Sign in to Azure DevOps if prompted"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "devops-pull-requests",
+   "title": "Pull Requests",
+   "route": "/devops/pull-requests",
+   "category": "Azure DevOps",
+   "description": "Lists Azure DevOps pull requests with status, branches, created date, and reviewers. Admins use it to review code changes across repositories.",
+   "adminActions": [
+    "Filter by repository and status such as completed or abandoned",
+    "Search pull requests",
+    "Open a pull request for details",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "message-center",
+   "title": "Message Center",
+   "route": "/message-center",
+   "category": "Service Health & Messages",
+   "description": "Stay informed about Microsoft 365 service updates and changes.",
+   "adminActions": [
+    "All",
+    "Unread",
+    "Favorites",
+    "Updated",
+    "Archived"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "analytics-servicenow-incidents",
+   "title": "ServiceNow Incident Analytics",
+   "route": "/analytics/servicenow-incidents",
+   "category": "Reports & Analytics",
+   "description": "Overview of ServiceNow incident metrics, including assigned and unassigned counts and incidents by priority. Admins use it to see incident load at a glance.",
+   "adminActions": [
+    "Review incident counts by priority",
+    "Open the full incident list",
+    "Configure the ServiceNow connection",
+    "Refresh the data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports",
+   "title": "Microsoft 365 Usage Reports",
+   "route": "/reports",
+   "category": "Reports & Analytics",
+   "description": "68 reports across 18 categories · Powered by Microsoft Graph reportRoot API.",
+   "adminActions": [
+    "Review Microsoft 365 Usage Reports across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "reports-browser-distribution-user-counts",
+   "title": "Browser Distribution User Counts",
+   "route": "/reports/browser-distribution-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the number of unique users by browser over the reporting period. Admins use it to see which browsers people actually use to reach Microsoft 365.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-browser-user-counts",
+   "title": "Browser User Counts",
+   "route": "/reports/browser-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the number of active users by browser. Admins use it to see how browser use is trending across the organization.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-email-activity-counts",
+   "title": "Email Activity Counts",
+   "route": "/reports/email-activity-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on trends in email activities such as send, receive, and read. Admins use it to see how heavily mail is used.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-email-activity-user-counts",
+   "title": "Email Activity User Counts",
+   "route": "/reports/email-activity-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the count of unique users who performed email activities. Admins use it to see how many people actively use email.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-email-app-usage-apps-user-counts",
+   "title": "Email App Usage Apps User Counts",
+   "route": "/reports/email-app-usage-apps-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the count of unique users per email app. Admins use it to see which mail clients connect to Exchange Online.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-email-app-usage-user-counts",
+   "title": "Email App Usage User Counts",
+   "route": "/reports/email-app-usage-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the count of unique users that connected to Exchange Online with any email app. Admins use it to see overall email client adoption.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-email-app-usage-versions-user-counts",
+   "title": "Email App Usage Versions User Counts",
+   "route": "/reports/email-app-usage-versions-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the count of unique users by Outlook desktop version. Admins use it to see which Outlook versions are still in use and may need updating.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-m365-app-platform-user-counts",
+   "title": "M365 App Platform User Counts",
+   "route": "/reports/m365-app-platform-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the count of Microsoft 365 app users by platform such as Windows, Mac, web, and mobile. Admins use it to see where people run Microsoft 365 apps.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-m365-app-user-counts",
+   "title": "M365 App User Counts",
+   "route": "/reports/m365-app-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Microsoft 365 application usage report showing active user counts across Exchange, SharePoint, Teams, OneDrive, and other M365 apps over selectable reporting periods.",
+   "adminActions": [
+    "Track adoption of Microsoft 365 applications",
+    "Compare app usage across different time periods",
+    "Identify which apps have the highest/lowest adoption",
+    "Generate usage reports for license optimization"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "reports-mailbox-usage-detail",
+   "title": "Mailbox Usage Detail",
+   "route": "/reports/mailbox-usage-detail",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on mailbox usage details for each user. Admins use it to see which mailboxes are large or close to quota.",
+   "adminActions": [
+    "Pick a report period or a specific date",
+    "Scan the per-row detail table",
+    "Export the detail rows",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-mailbox-usage-mailbox-counts",
+   "title": "Mailbox Usage Mailbox Counts",
+   "route": "/reports/mailbox-usage-mailbox-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the total number of mailboxes and how many are active. Admins use it to see how many mailboxes are idle.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-mailbox-usage-quota-status-mailbox-counts",
+   "title": "Mailbox Usage Quota Status",
+   "route": "/reports/mailbox-usage-quota-status-mailbox-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the count of user mailboxes in each quota category. Admins use it to see how many mailboxes are near or over their limits.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-mailbox-usage-storage",
+   "title": "Mailbox Usage Storage",
+   "route": "/reports/mailbox-usage-storage",
+   "category": "Reports & Analytics",
+   "description": "Get the amount of mailbox storage used in your organization. Rendered against live tenant data with 30 live records.",
+   "adminActions": [
+    "📥 Export CSV",
+    "Sort and filter by Report Date, Storage Used (bytes), Report Period",
+    "Review 30 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "reports-microsoft365-copilot-usage-user-detail",
+   "title": "Copilot Usage User Detail",
+   "route": "/reports/microsoft365-copilot-usage-user-detail",
+   "category": "Reports & Analytics",
+   "description": "Adoption statistics, consumption trends, and per-user activity. Rendered against live tenant data with 3 summary metrics.",
+   "adminActions": [
+    "Overview",
+    "Consumption",
+    "License Reclamation"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "reports-microsoft365-copilot-user-count-summary",
+   "title": "Copilot User Count Summary",
+   "route": "/reports/microsoft365-copilot-user-count-summary",
+   "category": "Reports & Analytics",
+   "description": "Adoption statistics, consumption trends, and per-user activity. Rendered against live tenant data with 3 summary metrics.",
+   "adminActions": [
+    "Overview",
+    "Consumption",
+    "License Reclamation"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "reports-microsoft365-copilot-user-count-trend",
+   "title": "Copilot User Count Trend",
+   "route": "/reports/microsoft365-copilot-user-count-trend",
+   "category": "Reports & Analytics",
+   "description": "Adoption statistics, consumption trends, and per-user activity. Rendered against live tenant data with 3 summary metrics.",
+   "adminActions": [
+    "Overview",
+    "Consumption",
+    "License Reclamation"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "reports-office365-activation-counts",
+   "title": "Office 365 Activation Counts",
+   "route": "/reports/office365-activation-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the count of Microsoft 365 activations on desktops and devices. Admins use it to see how licenses are consumed by installs.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-office365-activations-user-counts",
+   "title": "Office 365 Activations User Counts",
+   "route": "/reports/office365-activations-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the count of users that are enabled and those that have activated Microsoft 365. Admins use it to see license seats that are assigned but never activated.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-office365-activations-user-detail",
+   "title": "Office 365 Activations User Detail",
+   "route": "/reports/office365-activations-user-detail",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on Microsoft 365 activation details for each user. Admins use it to see which users have activated on which platforms.",
+   "adminActions": [
+    "Pick a report period or a specific date",
+    "Scan the per-row detail table",
+    "Export the detail rows",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-office365-groups-activity-counts",
+   "title": "M365 Groups Activity Counts",
+   "route": "/reports/office365-groups-activity-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the number of Microsoft 365 Groups activities across group workloads. Admins use it to see how actively groups are used.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-office365-groups-activity-detail",
+   "title": "M365 Groups Activity Detail",
+   "route": "/reports/office365-groups-activity-detail",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on Microsoft 365 Groups activity details for each group. Admins use it to see which groups are active or stale.",
+   "adminActions": [
+    "Pick a report period or a specific date",
+    "Scan the per-row detail table",
+    "Export the detail rows",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-office365-groups-activity-file-counts",
+   "title": "M365 Groups Activity File Counts",
+   "route": "/reports/office365-groups-activity-file-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the total number of files and how many were active across group SharePoint sites. Admins use it to see how much group file content is in use.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-office365-groups-activity-group-counts",
+   "title": "M365 Groups Activity Group Counts",
+   "route": "/reports/office365-groups-activity-group-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the total number of Microsoft 365 Groups and how many were active. Admins use it to see how many groups are inactive and may be cleaned up.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-office365-groups-activity-storage",
+   "title": "M365 Groups Activity Storage",
+   "route": "/reports/office365-groups-activity-storage",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on total storage used across group mailboxes and group SharePoint sites. Admins use it to see group storage growth.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-office365-reporting",
+   "title": "Office 365 Reporting",
+   "route": "/reports/office365-reporting",
+   "category": "Reports & Analytics",
+   "description": "Comprehensive Office 365 active user counts, services usage, and per-user activity detail. Rendered against live tenant data with 5 summary metrics, 30 live records, 7 charts.",
+   "adminActions": [
+    "Active User Counts",
+    "Services User Counts",
+    "User Activity Detail",
+    "Sort and filter by Report Date, Office 365, Exchange, OneDrive",
+    "Review 30 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "reports-onedrive-activity-file-counts",
+   "title": "OneDrive Activity File Counts",
+   "route": "/reports/onedrive-activity-file-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the number of unique licensed users who performed file interactions on OneDrive accounts. Admins use it to see how much OneDrive is used for file work.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-onedrive-activity-user-counts",
+   "title": "OneDrive Activity User Counts",
+   "route": "/reports/onedrive-activity-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the trend in the number of active OneDrive users. Admins use it to see OneDrive adoption over time.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-onedrive-usage-account-counts",
+   "title": "OneDrive Usage Account Counts",
+   "route": "/reports/onedrive-usage-account-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the trend in the number of active and total OneDrive sites. Admins use it to see how many OneDrive accounts are idle.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-onedrive-usage-file-counts",
+   "title": "OneDrive Usage File Counts",
+   "route": "/reports/onedrive-usage-file-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the total number of files across OneDrive sites and the number of active files. Admins use it to see how much stored content is in use.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-onedrive-usage-storage",
+   "title": "OneDrive Usage Storage",
+   "route": "/reports/onedrive-usage-storage",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the trend in OneDrive for Business storage use. Admins use it to see storage growth and capacity planning.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-sharepoint-activity-file-counts",
+   "title": "SharePoint Activity File Counts",
+   "route": "/reports/sharepoint-activity-file-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the number of unique licensed users who interacted with files stored on SharePoint sites. Admins use it to see how much SharePoint is used for file work.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-sharepoint-activity-pages",
+   "title": "SharePoint Activity Pages",
+   "route": "/reports/sharepoint-activity-pages",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the number of unique pages visited by users. Admins use it to see which SharePoint page activity is rising or falling.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-sharepoint-activity-user-counts",
+   "title": "SharePoint Activity User Counts",
+   "route": "/reports/sharepoint-activity-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the trend in the number of active users who interacted with SharePoint files. Admins use it to see SharePoint adoption over time.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-sharepoint-activity-user-detail",
+   "title": "SharePoint Activity User Detail",
+   "route": "/reports/sharepoint-activity-user-detail",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on SharePoint activity details for each user. Admins use it to see which users are active or inactive on SharePoint.",
+   "adminActions": [
+    "Pick a report period or a specific date",
+    "Scan the per-row detail table",
+    "Export the detail rows",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-sharepoint-site-usage",
+   "title": "SharePoint Site Usage",
+   "route": "/reports/sharepoint-site-usage",
+   "category": "Reports & Analytics",
+   "description": "SharePoint site usage analytics showing page views, active users, file activity, and storage usage per site collection over the reporting period.",
+   "adminActions": [
+    "Identify most and least active SharePoint sites",
+    "Track storage growth trends per site",
+    "Find sites with no recent activity for lifecycle management",
+    "Generate activity reports for department owners"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "reports-sharepoint-site-usage-file-counts",
+   "title": "SharePoint Site Usage File Counts",
+   "route": "/reports/sharepoint-site-usage-file-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the total number of files across SharePoint sites and the number of active files. Admins use it to see how much site content is in use.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-sharepoint-site-usage-pages",
+   "title": "SharePoint Site Usage Pages",
+   "route": "/reports/sharepoint-site-usage-pages",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the number of pages viewed across all SharePoint sites. Admins use it to see how site page traffic is trending.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-sharepoint-site-usage-site-counts",
+   "title": "SharePoint Site Usage Site Counts",
+   "route": "/reports/sharepoint-site-usage-site-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the trend in the number of active and total SharePoint sites. Admins use it to see how many sites are idle.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-sharepoint-site-usage-storage",
+   "title": "SharePoint Site Usage Storage",
+   "route": "/reports/sharepoint-site-usage-storage",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the trend in storage allocated and consumed across SharePoint sites. Admins use it to see capacity planning for SharePoint.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-teams-device-usage-distribution-user-counts",
+   "title": "Teams Device Usage Distribution",
+   "route": "/reports/teams-device-usage-distribution-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the number of unique Teams users by device type over the reporting period. Admins use it to see which devices people use for Teams.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-teams-device-usage-user-counts",
+   "title": "Teams Device Usage User Counts",
+   "route": "/reports/teams-device-usage-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the number of daily unique Teams users by device type. Admins use it to see how device use changes over time.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-teams-team-activity-counts",
+   "title": "Teams Team Activity Counts",
+   "route": "/reports/teams-team-activity-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the number of team activities across Microsoft Teams by activity type. Admins use it to see how teams are being used.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-teams-team-activity-detail",
+   "title": "Teams Team Activity Detail",
+   "route": "/reports/teams-team-activity-detail",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on Microsoft Teams activity details for each team. Admins use it to see which teams are active or dormant.",
+   "adminActions": [
+    "Pick a report period or a specific date",
+    "Scan the per-row detail table",
+    "Export the detail rows",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-teams-user-activity-counts",
+   "title": "Teams User Activity Counts",
+   "route": "/reports/teams-user-activity-counts",
+   "category": "Reports & Analytics",
+   "description": "Get the number of Microsoft Teams activities by activity type. Rendered against live tenant data with 30 live records.",
+   "adminActions": [
+    "📥 Export CSV",
+    "Review 30 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "reports-teams-user-activity-user-counts",
+   "title": "Teams User Activity User Counts",
+   "route": "/reports/teams-user-activity-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the number of Microsoft Teams users by activity type. Admins use it to see how many people chat, call, or attend meetings.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-tenant-reporting",
+   "title": "Tenant Reporting",
+   "route": "/reports/tenant-reporting",
+   "category": "Reports & Analytics",
+   "description": "Generate comprehensive reports across Power Platform, Azure, licensing, and security.",
+   "adminActions": [
+    "Select all",
+    "📊 Executive Summary",
+    "🔒 Security Audit",
+    "✅ Compliance Report",
+    "🏗️ Infrastructure Review"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "reports-yammer-activity-counts",
+   "title": "Yammer Activity Counts",
+   "route": "/reports/yammer-activity-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on trends in Viva Engage (Yammer) messages posted, read, and liked. Admins use it to see engagement levels.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-yammer-activity-user-counts",
+   "title": "Yammer Activity User Counts",
+   "route": "/reports/yammer-activity-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the count of unique users who performed Viva Engage (Yammer) activities. Admins use it to see community adoption.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-yammer-device-usage-distribution-user-counts",
+   "title": "Yammer Device Usage Distribution",
+   "route": "/reports/yammer-device-usage-distribution-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on unique Viva Engage (Yammer) users by device type over the reporting period. Admins use it to see which devices people use for Viva Engage.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-yammer-device-usage-user-counts",
+   "title": "Yammer Device Usage User Counts",
+   "route": "/reports/yammer-device-usage-user-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the count of daily unique Viva Engage (Yammer) users by device type. Admins use it to see device trends over time.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-yammer-groups-activity-counts",
+   "title": "Yammer Groups Activity Counts",
+   "route": "/reports/yammer-groups-activity-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on Viva Engage (Yammer) messages posted, read, and liked in groups. Admins use it to see how active communities are.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "reports-yammer-groups-activity-group-counts",
+   "title": "Yammer Groups Activity Group Counts",
+   "route": "/reports/yammer-groups-activity-group-counts",
+   "category": "Reports & Analytics",
+   "description": "Shows a Microsoft Graph usage report on the total number of Viva Engage (Yammer) groups and how many were active. Admins use it to see how many groups are inactive.",
+   "adminActions": [
+    "Switch the reporting period",
+    "Review the trend table and chart for the selected period",
+    "Export the report data",
+    "Refresh the report to load the latest Graph data"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "news-microsoft-foundry-blog",
+   "title": "Foundry Blog",
+   "route": "/news/microsoft-foundry/blog",
+   "category": "News",
+   "description": "Lists the latest posts from the Microsoft Foundry developer blog. Admins use it to keep up with Foundry announcements and guidance.",
+   "adminActions": [
+    "Browse the latest posts",
+    "Open a post to read the full article",
+    "Refresh the feed"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "news-microsoft-foundry-whats-new",
+   "title": "Foundry Whats New",
+   "route": "/news/microsoft-foundry/whats-new",
+   "category": "News",
+   "description": "Lists recent Microsoft Foundry news and what's new items. Admins use it to learn about new Foundry capabilities that may affect their environments.",
+   "adminActions": [
+    "Browse the latest posts",
+    "Open a post to read the full article",
+    "Refresh the feed"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "news-power-platform-copilot-studio",
+   "title": "Copilot Studio Blog",
+   "route": "/news/power-platform/copilot-studio",
+   "category": "News",
+   "description": "Shows the Microsoft Copilot Studio blog feed. Admins use it to follow agent platform changes and best practices.",
+   "adminActions": [
+    "Browse the latest posts",
+    "Open a post to read the full article",
+    "Refresh the feed"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "news-power-platform-developer",
+   "title": "Power Platform Developer Blog",
+   "route": "/news/power-platform/developer",
+   "category": "News",
+   "description": "Shows the Power Platform Developer blog feed. Admins use it to track developer-facing changes that can affect apps and flows.",
+   "adminActions": [
+    "Browse the latest posts",
+    "Open a post to read the full article",
+    "Refresh the feed"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "news-power-platform-platform",
+   "title": "Power Platform Blog",
+   "route": "/news/power-platform/platform",
+   "category": "News",
+   "description": "Shows the Power Platform blog feed. Admins use it to follow platform announcements and updates.",
+   "adminActions": [
+    "Browse the latest posts",
+    "Open a post to read the full article",
+    "Refresh the feed"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "news-release-communications-azure",
+   "title": "Azure Updates",
+   "route": "/news/release-communications/azure",
+   "category": "News",
+   "description": "Lists recently published and upcoming Azure service changes, previews, and retirements from Microsoft Release Communications. Admins use it to plan for changes before they land.",
+   "adminActions": [
+    "Browse recent and upcoming Azure changes",
+    "Open an item for full details",
+    "Refresh the feed"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "news-release-communications-microsoft-365",
+   "title": "Microsoft 365 Roadmap",
+   "route": "/news/release-communications/microsoft-365",
+   "category": "News",
+   "description": "Lists recently announced and upcoming Microsoft 365 features from Microsoft Release Communications. Admins use it to prepare users and policies ahead of rollouts.",
+   "adminActions": [
+    "Browse recent and upcoming feature announcements",
+    "Open an item for full details",
+    "Refresh the feed"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "multi-tenant",
+   "title": "Multitenant management",
+   "route": "/multi-tenant",
+   "category": "Multitenant",
+   "description": "Aggregate, compare, and act across every Entra tenant you administer.",
+   "adminActions": [
+    "Review Multi-tenant console across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "multi-tenant-admin",
+   "title": "Tenants & roles",
+   "route": "/multi-tenant/admin",
+   "category": "Multitenant",
+   "description": "Register tenants and override per-tenant portal roles. Requires admin permission. Rendered against live tenant data with 1 live records.",
+   "adminActions": [
+    "tenants",
+    "roles",
+    "audit",
+    "Discover from Lighthouse / GDAP",
+    "Register tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "agent",
+   "title": "Tenant Health Briefer",
+   "route": "/agent",
+   "category": "Agents",
+   "description": "Ask about drift, page health, KPI movement, or recommendations.",
+   "adminActions": [
+    "Give me today\\'s tenant health briefing",
+    "Summarize Power Platform drift",
+    "Send",
+    "Reset"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "agents-infographic",
+   "title": "Infographic Generator",
+   "route": "/agents/infographic",
+   "category": "Agents",
+   "description": "Generator that builds infographics from a brief, prompt template, and image settings. Admins use it to produce branded images.",
+   "adminActions": [
+    "Fill in the brief",
+    "Choose a prompt template",
+    "Set image quality",
+    "Generate the infographic"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "docx-editor",
+   "title": "Docx Editor",
+   "route": "/docx-editor",
+   "category": "Tools & Utilities",
+   "description": "Block-based editor for Word documents. Admins use it to edit document text and formatting.",
+   "adminActions": [
+    "Select a block",
+    "Apply bold or italic",
+    "Delete a block",
+    "Rename the document"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "tools-access-control",
+   "title": "Access Control",
+   "route": "/tools/access-control",
+   "category": "Tools & Utilities",
+   "description": "Define portal roles, assign access, and verify permissions. This page marks the beginning of the RBAC rollout.",
+   "adminActions": [
+    "Review Access Control across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "tools-document-comparison",
+   "title": "Document Comparison",
+   "route": "/tools/document-comparison",
+   "category": "Tools & Utilities",
+   "description": "Compare two Word documents or PDFs using AI-powered analysis to identify differences, additions, and changes.",
+   "adminActions": [
+    "Review Document Comparison across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "tools-theme-preview",
+   "title": "Theme Preview",
+   "route": "/tools/theme-preview",
+   "category": "Tools & Utilities",
+   "description": "Preview of the proposed design direction, showing controls, search patterns, and design principles. Admins and designers use it to review the look of the portal.",
+   "adminActions": [
+    "Browse the sample controls",
+    "Try the search pattern",
+    "Review the design principles"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "devices",
+   "title": "Devices",
+   "route": "/devices",
+   "category": "Other",
+   "description": "All Entra ID registered and joined devices across the tenant. Shows device compliance state, ownership (personal vs. corporate), platform, and last check-in time.",
+   "adminActions": [
+    "Audit all devices registered in Entra ID",
+    "Filter devices by platform, compliance, or join type",
+    "Identify stale or non-compliant devices",
+    "Navigate to device details for remote actions"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "licensing",
+   "title": "Licensing",
+   "route": "/licensing",
+   "category": "Other",
+   "description": "Centralized license management view showing all Microsoft 365 and Azure subscriptions, license counts, assigned quantities, and per-service-plan breakdowns.",
+   "adminActions": [
+    "View all subscribed Microsoft 365 SKUs and quantities",
+    "Assign and remove licenses for individual users",
+    "Identify over-provisioned or under-utilized licenses",
+    "Review service plan enablement per user"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "licensing-group-license-errors",
+   "title": "Group license errors",
+   "route": "/licensing/group-license-errors",
+   "category": "Other",
+   "description": "Lists groups whose group-based license assignment failed for some members, and why, such as not enough licenses or a conflicting product. Admins use it to find and fix licensing problems.",
+   "adminActions": [
+    "Review the error summary",
+    "Open a group to see affected members",
+    "Open the Entra admin center to reprocess or fix",
+    "Refresh the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "licensing-optimization",
+   "title": "License Optimization",
+   "route": "/licensing/optimization",
+   "category": "Other",
+   "description": "Reviews license waste, protects exceptions, and reclaims eligible seats, with potential annual savings. Admins use it to cut license cost.",
+   "adminActions": [
+    "Review ranked findings",
+    "Select users to reclaim",
+    "Manage exclusions",
+    "Review analysis thresholds and limitations"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "message-center--message-details",
+   "title": "Message details",
+   "route": "/message/[id]",
+   "category": "Other",
+   "description": "Shows one Microsoft 365 Message Center post with severity, services impacted, tags, and attachments. Admins use it to read a change announcement in full.",
+   "adminActions": [
+    "Read the message",
+    "Check services impacted",
+    "Review attachments",
+    "Go back to the list"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "my-account",
+   "title": "My Account",
+   "route": "/my-account",
+   "category": "Other",
+   "description": "Shows your own access packages and request information, including duration and ticket details. Users use it to review current access.",
+   "adminActions": [
+    "Review access packages",
+    "Activate a PIM role",
+    "Retry if loading fails",
+    "Open Microsoft My Access"
+   ],
+   "origin": "generated"
+  },
+  {
+   "stem": "onedrive-admin",
+   "title": "OneDrive Admin",
+   "route": "/onedrive-admin",
+   "category": "Other",
+   "description": "Per-user OneDrive storage and quota overview· 7 licensed users. Rendered against live tenant data with 7 live records.",
+   "adminActions": [
+    "View",
+    "Sort and filter by User, UPN, Status, Licenses",
+    "Review 7 live records from the tenant"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "pax-report-builder",
+   "title": "Report Builder",
+   "route": "/pax/report-builder",
+   "category": "Other",
+   "description": "Build, save, import, and download Cookbook-compatible portable report recipes without storing credentials.",
+   "adminActions": [
+    "AI-in-One Dashboard",
+    "AI Business Value Dashboard",
+    "M365 Usage Dashboard",
+    "Entra user info only",
+    "Microsoft Agent 365 catalog"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "pax-reports",
+   "title": "Reports and Exports",
+   "route": "/pax/reports",
+   "category": "Other",
+   "description": "Open live Fabric-backed reports or download any official Mini-Kitchen starter recipe as a portable .paxlite definition.",
+   "adminActions": [
+    "Review PAX reports and exports across the tenant from a single view"
+   ],
+   "origin": "curated"
+  },
+  {
+   "stem": "threat-hunting-playbook",
+   "title": "Threat Hunting Playbook",
+   "route": "/threat-hunting-playbook",
+   "category": "Other",
+   "description": "KQL threat hunting playbook with searchable queries tagged by MITRE ID and table. Admins use it to run advanced hunting queries against Defender.",
+   "adminActions": [
+    "Search queries by title, MITRE ID, or table",
+    "Run a query",
+    "Edit the KQL",
+    "Open in the Defender portal"
+   ],
+   "origin": "generated"
+  }
+ ]
+}
