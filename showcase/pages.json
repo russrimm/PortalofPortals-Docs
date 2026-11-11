@@ -5,6 +5,78 @@
  },
  "pages": [
   {
+   "stem": "servicenow-changes",
+   "title": "ServiceNow Change Management",
+   "route": "/servicenow/changes",
+   "category": "ServiceNow",
+   "description": "Review ServiceNow change requests with lifecycle counts and filters for type, state, and priority. Admins can inspect change details and create change requests through the configured ServiceNow connection.",
+   "adminActions": [
+    "Search and filter change requests",
+    "Review change lifecycle counts and request details",
+    "Create a change request",
+    "Update a selected change request"
+   ],
+   "origin": "generated",
+   "screenshotStatus": "pending"
+  },
+  {
+   "stem": "servicenow-changes-tasks",
+   "title": "ServiceNow Change Tasks",
+   "route": "/servicenow/changes/tasks",
+   "category": "ServiceNow",
+   "description": "This route redirects to ServiceNow Change Management; it does not display a separate task list. Use the destination page to review and manage change requests.",
+   "adminActions": [
+    "Continue to the Change Management page",
+    "Review change requests at the destination"
+   ],
+   "origin": "generated",
+   "screenshotStatus": "pending"
+  },
+  {
+   "stem": "servicenow-changes-templates",
+   "title": "ServiceNow Standard Change Templates",
+   "route": "/servicenow/changes/templates",
+   "category": "ServiceNow",
+   "description": "Browse standard change templates from the configured ServiceNow instance. Search the template list and inspect template details, including risk, impact, assignment group, and change model.",
+   "adminActions": [
+    "Search standard change templates",
+    "Review active and inactive template counts",
+    "Inspect template descriptions, risk, and impact",
+    "Refresh the template list"
+   ],
+   "origin": "generated",
+   "screenshotStatus": "pending"
+  },
+  {
+   "stem": "servicenow-incidents",
+   "title": "ServiceNow Incidents",
+   "route": "/servicenow/incidents",
+   "category": "ServiceNow",
+   "description": "View and manage ServiceNow incidents with summary counts, list filters, and incident details. The server-configured connection uses the signed-in user's Microsoft Entra identity and ServiceNow roles.",
+   "adminActions": [
+    "Load and filter the incident list",
+    "Review incident summary counts and details",
+    "Create an incident",
+    "Update a selected incident"
+   ],
+   "origin": "generated",
+   "screenshotStatus": "pending"
+  },
+  {
+   "stem": "servicenow-knowledge",
+   "title": "ServiceNow Knowledge",
+   "route": "/servicenow/knowledge",
+   "category": "ServiceNow",
+   "description": "Search and browse knowledge articles from the configured ServiceNow instance. Open article details to read the content and review publication state, author, and update information.",
+   "adminActions": [
+    "Search knowledge articles or browse without a search term",
+    "Page through article results",
+    "Read an article's content and metadata"
+   ],
+   "origin": "generated",
+   "screenshotStatus": "pending"
+  },
+  {
    "stem": "home",
    "title": "Home",
    "route": "/",

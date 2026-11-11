@@ -20,8 +20,12 @@ main{max-width:1200px;margin:0 auto;padding:0 20px 48px}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,520px),1fr));gap:20px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
 .card:target{outline:2px solid var(--accent)}
+.card[hidden]{display:none}
 .shot{display:block;background:#000}
 .shot img{display:block;width:100%;height:auto;aspect-ratio:1400/875;object-fit:cover;object-position:top}
+.shot-pending{aspect-ratio:1400/875;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;color:var(--muted);border-bottom:1px dashed var(--line)}
+.shot-pending p{margin:4px 0}
+.shot-pending strong{color:var(--text)}
 .body{padding:14px 16px 18px}
 .meta{display:flex;justify-content:space-between;gap:8px;margin:0 0 4px;font-size:.78rem;color:var(--muted)}
 .cat{text-transform:uppercase;letter-spacing:.04em}
