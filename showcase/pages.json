@@ -16,8 +16,7 @@
     "Create a change request",
     "Update a selected change request"
    ],
-   "origin": "generated",
-   "screenshotStatus": "pending"
+   "origin": "generated"
   },
   {
    "stem": "servicenow-changes-tasks",
@@ -29,8 +28,7 @@
     "Continue to the Change Management page",
     "Review change requests at the destination"
    ],
-   "origin": "generated",
-   "screenshotStatus": "pending"
+   "origin": "generated"
   },
   {
    "stem": "servicenow-changes-templates",
@@ -44,8 +42,7 @@
     "Inspect template descriptions, risk, and impact",
     "Refresh the template list"
    ],
-   "origin": "generated",
-   "screenshotStatus": "pending"
+   "origin": "generated"
   },
   {
    "stem": "servicenow-incidents",
@@ -59,8 +56,7 @@
     "Create an incident",
     "Update a selected incident"
    ],
-   "origin": "generated",
-   "screenshotStatus": "pending"
+   "origin": "generated"
   },
   {
    "stem": "servicenow-knowledge",
@@ -73,8 +69,7 @@
     "Page through article results",
     "Read an article's content and metadata"
    ],
-   "origin": "generated",
-   "screenshotStatus": "pending"
+   "origin": "generated"
   },
   {
    "stem": "home",

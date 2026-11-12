@@ -7040,6 +7040,81 @@
       "kind": "image"
     },
     {
+      "path": "docs/screenshots/servicenow-changes-tasks.webp",
+      "sourcePath": "docs/screenshots/servicenow-changes-tasks.webp",
+      "sourceCommit": "26e22ca50e1751c66b449a98e9535a0b7967311c",
+      "sourceSha256": "d5c80e58b9de9f4b030564df0cdd5bfaae414bda90f6b8a9fcaf24146969159b",
+      "sha256": "37123201172e19d78e31c9e285daa055554bd267489c513a92950c7f1effb598",
+      "bytes": 93308,
+      "width": 1400,
+      "height": 875,
+      "maskCount": 0,
+      "status": "reviewed-no-guid",
+      "capture": "current",
+      "aliases": [],
+      "kind": "image"
+    },
+    {
+      "path": "docs/screenshots/servicenow-changes-templates.webp",
+      "sourcePath": "docs/screenshots/servicenow-changes-templates.webp",
+      "sourceCommit": "26e22ca50e1751c66b449a98e9535a0b7967311c",
+      "sourceSha256": "08a4bfb8b14cbd975c9c5e17c69e4d21eca921b7c95f6f29bb9c5440b21e0d39",
+      "sha256": "612cfc566a0c5a245aa3770d99de14dd1a817dd540e4531c718bff9291fe8ed3",
+      "bytes": 91466,
+      "width": 1400,
+      "height": 875,
+      "maskCount": 0,
+      "status": "reviewed-no-guid",
+      "capture": "current",
+      "aliases": [],
+      "kind": "image"
+    },
+    {
+      "path": "docs/screenshots/servicenow-changes.webp",
+      "sourcePath": "docs/screenshots/servicenow-changes.webp",
+      "sourceCommit": "26e22ca50e1751c66b449a98e9535a0b7967311c",
+      "sourceSha256": "ce4327ac34fa0305e71091d37552cc66a5e2ad901d18863e9ecca13770174868",
+      "sha256": "0f646c54775dbc84ed9cbc2707995d6157e7b7175d049df2b44ed998211993cb",
+      "bytes": 93348,
+      "width": 1400,
+      "height": 875,
+      "maskCount": 0,
+      "status": "reviewed-no-guid",
+      "capture": "current",
+      "aliases": [],
+      "kind": "image"
+    },
+    {
+      "path": "docs/screenshots/servicenow-incidents.webp",
+      "sourcePath": "docs/screenshots/servicenow-incidents.webp",
+      "sourceCommit": "26e22ca50e1751c66b449a98e9535a0b7967311c",
+      "sourceSha256": "688a201f1f93e3688133641a7335347eeffac47a923448c3022a2931d63111b1",
+      "sha256": "73815d4f0952966791721328ed35548c08595acd6d28c153b67815700c954cf7",
+      "bytes": 83712,
+      "width": 1400,
+      "height": 875,
+      "maskCount": 0,
+      "status": "reviewed-no-guid",
+      "capture": "current",
+      "aliases": [],
+      "kind": "image"
+    },
+    {
+      "path": "docs/screenshots/servicenow-knowledge.webp",
+      "sourcePath": "docs/screenshots/servicenow-knowledge.webp",
+      "sourceCommit": "26e22ca50e1751c66b449a98e9535a0b7967311c",
+      "sourceSha256": "37285dc494980da21232de80bb0b2b8ec5bd0fb7a9a36d09f3bc99eaf86c6240",
+      "sha256": "654e36c3ebcb1304043a117bfc508dd2b02f7869501cd03001c3e1c2d20fd2a1",
+      "bytes": 70214,
+      "width": 1400,
+      "height": 875,
+      "maskCount": 0,
+      "status": "reviewed-no-guid",
+      "capture": "current",
+      "aliases": [],
+      "kind": "image"
+    },
+    {
       "path": "docs/screenshots/sharepoint-format-editor.webp",
       "sourcePath": "docs/screenshots/sharepoint-format-editor.webp",
       "sourceCommit": "26e22ca50e1751c66b449a98e9535a0b7967311c",
@@ -7754,19 +7829,19 @@
   ],
   "counts": {
     "documents": 238,
-    "images": 319,
+    "images": 324,
     "attachments": 6,
-    "files": 564
+    "files": 569
   },
   "screenshots": {
     "version": 1,
     "provenance": "screenshots-provenance.json",
-    "sha256": "2f4772b6a59a31753225a02af42edaf48b951430e9bb6663fb22394a0da49e13",
+    "sha256": "e04dbeb6a2809c171e3623bf9c0162d3607769db7c0fac51ca6bef0fb320b1fe",
     "counts": {
-      "current": 313,
+      "current": 318,
       "legacy": 6,
       "masked": 258,
-      "reviewedNoGuid": 61,
+      "reviewedNoGuid": 66,
       "masks": 457
     }
   }
