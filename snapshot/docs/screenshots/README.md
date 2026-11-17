@@ -20,6 +20,23 @@ These show the loaded starting interface, not a completed operation or invented 
 > domains are replaced with deterministic fictional stand-ins at capture time, and
 > profile photos are blurred. See `scripts/screenshot-redaction.mjs`.
 
+## Browse by topic
+
+Pick a topic to jump straight to its screenshots. Each section has a **Back to topics** link.
+
+| Topic | Categories (screenshot count) |
+| --- | --- |
+| **Microsoft Entra** | [Identity & Access](#identity--access) (24) · [Conditional Access & Policy](#conditional-access--policy) (8) · [Sign-in & Audit Logs](#sign-in--audit-logs) (7) |
+| **Microsoft Defender & security** | [Security & Risk](#security--risk) (11) |
+| **Microsoft 365** | [Microsoft 365 & Copilot](#microsoft-365--copilot) (12) · [Exchange, Teams & SharePoint](#exchange-teams--sharepoint) (10) · [Service Health & Messages](#service-health--messages) (1) |
+| **Power Platform** | [Power Platform](#power-platform) (42) |
+| **Intune** | [Device Management & Intune](#device-management--intune) (30) |
+| **Azure** | [Azure](#azure) (50) · [Azure DevOps](#azure-devops) (8) |
+| **Microsoft Fabric** | [Microsoft Fabric](#microsoft-fabric) (25) |
+| **Reports & insights** | [Reports & Analytics](#reports--analytics) (54) · [News](#news) (7) |
+| **Platform** | [Overview](#overview) (6) · [Multitenant](#multitenant) (2) · [Agents](#agents) (2) · [Tools & Utilities](#tools--utilities) (4) · [Other](#other) (10) |
+| **Not pictured** | [Pages not pictured](#pages-not-pictured) |
+
 ## Highlights
 
 ### Home
@@ -88,6 +105,8 @@ Click any page name to open its full screenshot.
 
 ### Overview
 
+[↑ Back to topics](#browse-by-topic)
+
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | Home | `/` | [View](home.webp) | Updated |
@@ -98,6 +117,8 @@ Click any page name to open its full screenshot.
 | CVE | `/security-pulse/cve` | [View](security-pulse-cve.webp) | Previous image retained; not refreshed |
 
 ### Microsoft 365 & Copilot
+
+[↑ Back to topics](#browse-by-topic)
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
@@ -115,6 +136,8 @@ Click any page name to open its full screenshot.
 | Work IQ Governance | `/microsoft365/work-iq/governance` | [View](microsoft365-work-iq-governance.webp) | Previous image retained; not refreshed |
 
 ### Identity & Access
+
+[↑ Back to topics](#browse-by-topic)
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
@@ -145,6 +168,8 @@ Click any page name to open its full screenshot.
 
 ### Conditional Access & Policy
 
+[↑ Back to topics](#browse-by-topic)
+
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | App Management Policies | `/app-management-policies` | [View](app-management-policies.webp) | Previous image retained; not refreshed |
@@ -157,6 +182,8 @@ Click any page name to open its full screenshot.
 | Token Lifetime Policies | `/token-lifetime-policies` | [View](token-lifetime-policies.webp) | Previous image retained; not refreshed |
 
 ### Security & Risk
+
+[↑ Back to topics](#browse-by-topic)
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
@@ -174,6 +201,8 @@ Click any page name to open its full screenshot.
 
 ### Sign-in & Audit Logs
 
+[↑ Back to topics](#browse-by-topic)
+
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | Audit Log Queries | `/audit-log-queries` | [View](audit-log-queries.webp) | Updated |
@@ -185,6 +214,8 @@ Click any page name to open its full screenshot.
 | User Registration Details | `/user-registration-details` | [View](user-registration-details.webp) | Previous image retained; not refreshed |
 
 ### Azure
+
+[↑ Back to topics](#browse-by-topic)
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
@@ -241,6 +272,8 @@ Click any page name to open its full screenshot.
 
 ### Power Platform
 
+[↑ Back to topics](#browse-by-topic)
+
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | Power Apps | `/power-platform/apps` | [View](power-platform-apps.webp) | Updated |
@@ -288,6 +321,8 @@ Click any page name to open its full screenshot.
 
 ### Device Management & Intune
 
+[↑ Back to topics](#browse-by-topic)
+
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | Application Management | `/application-management` | [View](application-management.webp) | Previous image retained; not refreshed |
@@ -323,6 +358,8 @@ Click any page name to open its full screenshot.
 
 ### Exchange, Teams & SharePoint
 
+[↑ Back to topics](#browse-by-topic)
+
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | Exchange Admin Dashboard | `/exchange/admin-dashboard` | [View](exchange-admin-dashboard.webp) | Previous image retained; not refreshed |
@@ -337,6 +374,8 @@ Click any page name to open its full screenshot.
 | Teams User Activity | `/teams/user-activity` | [View](teams-user-activity.webp) | Previous image retained; not refreshed |
 
 ### Microsoft Fabric
+
+[↑ Back to topics](#browse-by-topic)
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
@@ -368,6 +407,8 @@ Click any page name to open its full screenshot.
 
 ### Azure DevOps
 
+[↑ Back to topics](#browse-by-topic)
+
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | Area Paths & Iterations | `/devops/area-paths` | [View](devops-area-paths.webp) | Previous image retained; not refreshed |
@@ -381,11 +422,15 @@ Click any page name to open its full screenshot.
 
 ### Service Health & Messages
 
+[↑ Back to topics](#browse-by-topic)
+
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | Message Center | `/message-center` | [View](message-center.webp) | Updated |
 
 ### Reports & Analytics
+
+[↑ Back to topics](#browse-by-topic)
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
@@ -446,6 +491,8 @@ Click any page name to open its full screenshot.
 
 ### News
 
+[↑ Back to topics](#browse-by-topic)
+
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | Foundry Blog | `/news/microsoft-foundry/blog` | [View](news-microsoft-foundry-blog.webp) | Previous image retained; not refreshed |
@@ -458,6 +505,8 @@ Click any page name to open its full screenshot.
 
 ### Multitenant
 
+[↑ Back to topics](#browse-by-topic)
+
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | Multitenant management | `/multi-tenant` | [View](multi-tenant.webp) | Previous image retained; not refreshed |
@@ -465,12 +514,16 @@ Click any page name to open its full screenshot.
 
 ### Agents
 
+[↑ Back to topics](#browse-by-topic)
+
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
 | Tenant Health Briefer | `/agent` | [View](agent.webp) | Updated |
 | Infographic Generator | `/agents/infographic` | [View](agents-infographic.webp) | Updated |
 
 ### Tools & Utilities
+
+[↑ Back to topics](#browse-by-topic)
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
@@ -480,6 +533,8 @@ Click any page name to open its full screenshot.
 | Theme Preview | `/tools/theme-preview` | [View](tools-theme-preview.webp) | Previous image retained; not refreshed |
 
 ### Other
+
+[↑ Back to topics](#browse-by-topic)
 
 | Page | Route | Screenshot | Refresh status |
 | --- | --- | --- | --- |
@@ -495,6 +550,8 @@ Click any page name to open its full screenshot.
 | Threat Hunting Playbook | `/threat-hunting-playbook` | [View](threat-hunting-playbook.webp) | Previous image retained; not refreshed |
 
 ## Pages not pictured
+
+[↑ Back to topics](#browse-by-topic)
 
 139 pages have no approved screenshot in this gallery.
 Reasons include unavailable provider data, unfinished selections, privacy exclusions,
